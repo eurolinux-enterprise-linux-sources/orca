@@ -1,0 +1,109 @@
+m4_define([orca_major_version], [2])
+m4_define([orca_minor_version], [28])
+m4_define([orca_micro_version], [2])
+m4_define([orca_version],
+          [orca_major_version.orca_minor_version.orca_micro_version])
+
+AC_INIT([orca],
+        [orca_version],
+        [http://bugzilla.gnome.org/enter_bug.cgi?product=orca],
+        [orca])
+AM_INIT_AUTOMAKE
+AM_MAINTAINER_MODE
+ORCA_VERSION=orca_version
+AC_SUBST(ORCA_VERSION)
+
+dnl Gettext stuff
+GETTEXT_PACKAGE=orca
+AC_SUBST(GETTEXT_PACKAGE)
+AC_DEFINE_UNQUOTED(GETTEXT_PACKAGE,"$GETTEXT_PACKAGE", [gettext package])
+AM_GLIB_GNU_GETTEXT
+IT_PROG_INTLTOOL([0.40.0])
+
+dnl Needed programs
+AC_PROG_INSTALL
+
+# WDW - I give up. No matter what I do, I seem to find a package that
+# is specified somewhere, but the packaging is not honored by various
+# distributions.
+#
+#dnl Check for various modules. NOTE: On OpenSolaris, you may
+#dnl need to set PKG_CONFIG_PATH=/usr/lib/pkgconfig in order
+#dnl for these to be found.
+#PKG_CHECK_MODULES(orca, \
+#	dbus-python >= 0.83.0 \
+#	gnome-python-desktop-2.0 >= 2.24.0 \
+#	libspi-1.0 >= 1.24.0 \
+#)
+
+dnl Check for python and python modules needed by Orca
+dnl TODO: check for incompatibilities between Orca and liblouis
+dnl per http://live.gnome.org/Orca/Braille
+AM_PATH_PYTHON(2.4)
+AM_CHECK_PYGTK(2.0,,[AC_MSG_ERROR(Could not find pygtk 2.0)])
+AM_CHECK_PYMOD(gobject,,,[AC_MSG_ERROR(Could not find python module: gobject)])
+# Don't require the DISPLAY to be set - the gtk checking will fail 
+# if DISPLAY is not set, and we don't like that.
+#AM_CHECK_PYMOD(gtk,gdk,,[AC_MSG_ERROR(Could not find python module: gtk.gdk)])
+AM_CHECK_PYMOD(gconf,,,[AC_MSG_ERROR(Could not find python module: gconf)])
+AM_CHECK_PYMOD(pyatspi,,,[AC_MSG_ERROR(Could not find python module: pyatspi)])
+AM_CHECK_PYMOD(ORBit,,,[AC_MSG_ERROR(Could not find python module: ORBit)])
+AM_CHECK_PYMOD(ORBit,CORBA,,[AC_MSG_ERROR(Could not find python module: ORBit.CORBA)])
+AM_CHECK_PYMOD(bonobo,,,[AC_MSG_ERROR(Could not find python module: bonobo)])
+AM_CHECK_PYMOD(dbus,,,[AC_MSG_ERROR(Could not find python module: dbus)])
+AM_CHECK_PYMOD(cairo,,,[AC_MSG_ERROR(Could not find python module: cairo)])
+AM_CHECK_PYMOD(pango,,,[AC_MSG_ERROR(Could not find python module: pango)])
+AM_CHECK_PYMOD(wnck,,[wnck_available="yes"],[wnck_available="no"])
+AM_CHECK_PYORBIT_MOD(GNOME_Speech,[gnome_speech_available="yes"],[gnome_speech_available="no"])
+AM_CHECK_PYORBIT_MOD(GNOME_Magnifier,[gnome_mag_available="yes"],[gnome_mag_available="no"])
+AM_CHECK_PYMOD(brlapi,,[brlapi_available="yes"],[brlapi_available="no"])
+LOUIS_TABLE_DIR=""
+AM_CHECK_PYMOD(louis,,[louis_available="yes"],[louis_available="no"])
+if test x$louis_available = "xyes"; then
+  LOUIS_TABLE_DIR=`pkg-config --variable=tablesdir liblouis`
+fi
+AC_SUBST(LOUIS_TABLE_DIR)
+
+AC_OUTPUT([ 
+run_pylint.sh
+Makefile
+docs/Makefile
+docs/man/Makefile
+po/Makefile.in
+icons/Makefile
+src/Makefile
+src/orca/Makefile
+src/orca/scripts/Makefile
+src/orca/scripts/apps/Makefile
+src/orca/scripts/apps/soffice/Makefile
+src/orca/scripts/apps/evolution/Makefile
+src/orca/scripts/apps/gcalctool/Makefile
+src/orca/scripts/apps/packagemanager/Makefile
+src/orca/scripts/apps/pidgin/Makefile
+src/orca/scripts/apps/planner/Makefile
+src/orca/scripts/apps/rhythmbox/Makefile
+src/orca/scripts/apps/Thunderbird/Makefile
+src/orca/scripts/apps/gedit/Makefile
+src/orca/scripts/apps/gnome-window-properties/Makefile
+src/orca/scripts/toolkits/Makefile
+src/orca/scripts/toolkits/Gecko/Makefile
+src/orca/scripts/toolkits/J2SE-access-bridge/Makefile
+src/orca/orca
+src/orca/orca_i18n.py
+src/orca/platform.py
+],[chmod +x run_pylint.sh])
+
+if test "x$brlapi_available" = "xno" ; then
+echo
+echo "NOTE: Braille support requires BrlTTY >= 3.9 and BrlAPI >= 0.5.1."
+fi
+if test "x$wnck_available" = "xno" ; then
+echo
+echo "NOTE: Mouse review requires wnck, which was not found."
+fi
+echo
+echo Use gnome-speech: $gnome_speech_available
+echo Use gnome-mag: $gnome_mag_available
+echo Use brltty: $brlapi_available
+echo Use liblouis: $louis_available
+echo

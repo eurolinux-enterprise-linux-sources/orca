@@ -1,0 +1,68 @@
+# List of source files containing translatable strings.
+# Please keep this file sorted alphabetically.
+[encoding: UTF-8]
+orca.desktop.in
+src/orca/app_gui_prefs.py
+src/orca/bookmarks.py
+src/orca/braille_generator.py
+src/orca/braille.py
+src/orca/chnames.py
+src/orca/default.py
+src/orca/espeechfactory.py
+src/orca/find.py
+src/orca/flat_review.py
+src/orca/focus_tracking_presenter.py
+src/orca/generator.py
+src/orca/gnomespeechfactory.py
+src/orca/keybindings.py
+src/orca/keynames.py
+src/orca/liveregions.py
+src/orca/mag.py
+[type: gettext/glade]src/orca/orca-advanced-magnification.ui
+src/orca/orca_console_prefs.py
+[type: gettext/glade]src/orca/orca-find.ui
+src/orca/orca_gui_find.py
+src/orca/orca_gui_prefs.py
+src/orca/orca.in
+[type: gettext/glade]src/orca/orca-mainwin.ui
+src/orca/orca.py
+[type: gettext/glade]src/orca/orca-preferences-warning.ui
+[type: gettext/glade]src/orca/orca-quit.ui
+[type: gettext/glade]src/orca/orca-setup.ui
+src/orca/phonnames.py
+src/orca/rolenames.py
+src/orca/scripts/apps/acroread.py
+src/orca/scripts/apps/evolution/script.py
+src/orca/scripts/apps/evolution/speech_generator.py
+src/orca/scripts/apps/gcalctool/script.py
+src/orca/scripts/apps/gedit/script.py
+src/orca/scripts/apps/gnome-mud.py
+src/orca/scripts/apps/gnome-search-tool.py
+src/orca/scripts/apps/gtk-window-decorator.py
+src/orca/scripts/apps/liferea.py
+src/orca/scripts/apps/metacity.py
+src/orca/scripts/apps/nautilus.py
+src/orca/scripts/apps/notification-daemon.py
+src/orca/scripts/apps/notify-osd.py
+src/orca/scripts/apps/packagemanager/script.py
+src/orca/scripts/apps/packagemanager/tutorialgenerator.py
+src/orca/scripts/apps/pidgin/script.py
+src/orca/scripts/apps/planner/braille_generator.py
+src/orca/scripts/apps/planner/speech_generator.py
+src/orca/scripts/apps/soffice/script.py
+src/orca/scripts/apps/soffice/speech_generator.py
+src/orca/scripts/apps/soffice/structural_navigation.py
+src/orca/scripts/apps/Thunderbird/script.py
+src/orca/scripts/apps/Thunderbird/speech_generator.py
+src/orca/scripts/toolkits/Gecko/bookmarks.py
+src/orca/scripts/toolkits/Gecko/braille_generator.py
+src/orca/scripts/toolkits/Gecko/script.py
+src/orca/scripts/toolkits/Gecko/speech_generator.py
+src/orca/settings.py
+src/orca/speechdispatcherfactory.py
+src/orca/speech_generator.py
+src/orca/speech.py
+src/orca/speechserver.py
+src/orca/structural_navigation.py
+src/orca/text_attribute_names.py
+src/orca/tutorialgenerator.py
