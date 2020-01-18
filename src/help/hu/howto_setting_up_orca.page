@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="howto_setting_up_orca" xml:lang="hu">
+<info>
+  <link type="seealso" xref="preferences"/>
+  <link type="guide" xref="index#getting_started"/>
+  <link type="next" xref="howto_the_orca_modifier"/>
+  <title type="sort">3. Az Orka beállítása</title>
+  <title type="link">Beállítások</title>
+    <desc>Az <app>Orka</app> kiinduló és későbbi beállítása</desc>
+    <credit type="author">
+      <name>Joanmarie Diggs</name>
+      <email>joanied@gnome.org</email>
+    </credit>
+    <license>
+      <p>Creative Commons Share Alike 3.0</p>
+    </license>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Hammer Attila</mal:name>
+      <mal:email>hammera at pickup dot hu</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  </info>
+  <title>Az Orka beállítása</title>
+    <section id="initial_setup">
+      <title>Kiinduló beállítások</title>
+      <p>Ha először indítja el az <app>Orka</app> képernyőolvasót, automatikusan a beállító módba kerül. Az aktív munkamenet konfigurációjától függően a következő két dolog egyike történhet:</p>
+      <list>
+        <item>
+          <p>Ha az akadálymentesítési támogatás már engedélyezve lett az Ön által használt munkamenetben, az <app>Orka</app> <link xref="preferences">grafikus beállító párbeszédpanelbe</link> fog kerülni. Itt teljesen személyre szabhatja az <app>Orka</app> képernyőolvasó funkcióit, és rögtön használatba is veheti azt.</p>
+        </item>
+        <item>
+          <p>Ha az Ön által használt munkamenetben az akadálymentesítési szolgáltatás még nem lett engedélyezve, az <app>Orka</app> <link xref="howto_text_setup">Szöveges beállítófelülete</link> kerül elindításra. A szöveges beállítófelület lehetővé teszi a legalapvetőbb beállítások megadását, és az akadálymentesítési szolgáltatás engedélyezését az Ön által használt munkamenetben. A beállítások megadása után ki kell jelentkeznie, majd újra be kell lépnie az új beállítások életbe lépéséhez.</p>
+        </item>
+      </list>
+    </section>
+    <section id="configuring_orca">
+      <title>Az <app>Orka</app> későbbi beállítása</title>
+      <p>Ha később szeretné konfigurálni az <app>Orka</app> képernyőolvasót, a következők egyikét teheti:</p>
+      <list>
+        <item>
+          <p>Amikor legközelebb futtatja az <app>Orka</app> képernyőolvasót, a parancsot egészítse ki a <cmd>--setup</cmd> kapcsolóval. Ezzel automatikusan a <link xref="preferences">Beállítások</link> ablakba fog kerülni.</p>
+        </item>
+        <item>
+          <p>Ha legközelebb futtatja az <app>Orka</app> képernyőolvasót, a parancsot egészítse ki a <cmd>--text-setup</cmd> kapcsolóval, ezzel a kapcsolóval újra futtathatja az <link xref="howto_text_setup"><app>Orka</app> szöveges beállítófelületét</link>.</p>
+        </item> 
+        <item>
+          <p>Megnyithatja a <link xref="preferences">Beállítások</link> ablakot, ha megnyomja a <gui>Beállítások</gui> gombot az <app>Orka</app> főablakában, vagy ha lenyomja az <keyseq><key>Orka módosító</key><key>Szóköz</key></keyseq> billentyűkombinációt egy akadálymentesen használható alkalmazásban.</p>
+        </item>
+      </list>
+    </section>
+</page>

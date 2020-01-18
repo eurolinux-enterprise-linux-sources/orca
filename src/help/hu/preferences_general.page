@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="preferences_general" xml:lang="hu">
+  <info>
+    <title type="sort">1. Általános beállítások</title>
+    <title type="link">Általános beállítások</title>
+    <desc>Az <app>Orka</app> általános beállításainak megadása</desc>
+    <link type="guide" xref="preferences#orca"/>
+    <link type="next" xref="preferences_speech"/>
+    <credit type="author">
+      <name>Joanmarie Diggs</name>
+      <email>joanied@gnome.org</email>
+    </credit>
+    <license>
+      <p>Creative Commons Share Alike 3.0</p>
+    </license>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Hammer Attila</mal:name>
+      <mal:email>hammera at pickup dot hu</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  </info>
+  <title>Általános beállítások</title>
+  <section id="keyboardlayout">
+    <info>
+      <desc>Megadhatja, hogy az <app>Orkát</app> asztali vagy laptop billentyűzetkiosztással szeretné használni.</desc>
+    </info>
+    <title>Billentyűzetkiosztás</title>
+    <media type="image" mime="image/png" src="figures/preferences_keyboard_layout.png"/>
+    <p>A <gui>Billentyűzetkiosztás</gui> választógombcsoport segítségével megadható, hogy asztali billentyűzeten vagy hordozható számítógépen dolgozik-e. A kiválasztott kiosztás meghatározza az <key>Orka módosítóbillentyűt</key> és az <app>Orka</app> parancsok gyorsbillentyűit.</p>
+    <p>Alapbeállítás: <gui>Asztali</gui> kiosztás</p>
+  </section>
+  <section id="quitorca">
+    <info>
+      <desc>Az <app>Orkából</app> való kilépéskor megjelenjen-e a megerősítést kérő ablak.</desc>
+    </info>
+    <title>Kilépés az Orka programból jóváhagyás nélkül</title>
+      <media type="image" mime="image/png" src="figures/preferences_quit_Orca_without_confirmation.png"/>
+      <p>Az <app>Orka</app> képernyő-olvasóból kilépéskor egy megerősítést kérő ablak jelenik meg, és rákérdez, hogy ténylegesen ki szeretne-e lépni az <app>Orkából</app>. Ha bejelöli a <gui>Kilépés az Orka programból jóváhagyás nélkül</gui> jelölőnégyzetet, akkor megelőzheti a megerősítést kérő ablak megjelenését.</p>
+    <p>Alapbeállítás: nincs bejelölve</p>
+  </section>
+  <section id="presenttooltips">
+    <info>
+      <desc>Beállíthatja, hogy megjelenítésre kerüljenek-e a buboréksúgók, ezek például az egérrel felületi elemekre mutatás eredményeként bukkanhatnak fel.</desc>
+    </info>
+    <title>Buboréksúgók megjelenítése</title>
+    <media type="image" mime="image/png" src="figures/preferences_present_tooltips.png"/>
+    <p>Ha ez a jelölőnégyzet be van jelölve, akkor az Orka felolvassa az egérrel a felületi elemekre mutatáskor megjelenő információkat. A buboréksúgók megjelenítését kikényszerítő műveletek, például a <keyseq><key>Ctrl</key><key>F1</key></keyseq> billentyűkombináció lenyomása mindig megjeleníti a fókuszban lévő objektum buboréksúgóját, függetlenül ettől a beállítástól.</p>
+    <p>Alapbeállítás: nincs bejelölve</p>
+  </section>
+  <section id="showmainwindow">
+    <info>
+      <desc>Megadhatja, hogy az <app>Orka</app> főablaka megjelenítésre vagy elrejtésre kerüljön.</desc>
+    </info>
+    <title>Az Orka főablakának megjelenítése</title>
+    <media type="image" mime="image/png" src="figures/preferences_show_Orca_main_window.png"/>
+    <figure>
+      <title>Az Orka főablaka</title>
+      <media type="image" mime="image/png" src="figures/main_window.png"/>
+      <desc>Az <app>Orka</app> főablaka lehetővé teszi az <link xref="preferences">Orka beállítások</link> párbeszédablak elérését, a súgótémák megtekintését, a névjegy párbeszédablak megjelenítését és a kilépést az <app>Orka</app> képernyőolvasóból.</desc>
+    </figure>
+    <p>Sokan nem szeretik az <app>Orka</app> főablakát, mivel az <app>Orka</app> főablaka megjelenik az ablakkezelő tab-sorrendjében amikor lenyomják az <keyseq><key>Alt</key><key>Tab</key></keyseq> billentyűkombinációt az ablakok közötti váltáshoz. Ha törli a jelölést <gui>Az <app>Orka</app> főablakának megjelenítése</gui> jelölőnégyzetből, az <app>Orka</app> főablaka nem fog megjelenni.</p>
+    <p>Alapbeállítás: bejelölve</p>
+  </section>
+  <section id="objectundermouse">
+    <info>
+      <desc>Megadhatja, hogy felolvasásra kerüljenek-e az egér alatti objektumok.</desc>
+    </info>
+    <title>Az egér alatti objektum felolvasása</title>
+    <media type="image" mime="image/png" src="figures/preferences_speak_object_under_mouse.png"/>
+    <p>Ha ez a jelölőnégyzet be van jelölve, az <app>Orka</app> fel fogja olvasni az egér alatti objektumot, amikor az <app>Orka</app> <link xref="howto_mouse_review">áttekintés egérrel</link> funkció segítségével mozgatja az egérmutatót a képernyőn.</p>
+    <p>Alapbeállítás: nincs bejelölve</p>
+  </section>
+  <section id="timeanddate">
+    <info>
+      <desc>Megadhatja, hogy az <app>Orkában</app> milyen idő és dátumformátumot szeretne használni.</desc>
+    </info>
+    <title>Dátum- és időformátum</title>
+    <media type="image" mime="image/png" src="figures/preferences_date_and_time.png"/>
+    <p>Az <gui>Időformátum</gui> és <gui>Dátumformátum</gui> kombinált listamezők segítségével beállíthatja, hogy az <app>Orka</app> hogyan mondja ki és jelenítse meg a Braille-kijelzőn az időt és a dátumot.</p>
+    <p>Mindkét esetben az alapbeállítás a rendszer területi beállításának használata.</p>
+  </section>
+  <section id="profiles">
+    <info>
+      <desc>Megadhatja a különböző profilokkal kapcsolatos beállításokat.</desc>
+    </info>
+    <title>Profilok</title>
+    <media type="image" mime="image/png" src="figures/preferences_profiles.png"/>
+    <p>Az <gui>Általános</gui> lap alján található <gui>Profilok</gui> csoport vezérlőelemeinek segítségével lehetősége van többféle konfiguráció létrehozására és karbantartására.</p>
+   <list>
+      <item>
+        <p>Az <gui>Aktív profil</gui> kombinált listamező megjeleníti az éppen használt profilt, valamint lehetővé teszi egy másik betöltendő profil kiválasztását.</p>
+      </item>
+      <item>
+        <p>A <gui>Betöltés</gui> gomb megnyomásakor az <app>Orka</app> betölti az <gui>Aktív profil</gui> kombinált listamezőben korábban kiválasztott profilt.</p>
+      </item>
+      <item>
+        <p>A <gui>Mentés másként</gui> gomb segítségével elmentheti a beállítások párbeszédablakban éppen megadott beállításokat az Ön által megadott nevű profilba.</p>
+      </item>
+      <item>
+        <p>A <gui>Kezdeti profil</gui> kombinált listamezőben kiválaszthatja az <app>Orka</app> minden indításakor automatikusan betöltendő profilt.</p>
+      </item>
+    </list>
+  </section>
+</page>

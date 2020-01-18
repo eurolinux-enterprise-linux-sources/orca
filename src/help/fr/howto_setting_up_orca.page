@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="howto_setting_up_orca" xml:lang="fr">
+<info>
+  <link type="seealso" xref="preferences"/>
+  <link type="guide" xref="index#getting_started"/>
+  <link type="next" xref="howto_the_orca_modifier"/>
+  <title type="sort">3. Configuration d'Orca</title>
+  <title type="link">Configuration</title>
+    <desc>Configuration initiale et ultérieure d'<app>Orca</app></desc>
+    <credit type="author">
+      <name>Joanmarie Diggs</name>
+      <email>joanied@gnome.org</email>
+    </credit>
+    <license>
+      <p>Creative Commons Share Alike 3.0</p>
+    </license>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Laurent Coudeur</mal:name>
+      <mal:email>laurentc@iol.ie</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bruno Brouard</mal:name>
+      <mal:email>annoa.b@gmail.com</mal:email>
+      <mal:years>2011-12</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Julien Hardelin</mal:name>
+      <mal:email>jhardlin@orange.fr</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  </info>
+  <title>Configuration d'Orca</title>
+    <section id="initial_setup">
+      <title>Configuration initiale</title>
+      <p>Quand vous exécutez <app>Orca</app> pour la première fois, le mode configuration est lancé automatiquement. En fonction de la configuration de la session active, une ou deux choses suivantes se produisent :</p>
+      <list>
+        <item>
+          <p>Si la prise en charge de l'accessibilité est déjà activée pour votre session, vous serez dirigé vers la boîte de dialogue <link xref="preferences">Préférences</link> d'<app>Orca</app> où vous pouvez entièrement personnaliser <app>Orca</app> et l'utiliser aussitôt.</p>
+        </item>
+        <item>
+          <p>Si la prise en charge de l'accessibilité n'est pas encore activée pour votre session, la <link xref="howto_text_setup">configuration d'<app>Orca</app> en mode texte</link> est lancée. La configuration en mode texte permet de configurer les paramètres fondamentaux et active la prise en charge de l'accessibilité pour votre session. Vous devez vous déconnecter puis vous reconnecter pour que les nouveaux paramètres prennent effet.</p>
+        </item>
+      </list>
+    </section>
+    <section id="configuring_orca">
+      <title>Configuration ultérieure d'<app>Orca</app></title>
+      <p>Si vous souhaitez configurer <app>Orca</app> ultérieurement, vous pouvez utiliser les options suivantes :</p>
+      <list>
+        <item>
+          <p>Transmettez l'option <cmd>--setup</cmd> à <app>Orca</app> la prochaine fois que vous le lancez pour être dirigé vers la boîte de dialogue <link xref="preferences">Préférences</link>.</p>
+        </item>
+        <item>
+          <p>Transmettez l'option <cmd>--text-setup</cmd> à <app>Orca</app> pour exécuter de nouveau la <link xref="howto_text_setup">configuration d'<app>Orca</app> en mode texte</link>.</p>
+        </item> 
+        <item>
+          <p>Cliquez sur le bouton <gui>Préférences</gui> dans la fenêtre principale d'<app>Orca</app> ou appuyez sur <keyseq><key>Modificateur d'Orca</key><key>Barre d'espace</key></keyseq> dans n'importe quelle application accessible, pour ouvrir la boîte de dialogue <link xref="preferences">Préférences</link>.</p>
+        </item>
+      </list>
+    </section>
+</page>

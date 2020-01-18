@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="preferences_speech" xml:lang="sl">
+  <info>
+    <link type="guide" xref="preferences#orca"/>
+    <link type="next" xref="preferences_braille"/>
+    <title type="sort">2. Speech</title>
+    <title type="link">Speech</title>
+    <desc>Nastavljanje glasu in kaj se izgovori</desc>
+    <credit type="author">
+      <name>Joanmarie Diggs</name>
+      <email>joanied@gnome.org</email>
+    </credit>
+    <license>
+      <p>Creative Commons deljenje pod enakimi pogoji 3.0</p>
+    </license>
+  </info>
+  <title>Možnosti govora</title>
+  <section id="enable_speech">
+    <title>Omogoči govor</title>
+    <media type="image" mime="image/png" src="figures/preferences_enable_speech.png"/>
+    <p>
+      The <gui>Enable speech</gui> check box controls whether or not
+      <app>Orca</app> will make use of a speech synthesizer.
+      Braille-only users will likely want to uncheck this checkbox.
+    </p>
+  </section>
+  <section id="tts_options">
+    <title>Možnosti besedilo-v-govor</title>
+    <media type="image" mime="image/png" src="figures/preferences_tts_options.png"/>
+    <section>
+      <title>Sistem govora</title>
+      <p>To spustno polje vam omogoča izbiro prednostnega med nameščenimi sistemi govora. Primera vključujeta Speech Dispatcher in GNOME Speech.</p>
+    </section>
+    <section>
+      <title>Sintetizator govora</title>
+      <p>To spustno polje vam omogoča izbiro sintetizatorja govora, ki bo bil uporabljen z izbranim sistemom govora.</p>
+    </section>
+    <section>
+      <title>Nastavitve glasu</title>
+      <p>To spustno polje vam omogoča uporabo različnih glasov zato, da lahko lažje ločite velike črke in povezano besedilo od ostalega besedila in besedilo na zaslonu od besedila, ki ga je dodala <app>Orka</app>.</p>
+      <note style="tip">
+        <title>Nastavljanje več glasov</title>
+        <p>Za vsak glas, ki ga želite dodati, v spustnem polju <gui>Nastavitve glasu</gui> najprej izberite glas. Nato nastavite osebno, hitrost, višino in glasnost tega zvoka.</p>
+      </note>
+    </section>
+    <section>
+      <title>Oseba</title>
+      <p>To spustno polje vam omogoča izbiro "osebe" ali "govorca" za uporabo z izbranim glasom. Na primer, morda želite da privzeto govori David, vse hiperpovezave pa izgovori Alica. Vsebina spustnega polja <gui>Oseba</gui> je odvisna od nameščenih sintetizatorjev zvoka.</p>
+    </section>
+    <section>
+      <title>Hitrost, višina in glasnost</title>
+      <media type="image" mime="image/png" src="figures/preferences_rate_pitch_volume.png"/>
+      <p>Ti levo-desni drsniki vam omogočajo nadaljnje prilagajanje zvoka pravkar izbrane osebe.</p>
+    </section>
+  </section>
+  <section id="punctuation_level">
+    <title>Raven ločil</title>
+    <media type="image" mime="image/png" src="figures/preferences_punctuation_level.png"/>
+    <p>Skupino izbirnih gumbov <gui>Raven ločil</gui> lahko uporabite za prilagajanje količine ločil, ki jih izgovori sintetizator. Razpoložljive ravni so <gui>Brez</gui>, <gui>Nekaj</gui>, <gui>Večina</gui> in <gui>Vsa</gui>.</p>
+    <section>
+      <title>Brez</title>
+      <p>Izbira ravni ločil <gui>Brez</gui> določi, da ni izgovorjeno nobeno ločilo. Vendar so na ti ravni še vedno izgovorjeni posebni simboli kot so podpisana in nadpisana števila, ulomki unicode in seznamske točke.</p>
+    </section>
+    <section>
+      <title>Nekatera</title>
+      <p>Izbira ravni ločil <gui>Nekaj</gui> določi izgovorjavo vseh predhodno omenjenih simbolov. Poleg tega <app>Orka</app> izgovori znane matematične simbole, simbole enot in  "^", "@", "/", "&amp;", "#".</p>
+    </section>
+    <section>
+      <title>Večina</title>
+      <p>Izbira ravni loči <gui>Večina</gui> izgovori vse predhodno omenjene simbole. Poleg tega bo <app>Orka</app> izgovorila vse druge simbole ločil <em>razen</em>  "!", "'", ",", ".", "?".</p>
+    </section>
+    <section>
+      <title>Vsa</title>
+      <p>Izbira ravni ločil <gui>Vse</gui> določi, da <app>Orka</app> izgovori vse znane simbole ločil.</p>
+    </section>
+    <p>Privzeta vrednost: <gui>Večina</gui></p>
+  </section>
+  <section id="verbosity">
+    <title>Razločnost</title>
+    <media type="image" mime="image/png" src="figures/preferences_speech_verbosity.png"/>
+    <p>Nastavitev <gui>Razločnost</gui> določi količino podatkov, ki je izgovorjena v določenih situacijah. Na primer, če je nastavljeno na podrobno, bo <app>Orka</app> izgovorila tipkovne bližnjice za predmete v menijih. Ko je nastavljena na kratko, tipkovne bližnjice niso oznanjene.</p>
+    <p>Privzeta vrednost: <gui>Podrobno</gui></p>
+  </section>
+  <section id="table_rows">
+    <title>Vrstice razpredelnice</title>
+    <media type="image" mime="image/png" src="figures/preferences_table_rows.png"/>
+    <p>Skupina izbirnih gumbov <gui>Vrstice razpredelnice</gui> določi, kaj bo izgovorjeno ob krmarjenju v vrsticah v razpredelnici. Razpoložljive možnosti so <gui>govori vrstico</gui> in <gui>govori celico</gui>.</p>
+    <p>Razmislite o opravilu preučevanja seznama sporočil vašem dohodnem predalu. Da lahko <app>Orka</app> oznani pošiljatelja, zadevo, datum in prisotnost prilog, bi morali <gui>izgovoriti vrstico</gui>. Po drugi strani pa pri krmarjenju med vrsticami, poslušanje celotne vrstice ni želeno. V tem primeru izberite <gui>izgovori celico</gui>.</p>
+      <p>Privzeta vrednost: <gui>Izgovori vrstico</gui></p>
+  </section>
+  <section id="progress_bar_updates">
+    <title>Posodobitve kazalnika napredka</title>
+    <media type="image" mime="image/png" src="figures/preferences_progress_bar_updates.png"/>
+    <section>
+      <title>Omogočeno</title>
+      <p>V primeru, da je izbirno polje <gui>Omogočeno</gui> izbrano, bo <app>Orka</app>  občasno oznanila stanje vrstic napredka.</p>
+      <p>Privzeta vrednost: izbrano</p>
+    </section>
+    <section>
+      <title>Frekvenca (sek):</title>
+      <p>To vrtilno polje določi pogostost oznanjevanja.</p>
+      <p>Privzeta vrednost: 10</p>
+    </section>
+    <section>
+      <title>Omeji na</title>
+      <p>To spustno polje vam omogoča nadzor katere vrstice napredka naj bodo predstavljene, če je bilo predstavljanje posodobitev vrstic napredka omogočeno. Izbire so <gui>Vse</gui>, <gui>Program</gui> in <gui>Okno</gui>.</p>
+      <p>Izbira <gui>Vse</gui> določi, da <app>Orka</app> predstavi posodobitve za vse vrstice napredka ne glede na to kje so.</p>
+      <p>Izbira <gui>Program</gui> določi, da <app>Orka</app> predstavi posodobitve iz vrstic napredka v dejavnem programu, tudi če niso v dejavnem oknu.</p>
+      <p>Izbira <gui>Okno</gui> določi, da <app>Orka</app> predstavi le posodobitve vrstic napredka v dejavnem oknu.</p>
+      <p>Privzeta vrednost: <gui>Program</gui></p>
+    </section>
+  </section>
+  <section id="only_speak_displayed_text">
+    <title>Izgovori le prikazano besedilo</title>
+    <media type="image" mime="image/png" src="figures/preferences_only_speak_displayed_text.png"/>
+    <p>Izbira izbirnega polja določi, da <app>Orka</app> izgovori le besedilo prikazano na zaslonu. Ta možnost je namenjena predvsem za slabovidne uporabnike in uporabnike z nezmožnostjo učenja vida.</p>
+  </section>
+  <section id="multicase_strings">
+    <title>Izgovori nize z več nizi kot besede</title>
+    <media type="image" mime="image/png" src="figures/preferences_speak_multicase_strings_as_words.png"/>
+    <p>V nekaterih besedilih in posebno pri delu s kodo lahko najdete "besedo", ki je sestavljena iz več besed s spreminjajočimi velikostmi kot je "VečBesedniNiz". Sintetizatorji zvoka takšnih nizov ne izgovorijo vedno pravilno. Izbira izbirnega polja <gui>Izgovori nize z več besedami kot besede</gui> določi, da <app>Orka</app> besede kot je "VečBesedniNiz" pred posredovanjem sintetizatorju zvoka razdeli v ločene besede ("Več," "Besedni" in "Niz").</p>
+  </section>
+  <section id="pauses">
+    <media type="image" mime="image/png" src="figures/preferences_break_speech_into_chunks.png"/>
+    <title>Razdeli govor na zloge med premori</title>
+    <p>Glede na omogočene nastavitve govora lahko <app>Orka</app> o določenih predmetih pove kar precej kot na primer njegovo ime, njegovo vlogo, njegovo stanje, njegovo mnemotehniko in tako naprej. Izbirno polje <gui>Razdeli govor na zloge med premori</gui>, ki določi, da <app>Orka</app> med vsakega od teh podatkov vstavki kratek premor. </p>
+  </section>
+  <section id="say_all_by">
+    <media type="image" mime="image/png" src="figures/preferences_say_all_by.png"/>
+    <title>Reči vse od</title>
+    <p>Spustno polje <gui>Reci vse po</gui> vam omogoča navedbo ali <app>Orka</app> med "Izgovori vse"naenkrat izgovori stavek ali vrstico.</p>
+  </section>
+  <section id="system_voice_items">
+    <title>Podrobnosti o sistemu</title>
+    <media type="image" mime="image/png" src="figures/preferences_system_voice_options.png"/>
+    <p>Naslednji predmeti nadzirajo predstavitev dodatnih, "sistemskih" podatkov o predmetu z žariščem. Ker se povezano besedilo ne pojavi na zaslonu, so ti podatki predstavljeni v <app>Orkinem</app> sistemskem zvoku.</p>
+    <note style="note">
+      <title>Nastavitev podrobnosti sistema</title>
+      <p>Naslednji predmeti ne bodo na voljo za nastavitev, če je izbirno polje <gui>Izgovori le prikazano besedilo</gui> izbrano.</p>
+      </note>
+      <section id="speak_blank_lines">
+        <title>Izgovorite prazne vrstice</title>
+        <p>V primeru, da je izbirno polje <gui>Izgovori prazne vrstice</gui>, bo <app>Orka</app> rekla "prazno" vsakič, ko pridete do prazne vrstice. Če polje ni izbrano, <app>orka</app> ob premiku na prazno vrstico ne bo rekla ničesar.</p>
+      </section>
+      <section id="indentation_and_justification">
+        <title>Izgovarite zamik in poravnavo</title>
+        <p>Pri delu s kodo ali urejanju dokumentov je pogosto dobro vedeti, kje so poravnave in zamiki. Izbira izbirnega polja <gui>Izgovarjanje zamikov in poravnav</gui> bo povzročila, da bo <app>Orka</app> oznanila ta podatke.</p>
+      </section>
+      <section id="mnemonics">
+       <title>Izgovorite mnemotehniko predmeta</title>
+        <p>
+          If the <gui>Speak object mnemonics</gui> checkbox is checked,
+          <app>Orca</app> will announce the mnemonic associated with the
+          object with focus (such as <keyseq><key>Alt</key><key>O</key>
+          </keyseq> for an <gui>OK</gui> button).
+        </p>
+      </section>
+    <section id="child_position">
+      <title>Izgovorite položaj podrejenega predmeta</title>
+      <p>Izbira izbirnega polja <gui>Izgovori položaj podrejenega predmeta</gui> določi, da <app>Orka</app> oznani položaj predmeta v žarišču v menijih, seznamih in drevesih (na primer "9 od 16").</p>
+    </section>
+    <section id="speak_tutorial_messages">
+      <title>Izgovorite sporočila vodnika</title>
+      <p>V primeru, da je izbirno polje <gui>Izgovori sporočila vodnika</gui> izbrano, bo <app>Orka</app> med pomikanjem med predmeti po vmesniku  zagotovila dodatne podrobnosti kot sta kako se sporazumevati s predmetom, ki je trenutno v žarišču.</p>
+    </section>
+  </section>
+</page>

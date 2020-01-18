@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="preferences_speech" xml:lang="fr">
+  <info>
+    <link type="guide" xref="preferences#orca"/>
+    <link type="next" xref="preferences_braille"/>
+    <title type="sort">2. Synthèse vocale</title>
+    <title type="link">Synthèse vocale</title>
+    <desc>Configurer la voix et ce qui est lu</desc>
+    <credit type="author">
+      <name>Joanmarie Diggs</name>
+      <email>joanied@gnome.org</email>
+    </credit>
+    <license>
+      <p>Creative Commons Share Alike 3.0</p>
+    </license>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Laurent Coudeur</mal:name>
+      <mal:email>laurentc@iol.ie</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bruno Brouard</mal:name>
+      <mal:email>annoa.b@gmail.com</mal:email>
+      <mal:years>2011-12</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Julien Hardelin</mal:name>
+      <mal:email>jhardlin@orange.fr</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  </info>
+  <title>Préférence de la synthèse vocale</title>
+  <section id="enable_speech">
+    <title>Activer la synthèse vocale</title>
+    <media type="image" mime="image/png" src="figures/preferences_enable_speech.png"/>
+    <p>La case à cocher <gui>Activer la synthèse vocale</gui> contrôle si <app>Orca</app> utilise la synthèse vocale. Les utilisateurs qui utilisent uniquement le braille préféreront sûrement décocher cette case.</p>
+  </section>
+  <section id="tts_options">
+    <title>Options de la synthèse vocale</title>
+    <media type="image" mime="image/png" src="figures/preferences_tts_options.png"/>
+    <section>
+      <title>Système de synthèse vocale</title>
+      <p>Cette liste déroulante vous permet de sélectionner votre système de synthèse vocale préféré parmi ceux que vous avez installé. Par exemple, Speech Dispatcher et GNOME Speech.</p>
+    </section>
+    <section>
+      <title>Synthétiseur vocal</title>
+      <p>Cette liste déroulante vous permet de sélectionner le synthétiseur vocal à utiliser avec le système de synthèse vocale.</p>
+    </section>
+    <section>
+      <title>Type de voix</title>
+      <p>Cette liste déroulante rend possible l'utilisation de différentes voix pour que vous puissiez distinguer les majuscules et les liens textuels d'autres textes, et aussi distinguer un texte affiché à l'écran de celui ajouté par <app>Orca</app>.</p>
+      <note style="tip">
+        <title>Configuration de voix multiples</title>
+        <p>Pour chaque voix que vous souhaitez configurer, sélectionnez en premier la voix dans la liste déroulante <gui>Type de voix</gui>. Configurez ensuite la personne, le débit, la hauteur, et le volume pour cette voix.</p>
+      </note>
+    </section>
+    <section>
+      <title>Personne</title>
+      <p>Cette liste déroulante vous permet de choisir quelle « personne » ou « lecteur » doit être utilisé avec la voix sélectionnée. Par exemple, vous pouvez souhaiter que David lise par défaut et qu'Alice lise les hyperliens. Notez que ce qui se trouve dans la liste déroulante <gui>Personne</gui> dépend des synthétiseurs vocaux que vous avez installés.</p>
+    </section>
+    <section>
+      <title>Débit, hauteur et volume</title>
+      <media type="image" mime="image/png" src="figures/preferences_rate_pitch_volume.png"/>
+      <p>Ces trois glissières horizontales vous permettent de personnaliser de manière plus complète la voix de la personne que vous venez de choisir.</p>
+    </section>
+  </section>
+  <section id="punctuation_level">
+    <title>Niveau de ponctuation</title>
+    <media type="image" mime="image/png" src="figures/preferences_punctuation_level.png"/>
+    <p>Le groupement de boutons radio <gui>Niveau de ponctuation</gui> permet d'ajuster le taux de ponctuation lu par le synthétiseur. Les niveaux disponibles sont <gui>Aucun</gui>, <gui>Quelques-uns</gui>, <gui>La plupart</gui> et <gui>Tous</gui>.</p>
+    <section>
+      <title>Aucun</title>
+      <p>Le choix du niveau de ponctuation <gui>Aucun</gui> va, comme vous l'attendez, faire en sorte que la ponctuation ne soit pas lue. Notez que les symboles spéciaux tels que les chiffres en indice ou en exposant, les fractions Unicode et les puces sont toujours lus à ce niveau, même si certains les considèrent comme des symboles de ponctuation.</p>
+    </section>
+    <section>
+      <title>Quelques-uns</title>
+      <p>Le choix du niveau de ponctuation <gui>Quelques-uns</gui> va faire en sorte que les symboles nommés précédemment soit prononcés. <app>Orca</app> prononce de plus certains symboles mathématiques, symboles monétaires et « ^ », « @ », « / », « &amp; », « # ».</p>
+    </section>
+    <section>
+      <title>La plupart</title>
+      <p>Le choix du niveau de ponctuation <gui>La plupart</gui> va faire en sorte que les symboles nommés précédemment soit prononcés. <app>Orca</app> prononce de plus tous les autres symboles de ponctuation connus <em>autre que</em> « ! », « ' », « , », « . », « ? ».</p>
+    </section>
+    <section>
+      <title>Tous</title>
+      <p>Le choix du niveau de punctuation <gui>Tous</gui> va, comme vous l'attendez, faire en sorte que <app>Orca</app> prononce tous les symboles de ponctuation.</p>
+    </section>
+    <p>Valeur par défaut : <gui>La plupart</gui></p>
+  </section>
+  <section id="verbosity">
+    <title>Verbosité</title>
+    <media type="image" mime="image/png" src="figures/preferences_speech_verbosity.png"/>
+    <p>Le paramètre <gui>Verbosité</gui> détermine le niveau d'information qui est lu dans différentes situations. Par exemple, s'il est défini à « Verbeux », et que vous pointez sur un mot mal orthographié, <app>Orca</app> annonce alors que ce mot est mal orthographié. Quand ce niveau est défini à « Court », cette annonce ne sera pas faite.</p>
+    <p>Valeur par défaut : <gui>Verbeux</gui></p>
+  </section>
+  <section id="table_rows">
+    <title>Lignes de tableau</title>
+    <media type="image" mime="image/png" src="figures/preferences_table_rows.png"/>
+    <p>Le groupement de boutons radio <gui>Lignes de tableau</gui> détermine ce qui est prononcé quand vous parcourez les lignes d'un tableau. Les options disponibles sont : <gui>Lire la ligne</gui> et <gui>Lire la cellule</gui>.</p>
+    <p>Pensez à l'examen de la liste des messages dans votre boîte aux lettres. Pour que <app>Orca</app> puisse lire l'expéditeur, le sujet, la date, et la présence de pièces jointes, vous devez activer <gui>Lire la ligne</gui>. Par contre, lorsque vous parcourez les lignes d'une feuille de calcul, entendre la ligne entière n'est pas toujours souhaitable. Dans ce cas, <gui>Lire la cellule</gui> doit être choisi.</p>
+      <p>Valeur par défaut : <gui>Lire la ligne</gui></p>
+  </section>
+  <section id="progress_bar_updates">
+    <title>Mises à jour des barres de progression</title>
+    <media type="image" mime="image/png" src="figures/preferences_progress_bar_updates.png"/>
+    <section>
+      <title>Activée</title>
+      <p>Si la case <gui>Activée</gui> est cochée, <app>Orca</app> annonce périodiquement l'état des barres de progression.</p>
+      <p>Valeur par défaut : cochée</p>
+    </section>
+    <section>
+      <title>Fréquence (sec)</title>
+      <p>Ce bouton compteur détermine la fréquence à laquelle les annonces sont faites.</p>
+      <p>Valeur par défaut : 10</p>
+    </section>
+    <section>
+      <title>Limiter à</title>
+      <p>Cette liste déroulante vous permet de choisir quelles barres de progression sont prononcées, en supposant que l'annonce de la mise à jour des barres de progression soit activée. Les choix possibles sont : <gui>Toutes</gui>, <gui>Application</gui> et <gui>Fenêtre</gui>.</p>
+      <p>Quand vous choisissez <gui>Toutes</gui>, <app>Orca</app> prononce les mises à jour de toutes les barres de progression, quel que soit leur emplacement.</p>
+      <p>Quand vous choisissez <gui>Application</gui>, <app>Orca</app> prononce les mises à jour des barres de progression de l'application active, même si elles ne sont pas dans la fenêtre active.</p>
+      <p>Quand vous choisissez <gui>Fenêtre</gui>, <app>Orca</app> prononce les mises à jour uniquement pour les barres de progression de la fenêtre active.</p>
+      <p>Valeur par défaut : <gui>Application</gui></p>
+    </section>
+  </section>
+  <section id="only_speak_displayed_text">
+    <title>Ne lire que le texte affiché</title>
+    <media type="image" mime="image/png" src="figures/preferences_only_speak_displayed_text.png"/>
+    <p>Quand cette case est cochée, <app>Orca</app> ne prononce que le texte affiché à l'écran. Cette option est destinée principalement aux utilisateurs malvoyants ou à ceux qui ont des difficultés d'apprentissage visuelles.</p>
+  </section>
+  <section id="multicase_strings">
+    <title>Lire les chaînes à casse mélangée comme des mots</title>
+    <media type="image" mime="image/png" src="figures/preferences_speak_multicase_strings_as_words.png"/>
+    <p>Dans certain texte, et particulièrement lorsque vous faites de la programmation informatique, vous pouvez souvent trouver des « mots » constitués de plusieurs mots avec une casse mélangée, tels que « MonCompteurDeMots ». La synthèse vocale ne prononce pas toujours ces mots correctement. Lorsque la case <gui>Lire les chaînes à casse mélangée comme des mots</gui> est cochée, <app>Orca</app> coupe alors le mot « MonCompteurDeMots » en plusieurs mots (« Mon », « Compteur », « De » et « Mots ») avant de les transmettre au synthétiseur vocal.</p>
+  </section>
+  <section id="pauses">
+    <media type="image" mime="image/png" src="figures/preferences_break_speech_into_chunks.png"/>
+    <title>Couper la synthèse vocale en morceaux entre les pauses</title>
+    <p>En fonction des paramètres de synthèse vocale, <app>Orca</app> peut avoir beaucoup à dire sur un objet particulier tel que son nom, son rôle, son état, son raccourci clavier, son message d'aide, etc. Lorsque la case <gui>Couper la synthèse vocale en morceaux entre les pauses</gui> est cochée, <app>Orca</app> insère une brève pause entre chacune de ces informations.</p>
+  </section>
+  <section id="say_all_by">
+    <media type="image" mime="image/png" src="figures/preferences_say_all_by.png"/>
+    <title>Lire tout par</title>
+    <p>La liste déroulante <gui>Lire tout par</gui> vous permet de spécifier si <app>Orca</app> lit une phrase à la fois ou une ligne à la fois quand une commande « Lire tout » est effectuée sur un document.</p>
+  </section>
+  <section id="system_voice_items">
+    <title>Informations système</title>
+    <media type="image" mime="image/png" src="figures/preferences_system_voice_options.png"/>
+    <p>Les éléments suivants contrôlent la présentation d'un grand nombre d'informations « système » supplémentaires à propos de l'élément qui possède le focus. Comme le texte associé n'apparaît pas à l'écran, celle-ci est lue par le système vocal d'<app>Orca</app>.</p>
+    <note style="note">
+      <title>Configuration des informations système</title>
+      <p>La configuration des éléments suivants n'est pas disponible si la case <gui>Ne lire que le texte affiché</gui> est cochée.</p>
+      </note>
+      <section id="speak_blank_lines">
+        <title>Lire les lignes vides</title>
+        <p>Si la case <gui>Lire les lignes vides</gui> est cochée, <app>Orca</app> prononce le mot « vide » chaque fois que vous pointez sur une ligne vide. Si elle n'est pas cochée, <app>Orca</app> ne dit rien quand vous vous déplacez sur une ligne vide.</p>
+      </section>
+      <section id="indentation_and_justification">
+        <title>Lire l'indentation et la justification</title>
+        <p>Lorsque vous travaillez sur du code informatique ou avec d'autres documents, il est souvent souhaitable d'être informé sur la justification ou l'indentation. En cochant la case <gui>Lire l'indentation et la justification</gui>, <app>Orca</app> donne cette information.</p>
+      </section>
+      <section id="mnemonics">
+       <title>Lire le raccourci des objets</title>
+        <p>Si la case <gui>Lire le raccourci des objets</gui> est cochée, <app>Orca</app> prononce le raccourci de l'objet qui possède le focus (par exemple <keyseq><key>Alt</key><key>V</key></keyseq> pour un bouton <gui>Valider</gui>).</p>
+      </section>
+    <section id="child_position">
+      <title>Lire la position fille</title>
+      <p>Lorsque la case <gui>Lire la positon fille</gui> est cochée, <gui>Orca</gui> lit la position de l'objet qui possède le focus dans les menus, les listes et les arborescences (par exemple « neuf sur seize »).</p>
+    </section>
+    <section id="speak_tutorial_messages">
+      <title>Lire les messages du tutoriel</title>
+      <p>Si la case <gui>Lire les messages du tutoriel</gui> est cochée, quand vous vous déplacez parmi les objets de l'interface <app>Orca</app> fournit des informations supplémentaires, comme par exemple comment utiliser l'objet qui possède actuellement le focus.</p>
+    </section>
+  </section>
+</page>

@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="preferences_speech" xml:lang="gl">
+  <info>
+    <link type="guide" xref="preferences#orca"/>
+    <link type="next" xref="preferences_braille"/>
+    <title type="sort">2. Speech</title>
+    <title type="link">Speech</title>
+    <desc>Configurar a voz e o que se fala</desc>
+    <credit type="author">
+      <name>Joanmarie Diggs</name>
+      <email>joanied@gnome.org</email>
+    </credit>
+    <license>
+      <p>Creative Commons Compartir Igual 3.0</p>
+    </license>
+  </info>
+  <title>Preferencias de voz</title>
+  <section id="enable_speech">
+    <title>Activar voz</title>
+    <media type="image" mime="image/png" src="figures/preferences_enable_speech.png"/>
+    <p>A casilla <gui>Activar voz</gui> controla se <app>Orca</app> fará uso ou non dun sintetizador de voz. Os usuarios que soamente usen Braille probabelmente queiran desmarcar esta casilla.</p>
+  </section>
+  <section id="tts_options">
+    <title>Opcións de texto a voz</title>
+    <media type="image" mime="image/png" src="figures/preferences_tts_options.png"/>
+    <section>
+      <title>Sistema de voz</title>
+      <p>Este cadro combinado permítelle seleccionar o seu sistema de voz preferido de entre os que teña instalados. Como por exemplo Speech Dispatcher e GNOME Speech.</p>
+    </section>
+    <section>
+      <title>Sintetizador de voz</title>
+      <p>Este cadro combinado permítelle seleccionar o sintetizador de voz que usar co sistema de voz elixido.</p>
+    </section>
+    <section>
+      <title>Axustes de voz</title>
+      <p>Este cadro combinado fai posiel que use voces diferentes para distinguir mellor o texto en maiúsculas e o texto ligado de outro texto, e o texto en que aparece en pantalla de outro texto que <app>Orca</app> engada.</p>
+      <note style="tip">
+        <title>Configurar múltiples voces</title>
+        <p>Para cada voz que desexe configurar, primeiro seleccione a voz no cadro combinado <gui>Axustes de voz</gui>. Logo configure a persoa, velocidade, tone e volume que se usarán con dita voz.</p>
+      </note>
+    </section>
+    <section>
+      <title>Persoa</title>
+      <p>Este cadro combinado permítelle elixir que «persona» ou «falante» se debería usar coa voz seleccionada. Por exemplo, podería querer ter a David para falar de maneira predeterminada, pero ter a alicia para falar as hiperligazóns. Teña en conta que o que atope no cadro combinado <gui>Persoa</gui> dependerá de que sintetizador de voz teña instalado.</p>
+    </section>
+    <section>
+      <title>Velocidade, ton e volume</title>
+      <media type="image" mime="image/png" src="figures/preferences_rate_pitch_volume.png"/>
+      <p>Estes tres deslizadores esquerda-dereita permítenlle personalizar aínda máis o son da persoa que acaba de seleccionar.</p>
+    </section>
+  </section>
+  <section id="punctuation_level">
+    <title>Nivel de pronunciación</title>
+    <media type="image" mime="image/png" src="figures/preferences_punctuation_level.png"/>
+    <p>O grupo de botóns de radio <gui>Nivel de puntuación</gui> úsase para axustar a cantidade de puntuación que se fala polo sintetizador. Os niveis dispoñíbeis son <gui>Ningunha</gui>, <gui>Algunha</gui>, <gui>A maioría</gui> e <gui>Toda</gui>.</p>
+    <section>
+      <title>Ningunha</title>
+      <p>
+        Choosing a punctuation level of <gui>None</gui> would, as you expect,
+        cause no punctuation to be spoken. Note, however, that special symbols
+        such as subscripted and superscripted numbers, unicode fractions, and
+        bullets are still spoken at this level, even though some might consider
+        these types of symbols punctuation.
+      </p>
+    </section>
+    <section>
+      <title>Algunha</title>
+      <p>Seleccionar un nivel de puntuación <gui>Algunha</gui> fai que se falen tódolos símbolos mencionados anteriormente. Por outro lado, <app>Orca</app> falará os símbolos matemáticos coñecidos, símbolos de moeda e «^», «@», «/», «&amp;», «#».</p>
+    </section>
+    <section>
+      <title>A maioría</title>
+      <p>
+          Choosing a punctuation level of <gui>Most</gui> causes all of the
+        previous-mentioned symbols to be spoken. In addition, <app>Orca</app>
+        will speak all other known punctuation symbols <em>other than</em> "!",
+        "'", ",", ".", "?".
+      </p>
+    </section>
+    <section>
+      <title>Toda</title>
+      <p>
+        Choosing a punctuation level of <gui>All</gui>, as expected, causes
+        <app>Orca</app> to speak all known punctuation symbols.
+      </p>
+    </section>
+    <p>Valor predeterminado: <gui>A maioría</gui></p>
+  </section>
+  <section id="verbosity">
+    <title>Cantidade de información</title>
+    <media type="image" mime="image/png" src="figures/preferences_speech_verbosity.png"/>
+    <p>
+      The <gui>Verbosity</gui> setting determines the amount of information
+      that will be spoken in various situations. For example, if it is set
+      to verbose, and you arrow into a word that is misspelled, <app>Orca</app>
+      will announce that the word is misspelled. When the level is set to brief,
+      this announcement will not be made.
+    </p>
+    <p>Valor predeterminado: <gui>estendida</gui></p>
+  </section>
+  <section id="table_rows">
+    <title>Filas da táboa</title>
+    <media type="image" mime="image/png" src="figures/preferences_table_rows.png"/>
+    <p>
+      The <gui>Table Rows</gui> radio button group determines what gets
+      spoken when navigating amongst rows in a table. The available
+      options are <gui>speak row</gui> and <gui>speak cell</gui>.
+    </p>
+    <p>
+      Consider the process of examining the list of messages in your Inbox.
+      In order to have <app>Orca</app> announce the sender, subject, date,
+      and presence of attachments you would need <gui>speak row</gui>. On
+      the other hand, when navigating amongst rows in a spreadsheet, hearing
+      the full row may not be desired. In that case, <gui>speak cell</gui>
+      should instead be chosen.
+    </p>
+      <p>Valor predeterminado: <gui>Ler fila</gui></p>
+  </section>
+  <section id="progress_bar_updates">
+    <title>Actualizacións da barra de progreso</title>
+    <media type="image" mime="image/png" src="figures/preferences_progress_bar_updates.png"/>
+    <section>
+      <title>Activado</title>
+      <p>Se a casilla <gui>Activado</gui> está marcada <app>Orca</app> presentará periodicamente o estado das barras de progreso.</p>
+      <p>Valor por omisión: marcado</p>
+    </section>
+    <section>
+      <title>Frecuencia (segundos)</title>
+      <p>Este botón contador determina con que frecuencia se fai o anuncio.</p>
+      <p>Valor por omisión: 10</p>
+    </section>
+    <section>
+      <title>Restrinxir a</title>
+      <p>
+         This combo box allows you to control which progress bars should be
+         presented, assuming the presentation of progress bar updates has been
+         enabled. The choices are <gui>All</gui>, <gui>Application</gui>, and
+         <gui>Window</gui>.
+      </p>
+      <p>
+        Choosing <gui>All</gui> will result in <app>Orca</app> presenting
+        updates for all progress bars, regardless of where the progress bars
+        are located.
+      </p>
+      <p>
+        Choosing <gui>Application</gui> will result in <app>Orca</app>
+        presenting updates from progress bars in the active application, even
+        if they are not in the active window.
+      </p>
+      <p>
+         Choosing <gui>Window</gui> will result in <app>Orca</app> only
+         presenting updates for progress bars in the active window.
+      </p>
+      <p>Valor predeterminado: <gui>Aplicativo</gui></p>
+    </section>
+  </section>
+  <section id="only_speak_displayed_text">
+    <title>Ler só o texto mostrado</title>
+    <media type="image" mime="image/png" src="figures/preferences_only_speak_displayed_text.png"/>
+    <p>Ao marcar esta casilla fai que <app>Orca</app> só fale o texto actual que se mostra en pantalla. Esta opción está destinada a usuarios con baixa visión e usuarios cunha discapacidade de aprendizaxe visual.</p>
+  </section>
+  <section id="multicase_strings">
+    <title>Ler as cadeas con maiúsculas e minúsculas como palabras</title>
+    <media type="image" mime="image/png" src="figures/preferences_speak_multicase_strings_as_words.png"/>
+    <p>
+      In some texts, and especially when working with code, one often comes
+      across a "word" consisting of several words with alternating case, such
+      as "MultiCaseString." Speech synthesizers do not always pronounce such
+      multicase strings correctly. Checking the <gui>Speak multicase strings
+      as words</gui> checkbox will cause <app>Orca</app> to break a word like
+      "MultiCaseString" into separate words ("Multi," "Case," and "String")
+      prior to passing it along to the speech synthesizer.
+    </p>
+  </section>
+  <section id="pauses">
+    <media type="image" mime="image/png" src="figures/preferences_break_speech_into_chunks.png"/>
+    <title>Partir a voz en anacos entre pausas</title>
+    <p>
+      Depending on the enabled speech settings, <app>Orca</app> may have quite
+      a bit to say about a particular object such as its name, its role, its
+      state, its mnemonic, its tutorial message, and so on. Checking the
+      <gui>Break speech into chunks between pauses</gui> checkbox will cause
+      <app>Orca</app> to insert brief pauses in between each of these pieces
+      of information.
+    </p>
+  </section>
+  <section id="say_all_by">
+    <media type="image" mime="image/png" src="figures/preferences_say_all_by.png"/>
+    <title>Ler todo por</title>
+    <p>
+      The <gui>Say All By</gui> combo box allows you to specify whether
+      <app>Orca</app> speaks a sentence at a time or a line at a time when
+      doing a "Say All" of a document.
+    </p>
+  </section>
+  <section id="system_voice_items">
+    <title>Información do sistema</title>
+    <media type="image" mime="image/png" src="figures/preferences_system_voice_options.png"/>
+    <p>
+      The following items control the presentation of a variety of
+      supplemental, "system" information about the item with focus.
+      Because the associated text does not appear on screen, this
+      information is presented in <app>Orca</app>'s System voice.
+    </p>
+    <note style="note">
+      <title>Configuration of System Information</title>
+      <p>
+        The follow items will not be available for configuration if
+        the <gui>Only speak displayed text</gui> checkbox is checked.
+      </p>
+      </note>
+      <section id="speak_blank_lines">
+        <title>Ler as liñas en branco</title>
+        <p>
+          If the <gui>Speak blank lines</gui> checkbox is checked,
+          <app>Orca</app> will say "blank" each time you arrow to a blank
+          line. If it is unchecked, <app>Orca</app> will say nothing when
+          you move to a blank line.
+        </p>
+      </section>
+      <section id="indentation_and_justification">
+        <title>Ler a sangría e a xustificación</title>
+        <p>
+          When working with code or editing other documents it is often
+          desirable to be aware of justification and indentation. Checking
+          the <gui>Speak indentation and justification</gui> checkbox will
+          cause <app>Orca</app> to announce this information.
+        </p>
+      </section>
+      <section id="mnemonics">
+       <title>Ler as teclas de acceso do obxecto</title>
+        <p>
+          If the <gui>Speak object mnemonics</gui> checkbox is checked,
+          <app>Orca</app> will announce the mnemonic associated with the
+          object with focus (such as <keyseq><key>Alt</key><key>O</key>
+          </keyseq> for an <gui>OK</gui> button).
+        </p>
+      </section>
+    <section id="child_position">
+      <title>Ler a posición do fillo</title>
+      <p>
+        Checking the <gui>Speak child position</gui> checkbox will cause
+        <app>Orca</app> to announce the position of the focused item in
+        menus, lists, and trees (e.g. "9 of 16").
+      </p>
+    </section>
+    <section id="speak_tutorial_messages">
+      <title>Ler as mensaxes do tutorial</title>
+      <p>
+        If the <gui>Speak tutorial messages</gui> checkbox is checked, as
+        you move amongst objects in an interface, <app>Orca</app> will
+        provide additional information, such as how to interact with the
+        currently-focused object.
+      </p>
+    </section>
+  </section>
+</page>

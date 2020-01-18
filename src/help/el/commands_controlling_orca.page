@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="commands_controlling_orca" xml:lang="el">
+  <info>
+    <link type="next" xref="commands_where_am_i"/>
+    <link type="guide" xref="commands#getting_started"/>
+    <title type="sort">1. Έλεγχος και εκμάθηση χρήσης του Orca</title>
+    <title type="link">Έλεγχος και εκμάθηση χρήσης του Orca</title>
+    <desc>Εντολές για αλληλεπίδραση με το <app>Orca</app></desc>
+    <credit type="author">
+      <name>Joanmarie Diggs</name>
+      <email>joanied@gnome.org</email>
+    </credit>
+    <license>
+      <p>Creative Commons Share Alike 3.0</p>
+    </license>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name> Δημήτρης Σπίγγος</mal:name>
+      <mal:email>dmtrs32@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  </info>
+  <title type="link">Έλεγχος και εκμάθηση χρήσης του Orca</title>
+  <section id="controlling">
+    <title>Εντολές για έλεγχο του <app>Orca</app></title>
+    <p>Οι επόμενες εντολές μπορούν να χρησιμοποιηθούν για είσοδο στους διαλόγους προτιμήσεων του <app>Orca</app>, έξοδος από το <app>Orca</app> και παράκαμψη των εντολών <app>Orca</app> για αποφυγή συγκρούσεων συντόμευσης μέσα στην εφαρμογή που προσπελάζεται.</p>
+    <list>
+      <item>
+        <p>Διάλογος <link xref="preferences">προτιμήσεων Orca</link>: <keyseq><key>τροποποιητής Orca</key><key>διάστημα</key></keyseq>.</p>
+      </item>
+      <item>
+        <p>Ο διάλογος προτιμήσεων του Orca για την εστιασμένη εφαρμογή: <keyseq><key>Ctrl</key><key>τροποποιητής Orca</key><key>διάστημα</key></keyseq>.</p>
+      </item>
+      <item>
+        <p>Έξοδος από το <app>Orca</app>: <keyseq><key>τροποποιητής Orca</key><key>Q</key></keyseq>.</p>
+      </item>
+      <item>
+        <p>Περάστε την επόμενη εντολή στην τρέχουσα εφαρμογή: <keyseq><key>τροποποιητής Orca</key><key>BackSpace</key></keyseq></p>
+      </item>
+    </list>
+  </section>
+  <section id="learning">
+    <title>Εντολές για εκμάθηση χρήσης του <app>Orca</app></title>
+    <p>Το Orca έχει δύο καταστάσεις για μάθηση περισσότερων σχετικά με τις εντολές του <app>Orca</app>: κατάσταση μάθησης και λίστα κατάστασης συντομεύσεων. Στην κατάσταση μάθησης, το <app>Orca</app> θα ανακοινώνει κάθε πληκτρολόγηση που πατάτε μαζί με οποιαδήποτε συσχετισμένη εντολή του <app>Orca</app> που αυτή η πληκτρολόγηση είναι συνδεμένη. Η λίστα της κατάστασης συντομεύσεων παρέχει μια λίστα όλων των εντολών του <app>Orca</app> που μπορείτε να χρησιμοποιήσετε.</p>
+    <list>
+      <item>
+        <p>Είσοδος στην κατάσταση εκμάθησης: <keyseq><key>τροποποιητής Orca</key><key>H</key></keyseq></p>
+      </item>
+      <item>
+        <p>Είσοδος στην κατάσταση λίστας συντομεύσεων: <keyseq><key>τροποποιητής Orca</key><key>H</key></keyseq> (διπλό κλικ)</p>
+      </item>
+      <item>
+        <p>Έξοδος και από τις δυο καταστάσεις: <keyseq><key>Esc</key></keyseq></p>
+      </item>
+    </list>
+  </section>
+</page>

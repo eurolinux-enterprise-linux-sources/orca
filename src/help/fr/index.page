@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" id="index" xml:lang="fr">
+  <info>
+    <title type="text">Lecteur d'écran Orca</title>
+    <title type="link">Présentation du lecteur d'écran <app>Orca</app></title>
+    <credit type="author">
+      <name>Joanmarie Diggs</name>
+      <email>joanied@gnome.org</email>
+    </credit>
+    <license>
+      <p>Creative Commons Share Alike 3.0</p>
+    </license>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Laurent Coudeur</mal:name>
+      <mal:email>laurentc@iol.ie</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bruno Brouard</mal:name>
+      <mal:email>annoa.b@gmail.com</mal:email>
+      <mal:years>2011-12</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Julien Hardelin</mal:name>
+      <mal:email>jhardlin@orange.fr</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  </info>
+  <title><media type="image" mime="image/png" src="figures/orca-logo.png">Logo d'<app>Orca</app></media>Lecteur d'écran <app>Orca</app></title>
+  <note style="important">
+    <title>Avant de commencer</title>
+    <p>Lisez l'<link href="help:gnome-help#a11y">aide de l'accès universel</link></p>
+  </note>
+  <section id="getting_started" style="2column">
+    <title>Premier pas</title>
+  </section>
+  <section id="reading" style="2column">
+    <title>Lecture de documents ou de pages Web</title>
+  </section>
+  <section id="reviewing" style="2column">
+    <title>Examen et interaction avec le contenu de l'écran</title>
+  </section>
+  <section id="quick_reference" style="2column">
+    <title>Référence rapide</title>
+  </section>
+</page>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="howto_setting_up_orca" xml:lang="el">
+<info>
+  <link type="seealso" xref="preferences"/>
+  <link type="guide" xref="index#getting_started"/>
+  <link type="next" xref="howto_the_orca_modifier"/>
+  <title type="sort">3. Διαμόρφωση Orca</title>
+  <title type="link">Διαμόρφωση</title>
+    <desc>Ρύθμιση του <app>Orca</app> αρχικά και στο μέλλον</desc>
+    <credit type="author">
+      <name>Joanmarie Diggs</name>
+      <email>joanied@gnome.org</email>
+    </credit>
+    <license>
+      <p>Creative Commons Share Alike 3.0</p>
+    </license>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name> Δημήτρης Σπίγγος</mal:name>
+      <mal:email>dmtrs32@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  </info>
+  <title>Διαμόρφωση Orca</title>
+    <section id="initial_setup">
+      <title>Αρχική εγκατάσταση</title>
+      <p>Όταν εκτελείτε το <app>Orca</app> για πρώτη φορά, θα μπει αυτόματα σε κατάσταση εγκατάστασης. Ανάλογα με την διαμόρφωση της ενεργής συνόδου, ένα από τα δύο πράγματα θα συμβεί:</p>
+      <list>
+        <item>
+          <p>Εάν η υποστήριξη προσβασιμότητας έχει ήδη ενεργοποιηθεί για τη σύνοδο σας, θα βρεθείτε στο πλαίσιο διαλόγου του <app>Orca</app> <link xref="preferences">προτιμήσεις</link> όπου μπορείτε να προσαρμόσετε το <app>Orca</app> πλήρως και έπειτα να το χρησιμοποιήσετε αμέσως.</p>
+        </item>
+        <item>
+          <p>Εάν η υποστήριξη προσβασιμότητας δεν έχει ήδη ενεργοποιηθεί για τη σύνοδο σας στο <app>Orca</app>, η <link xref="howto_text_setup">εγκατάσταση με βάση κείμενο</link> θα ξεκινήσει στη θέση της. Η εγκατάσταση με βάση κείμενο επιτρέπει τη διαμόρφωση των πιο θεμελιακών ρυθμίσεων και ενεργοποιεί την υποστήριξη προσβασιμότητας για τη σύνοδο σας. Θα χρειαστείτε να αποσυνδεθείτε και να επανασυνδεθείτε για να ισχύσουν οι νέες ρυθμίσεις.</p>
+        </item>
+      </list>
+    </section>
+    <section id="configuring_orca">
+      <title>Ρύθμιση του <app>Orca</app> στο μέλλον</title>
+      <p>Εάν θέλετε να διαμορφώσετε το <app>Orca</app> στο μέλλον, μπορείτε να κάνετε ένα από τα παρακάτω:</p>
+      <list>
+        <item>
+          <p>Περάστε την επιλογή <cmd>--setup</cmd> στο <app>Orca</app> την επόμενη φορά που θα το τρέξετε για να βρεθείτε αυτόματα στο πλαίσιο διαλόγου <link xref="preferences">προτιμήσεις</link>.</p>
+        </item>
+        <item>
+          <p>Περάστε την επιλογή <cmd>--text-setup</cmd> στο <app>Orca</app> για επανεκτέλεση στο <app>Orca</app> της <link xref="howto_text_setup">εγκατάστασης με βάση κείμενο</link>.</p>
+        </item> 
+        <item>
+          <p>Πηγαίνετε στο πλαίσιο διαλόγου <link xref="preferences">προτιμήσεις</link> πατώντας το κουμπί <gui>προτιμήσεις</gui> στο κύριο παράθυρο του <app>Orca</app> ή πατώντας <keyseq><key>τροποποιητής του Orca</key><key>διάστημα</key> </keyseq> από οποιαδήποτε προσβάσιμη εφαρμογή.</p>
+        </item>
+      </list>
+    </section>
+</page>

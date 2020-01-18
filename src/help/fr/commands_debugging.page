@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="commands_debugging" xml:lang="fr">
+  <info>
+    <link type="guide" xref="commands#troubleshooting"/>
+    <title type="sort">1. Débogage</title>
+    <title type="link">Débogage</title>
+    <desc>Commandes de dépannage</desc>
+    <credit type="author">
+      <name>Joanmarie Diggs</name>
+      <email>joanied@gnome.org</email>
+    </credit>
+    <license>
+      <p>Creative Commons Share Alike 3.0</p>
+    </license>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Laurent Coudeur</mal:name>
+      <mal:email>laurentc@iol.ie</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bruno Brouard</mal:name>
+      <mal:email>annoa.b@gmail.com</mal:email>
+      <mal:years>2011-12</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Julien Hardelin</mal:name>
+      <mal:email>jhardlin@orange.fr</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  </info>
+  <title>Commandes de débogage</title>
+    <list>
+      <item>
+        <p>Rapporter des informations sur le script actif : <keyseq><key>Ctrl</key><key>Alt</key><key>Modificateur d'Orca</key><key>Origine</key></keyseq></p>
+      </item>
+    </list>
+    <note style="tip">
+    <p>Afin de pouvoir utiliser les trois prochaines commandes, <app>Orca</app> doit être lancé à partir d'une console virtuelle ou depuis <app>gnome-terminal</app>. La sortie n'est envoyée qu'à la console (donc pas à la synthèse vocale ni à la console braille).</p>
+  </note>
+  <list>
+    <item>
+      <p>Afficher dans la console une liste pour débogage de toutes les applications connues où <app>Orca</app> est lancé : <keyseq><key>Ctrl</key><key>Alt</key><key>Modificateur d'Orca</key><key>Fin</key></keyseq></p>
+    </item>
+    <item>
+      <p>Afficher les informations de débogage concernant l'ascendance de l'objet ayant le focus : <keyseq><key>Ctrl</key><key>Alt</key><key>Modificateur d'Orca</key><key>Page haut</key></keyseq></p>
+    </item>
+    <item>
+      <p>Afficher les informations de débogage concernant la hiérarchie de l'application ayant le focus : <keyseq><key>Ctrl</key><key>Alt</key><key>Modificateur d'Orca</key><key>Page bas</key></keyseq></p>
+    </item>
+  </list>
+</page>

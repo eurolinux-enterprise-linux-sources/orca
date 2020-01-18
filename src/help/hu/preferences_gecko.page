@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="preferences_gecko" xml:lang="hu">
+  <info>
+    <link type="guide" xref="preferences#application"/>
+    <link type="next" xref="preferences_table_navigation"/>
+    <title type="sort">1. Gecko navigáció</title>
+    <title type="link">Gecko navigáció</title>
+    <desc>Az <app>Orka</app> <app>Firefox</app> és <app>Thunderbird</app> támogatásának konfigurálása</desc>
+    <credit type="author">
+      <name>Joanmarie Diggs</name>
+      <email>joanied@gnome.org</email>
+    </credit>
+    <license>
+      <p>Creative Commons Share Alike 3.0</p>
+    </license>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Hammer Attila</mal:name>
+      <mal:email>hammera at pickup dot hu</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  </info>
+  <title>A Gecko navigáció beállításai</title>
+  <section id="page_navigation">
+    <title>Oldalnavigáció</title>
+    <media type="image" mime="image/png" src="figures/preferences_gecko_page_navigation.png"/>
+    <p>Az <gui>Oldalnavigáció</gui> alatti vezérlőelemek segítségével személyre szabhatja a szöveges és más tartalmak <app>Orka</app> általi ismertetését.</p>
+    <section>
+      <title>Orka mutatónavigáció használata</title>
+      <p>Ez a jelölőnégyzet be- vagy kikapcsolja az <app>Orka</app> mutatónavigációt. Ha ez a jelölőnégyzet be van jelölve, az <app>Orka</app> vezérli a mutatót, amikor navigál egy weboldalon. Ha ez a jelölőnégyzet nincs bejelölve, a beépített Gecko mutatónavigáció lesz aktív.</p>
+      <p>Alapbeállítás: bejelölve</p>
+      <note style="tip">
+        <title>A beállítás menet közben módosítható</title>
+        <p>A két beállítás közötti gyors váltáshoz nyomja meg az <keyseq><key>Orka módosító</key><key>F12</key></keyseq> billentyűkombinációt. Ha ezt a billentyűkombinációt használja, a beállítás nem kerül mentésre.</p>
+       </note>
+    </section>
+    <section>
+      <title>Strukturált Orka navigáció használata</title>
+      <p>Ez a jelölőnégyzet be- vagy kikapcsolja a <link xref="howto_structural_navigation">strukturált Orka navigációt</link>. A strukturált Orka navigáció lehetővé teszi az elemek, például a címsorok, hivatkozások és űrlapmezők alapján történő navigációt.</p>
+      <p>Alapbeállítás: bejelölve</p>
+      <note style="tip">
+        <title>A beállítás menet közben módosítható</title>
+        <p>A beállítás ideiglenes be- vagy kikapcsolásához nyomja meg az <keyseq><key>Orka módosító</key><key>Z</key></keyseq> billentyűkombinációt. Ha ezt a billentyűkombinációt használja, a beállítás nem kerül mentésre.</p>
+       </note>
+    </section>
+    <section>
+      <title>Az objektumok fókuszának megragadása navigálás közben</title>
+      <p>Ha ez a jelölőnégyzet be van jelölve, az <app>Orka</app> mindenképpen megragadja a fókuszban levő objektumot, amikor az <app>Orka</app> mutatónavigációt használja. Ezt a beállítást a régebbi verziójú <app>Firefox</app> és <app>Thunderbird</app> alkalmazások használata esetén érdemes megadnia.</p>
+      <p>Alapbeállítás: nincs bejelölve</p>
+    </section>
+    <section>
+      <title>A kurzor kerüljön a sor elejére függőleges navigálás közben</title>
+      <p>Ha ez a jelölőnégyzet be van jelölve, és az <app>Orka</app> vezérli a mutatót, a mutató mindig a sor elejére fog kerülni, ha lenyomja a felfelé vagy lefelé nyíl billentyűt az előző vagy következő sor felolvasásához. Ha ez a jelölőnégyzet nincs bejelölve, az <app>Orka</app> megpróbálja ugyanabban a vízszintes pozícióban tartani a mutatót, amelyben kezdeményezte a felfelé vagy lefelé történő navigációt.</p>
+      <p>Alapbeállítás: nincs bejelölve</p>
+    </section>
+  </section>
+  <section id="find_options">
+    <title>Keresési feltételek</title>
+    <media type="image" mime="image/png" src="figures/preferences_gecko_find_options.png"/>
+    <p>A <gui>Keresési feltételek</gui> beállítócsoport vezérlőelemeivel személyre szabhatja, hogyan ismertesse az <app>Orka</app> az alkalmazások beépített keresőjében végzett keresés eredményeit.</p>
+    <section>
+      <title>Keresés eredményének felolvasása</title>
+      <p>Ha ez a jelölőnégyzet be van jelölve, az <app>Orka</app> fel fogja olvasni azt a sort, amelyben az Ön által keresett kifejezés található.</p>
+      <p>Alapbeállítás: bejelölve</p>
+    </section>
+    <section>
+      <title>Csak a megváltozott sorok felolvasása a keresés során</title>
+      <p>Ha ez a jelölőnégyzet be van jelölve, az <app>Orka</app> nem fogja többször felolvasni azokat a sorokat, amelyekben több helyen is előfordul a keresett kifejezés.</p>
+      <p>Alapbeállítás: nincs bejelölve</p>
+    </section>
+    <section>
+      <title>A keresett szöveg minimális hossza</title>
+      <p>Ezzel a léptetőgombbal megadhatja, hogy az <app>Orka</app> hány karakter begépelése után olvassa fel a keresett kifejezést tartalmazó sorokat. Ezzel az opcióval megelőzheti a keresett kifejezés begépelésekor előforduló rövidebb egyezéseket tartalmazó sorok felolvasását.</p>
+      <p>Alapbeállítás: 4</p>
+    </section>
+  </section>
+</page>

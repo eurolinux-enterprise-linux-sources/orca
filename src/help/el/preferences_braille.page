@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="preferences_braille" xml:lang="el">
+  <info>
+    <title type="sort">3. Μπράιγ</title>
+    <title type="link">Μπράιγ</title>
+    <desc>Ρύθμιση της υποστήριξης εμφάνιση Μπράιγ του <app>Orca</app></desc>
+    <link type="guide" xref="preferences#orca"/>
+    <link type="next" xref="preferences_key_echo"/>
+    <credit type="author">
+      <name>Joanmarie Diggs</name>
+      <email>joanied@gnome.org</email>
+    </credit>
+    <license>
+      <p>Creative Commons Share Alike 3.0</p>
+    </license>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name> Δημήτρης Σπίγγος</mal:name>
+      <mal:email>dmtrs32@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  </info>
+  <title>Προτιμήσεις Μπράιγ</title>
+  <section id="braillesupport">
+    <title>Ενεργοποίηση υποστήριξης Μπράιγ</title>
+    <media type="image" mime="image/png" src="figures/preferences_enable_braille_support.png"/>
+    <p>Αυτό το πλαίσιο ελέγχου εναλλάσσει εάν το <app>Orca</app> θα χρησιμοποιήσει ή όχι μια εμφάνιση Μπράιγ. Εάν το BrlTTY δεν εκτελείται, το <app>Orca</app> θα ανακάμψει σωστά και δεν θα επικοινωνήσει με την προβολή Μπράιγ.</p>
+    <p>Προεπιλεγμένη τιμή: ασημείωτη</p>
+    <note style="tip">
+      <p>Εάν ρυθμίσετε αργότερα το BrlTTY, χρειάζεται να επανεκκινήσετε το <app>Orca</app> για να χρησιμοποιήσετε Μπράιγ.</p>
+    </note>
+  </section>
+  <section id="braillemonitor">
+    <title>Ενεργοποίηση ελέγχου Μπράιγ</title>
+    <media type="image" mime="image/png" src="figures/preferences_enable_braille_monitor.png"/>
+    <p>Ο έλεγχος Μπράιγ του Orca παρέχει στην οθόνη μια αναπαράσταση του τι λαμβάνει χώρα στην εμφάνιση Μπράιγ. Πρόκειται κυρίως για σκοπούς επίδειξης, αλλά μπορεί να αποδειχθεί χρήσιμη για τους προγραμματιστές της <app>Όρκας</app> που δεν έχουν πρόσβαση σε πινακίδα Μπράιγ.</p>
+    <p>Προεπιλεγμένη τιμή: ασημείωτη</p>
+  </section>
+  <section id="contractedbraille">
+    <title>Ενεργοποίηση συμπυκνωμένου Μπράιγ</title>
+    <media type="image" mime="image/png" src="figures/preferences_braille_contracted.png"/>
+    <p>Το Orca υποστηρίζει συμπυκνωμένο Μπράιγ μέσα από το έργο liblouis. Επειδή πολλές διανομές περιλαμβάνουν το liblouis, είναι πιθανό να έχετε αυτόματη πρόσβαση σε συμπυκνωμένη υποστήριξη Μπράιγ στο <app>Orca</app>.</p>
+    <p>Για ενεργοποίηση συμπυκνωμένου Μπράιγ σε ένα σύστημα όπου το liblouis έχει εγκατασταθεί, βεβαιωθείτε ότι το πλαίσιο ελέγχου<gui>ενεργοποίηση συμπυκνωμένου Μπράιγ</gui> έχει σημειωθεί. Έπειτα επιλέξτε τον επιθυμητό πίνακα μετάφρασης από το σύνθετο πλαίσιο του <gui>πίνακας σύντμησης</gui>.</p>
+    <p>Προεπιλεγμένη τιμή: ασημείωτη</p>
+  </section>
+  <section id="rolenames">
+    <title>Συντμήσεις ονομάτων ρόλου</title>
+    <media type="image" mime="image/png" src="figures/preferences_abbreviated_role_names.png"/>
+    <p>Αυτό το πλαίσιο ελέγχου καθορίζει τον τρόπο που τα ονόματα ρόλου εμφανίζονται και μπορεί να χρησιμοποιηθεί για να βοηθήσει στη διατήρηση πραγματικής κατάστασης στην προβολή Μπράιγ. Για παράδειγμα, εάν ένας ολισθητής εστιαστεί, η λέξη "ολισθητής" θα εμφανιστεί εάν οι συντμήσεις ρόλων δεν έχουν σημειωθεί· εάν έχουν σημειωθεί "ολσθτ" θα εμφανιστεί στη θέση του.</p>
+    <p>Προεπιλεγμένη τιμή: ασημείωτη</p>
+  </section>
+  <section id="eolindicator">
+    <title>Απενεργοποίηση συμβόλου τέλους γραμμής</title>
+    <media type="image" mime="image/png" src="figures/preferences_disable_eol_symbol.png"/>
+    <p>Σημείωση αυτού του πλαισίου ελέγχου λέει στο <app>Orca</app> να μην εμφανίσει τη συμβολοσειρά "$l" στο τέλος μιας γραμμής κειμένου.</p>
+    <p>Προεπιλεγμένη τιμή: ασημείωτη</p>
+  </section>
+  <section id="verbosity">
+    <title>Περιγραφικότητα</title>
+    <media type="image" mime="image/png" src="figures/preferences_braille_verbosity.png"/>
+    <p>Αυτή η ομάδα ραδιοπλήκτρων καθορίζει την ποσότητα των πληροφοριών που θα προβληθεί ως Μπράιγ σε συγκεκριμένες καταστάσεις. Για παράδειγμα, εάν οριστεί σε αναλυτική, οι πληροφορίες συντομεύσεων πληκτρολογίου και ονομάτων ρόλου θα εμφανιστούν. Αυτές οι πληροφορίες δεν εμφανίζονται σε σύντομη κατάσταση.</p>
+    <p>Προεπιλεγμένη τιμή: <gui>αναλυτικά</gui></p>
+  </section>
+  <section id="selectionandhyperlink">
+    <title>Επιλογή και δείκτες υπερσύνδεσης</title>
+    <media type="image" mime="image/png" src="figures/preferences_braille_indicators.png"/>
+    <p>Η <gui>επιλογή δείκτη</gui> και οι ομάδες ραδιοπλήκτρων <gui>δείκτη υπερσύνδεσης</gui> επιτρέπουν τη ρύθμιση της συμπεριφοράς του <app>Orca</app> όταν εμφανίζεται το επιλεγμένο κείμενο και υπερσύνδεσμοι. Από προεπιλογή, όταν συμβαίνει οποιοδήποτε από τα δύο, το <app>Orca</app> θα "υπογραμμίσει" αυτό το κείμενο στην εμφάνιση Μπράιγ με κουκκίδες 7 και 8. Εάν προτιμάτε, μπορείτε να αλλάξετε τον δείκτη σε μόνο κουκκίδα 7, μόνο σε κουκκίδα 8, ή να μην είναι καθόλου παρόν.</p>
+    <p>Προεπιλεγμένη τιμή: <gui>κουκκίδες 7 και 8</gui></p>
+    <note style="tip">
+      <title>Δείκτες γνωρίσματος κειμένου</title>
+      <p>Μπορείτε επίσης προαιρετικά να έχετε γνωρίσματα κειμένου που εμφανίζονται σε Μπράιγ. Η ενεργοποίηση αυτού του γνωρίσματος και επιλογή των γνωρισμάτων που ενδιαφέρουν γίνεται στη σελίδα <link xref="preferences_text_attributes"> <gui>γνωρίσματα κειμένου</gui></link> του διαλόγου προτιμήσεων.</p>
+    </note>
+  </section>
+</page>

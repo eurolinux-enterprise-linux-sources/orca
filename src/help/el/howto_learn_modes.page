@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="howto_learn_modes" xml:lang="el">
+  <info>
+    <link type="guide" xref="index#getting_started"/>
+    <link type="next" xref="howto_keyboard_layout"/>
+    <title type="sort">5. Οι καταστάσεις "μάθησης"</title>
+    <desc>Ανακαλύπτοντας τις εντολές του <app>Orca</app></desc>
+    <credit type="author">
+      <name>Joanmarie Diggs</name>
+      <email>joanied@gnome.org</email>
+    </credit>
+    <license>
+      <p>Creative Commons Share Alike 3.0</p>
+    </license>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name> Δημήτρης Σπίγγος</mal:name>
+      <mal:email>dmtrs32@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  </info>
+  <title>Οι καταστάσεις "μάθησης"</title>
+  <p>Το Orca έχει δύο καταστάσεις για μάθηση περισσότερων σχετικά με τις εντολές του <app>Orca</app>: κατάσταση μάθησης και λίστα κατάστασης συντομεύσεων. Στην κατάσταση μάθησης, το <app>Orca</app> θα ανακοινώνει κάθε πληκτρολόγηση που πατάτε μαζί με οποιαδήποτε συσχετισμένη εντολή του <app>Orca</app> που αυτή η πληκτρολόγηση είναι συνδεμένη. Η λίστα της κατάστασης συντομεύσεων παρέχει μια λίστα όλων των εντολών του <app>Orca</app> που μπορείτε να χρησιμοποιήσετε.</p>
+  <steps>
+    <title>Χρήση κατάστασης μάθησης</title>
+    <item>
+      <p>Πηγαίνετε στην κατάσταση μάθησης πατώντας <keyseq><key>τροποποιητής Orca</key> <key>H</key></keyseq>.</p>
+    </item>
+    <item>
+      <p>Πατήστε οποιοδήποτε πλήκτρο ή πληκτρολογήστε. Το <app>Orca</app> θα ανακοινώσει τα πλήκτρα και οποιαδήποτε συσχετισμένη εντολή.</p>
+    </item>
+    <item>
+      <p>Πατήστε <key>Esc</key> για να αφήσετε την κατάσταση μάθησης.</p>
+    </item>
+  </steps>
+  <steps>
+    <title>Χρήση κατάστασης λίστας συντομεύσεων</title>
+    <item>
+      <p>Πηγαίνετε στην κατάσταση λίστας συντομεύσεων πατώντας <keyseq><key>τροποποιητής Orca</key> <key>H</key></keyseq> δυο φορές γρήγορα.</p>
+    </item>
+    <item>
+      <p>Πατήστε <key>1</key> εάν θέλετε μια λίστα συντομεύσεων που εφαρμόζει γενικά το <app>Orca</app>, ή πατήστε το <key>2</key> εάν θέλετε μια λίστα συντομεύσεων που είναι ειδικά για την εφαρμογή με εστίαση.</p>
+    </item>
+    <item>
+      <p>Πατήστε <key>επάνω</key> ή <key>κάτω</key> για να εξετάσετε τα περιεχόμενα της λίστας.</p>
+    </item>
+    <item>
+      <p>Πατήστε <key>Esc</key> για να αφήσετε την κατάσταση λίστας συντομεύσεων.</p>
+    </item>
+  </steps>
+</page>

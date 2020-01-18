@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="commands_bookmarks" xml:lang="fr">
+  <info>
+    <link type="next" xref="commands_live_regions"/>
+    <link type="guide" xref="commands#reviewing_screen_contents"/>
+    <link type="seealso" xref="howto_bookmarks"/>
+    <title type="sort">4. Signets</title>
+    <title type="link">Signets</title>
+    <desc>Commandes pour créer des signets et récupérer des éléments</desc>
+    <credit type="author">
+      <name>Joanmarie Diggs</name>
+      <email>joanied@gnome.org</email>
+    </credit>
+    <license>
+      <p>Creative Commons Share Alike 3.0</p>
+    </license>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Laurent Coudeur</mal:name>
+      <mal:email>laurentc@iol.ie</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bruno Brouard</mal:name>
+      <mal:email>annoa.b@gmail.com</mal:email>
+      <mal:years>2011-12</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Julien Hardelin</mal:name>
+      <mal:email>jhardlin@orange.fr</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  </info>
+  <title>Commandes de signets</title>
+  <list>
+    <item>
+      <p>Enregistrer un signet dans l'emplacement numéroté : <keyseq><key>Modificateur d'Orca</key><key>Alt</key><key>1</key></keyseq>-<key>6</key></p>
+    </item>
+    <item>
+      <p>Enregistrer les signets définis pour l'application ou la page : <keyseq><key>Modificateur d'Orca</key><key>Alt</key><key>B</key></keyseq></p>
+    </item>
+    <item>
+      <p>Aller à l'emplacement du signet numéroté spécifique : <keyseq><key>Modificateur d'Orca</key><key>1</key></keyseq>-<key>6</key></p>
+    </item>
+    <item>
+      <p>Aller à l'emplacement du signet précédent pour l'application ou la page : <keyseq><key>Modificateur d'Orca</key><key>Maj</key><key>B</key></keyseq></p>
+    </item>
+    <item>
+      <p>Aller à l'emplacement du signet suivant pour l'application ou la page : <keyseq><key>Modificateur d'Orca</key><key>B</key></keyseq></p>
+    </item>
+    <item>
+      <p>Informations « Où suis-je » pour ce signet par rapport à la position actuelle du pointeur : <keyseq><key>Alt</key><key>Maj</key><key>1</key></keyseq>-<key>6</key></p>
+    </item>
+  </list>
+</page>

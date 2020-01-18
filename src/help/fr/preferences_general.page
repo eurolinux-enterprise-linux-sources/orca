@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="preferences_general" xml:lang="fr">
+  <info>
+    <title type="sort">1. Général</title>
+    <title type="link">Général</title>
+    <desc>Configurer les comportements fondamentaux d'<app>Orca</app></desc>
+    <link type="guide" xref="preferences#orca"/>
+    <link type="next" xref="preferences_speech"/>
+    <credit type="author">
+      <name>Joanmarie Diggs</name>
+      <email>joanied@gnome.org</email>
+    </credit>
+    <license>
+      <p>Creative Commons Share Alike 3.0</p>
+    </license>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Laurent Coudeur</mal:name>
+      <mal:email>laurentc@iol.ie</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bruno Brouard</mal:name>
+      <mal:email>annoa.b@gmail.com</mal:email>
+      <mal:years>2011-12</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Julien Hardelin</mal:name>
+      <mal:email>jhardlin@orange.fr</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  </info>
+  <title>Préférences générales</title>
+  <section id="keyboardlayout">
+    <info>
+      <desc>Option de la boîte de dialogue des préférences qui permet de sélectionner l'agencement de clavier utilisé par <app>Orca</app> : ordinateur de bureau ou portable.</desc>
+    </info>
+    <title>Agencement de clavier</title>
+    <media type="image" mime="image/png" src="figures/preferences_keyboard_layout.png"/>
+    <p>Le groupement de boutons radio <gui>Agencement de clavier</gui> vous permet d'indiquer si vous utilisez un clavier d'ordinateur de bureau (c.-à-d. avec pavé numérique) ou un clavier de portable. L'agencement que vous choisissez détermine le <key>Modificateur d'Orca</key> ainsi qu'un grand nombre de raccourcis clavier pour réaliser les commandes <app>Orca</app>.</p>
+    <p>Valeur par défaut : <gui>Bureau</gui></p>
+  </section>
+  <section id="quitorca">
+    <info>
+      <desc>Option de la boîte de dialogue pour quitter <app>Orca</app> sans afficher de boîte de dialogue de confirmation.</desc>
+    </info>
+    <title>Quitter Orca sans confirmation</title>
+      <media type="image" mime="image/png" src="figures/preferences_quit_Orca_without_confirmation.png"/>
+      <p>Normalement quand vous quittez <app>Orca</app>, une boîte de dialogue de confirmation s'affiche vous demandant si vous désirez bien quitter <app>Orca</app>. Cochez la case <gui>Quitter Orca sans confirmation</gui> pour empêcher l'affichage de cette fenêtre de confirmation.</p>
+    <p>Valeur par défaut : non cochée</p>
+  </section>
+  <section id="presenttooltips">
+    <info>
+      <desc>Option de la boîte de dialogue de préférences pour activer la prononciation des infobulles qui apparaissent lors du survol par la souris. </desc>
+    </info>
+    <title>Présentation des infobulles</title>
+    <media type="image" mime="image/png" src="figures/preferences_present_tooltips.png"/>
+    <p>Si elle est cochée, cette option demande à <app>Orca</app> de présenter les informations des infobulles lorsqu'elles apparaissent quand le pointeur de la souris reste immobile au dessus d'un élément. Des actions spécifiques pour forcer les infobulles à apparaître, comme l'appui sur <keyseq><key>Ctrl</key><key>F1</key></keyseq> lorsqu'un objet a le focus, provoqueront toujours la présentation des infobulles, quel que soit le réglage de ce paramètre.</p>
+    <p>Valeur par défaut : non cochée</p>
+  </section>
+  <section id="showmainwindow">
+    <info>
+      <desc>Option de la boîte de dialogue de préférences pour afficher ou masquer la fenêtre principale d'<app>Orca</app>.</desc>
+    </info>
+    <title>Afficher la fenêtre principale d'Orca</title>
+    <media type="image" mime="image/png" src="figures/preferences_show_Orca_main_window.png"/>
+    <figure>
+      <title>Fenêtre principale d'Orca</title>
+      <media type="image" mime="image/png" src="figures/main_window.png"/>
+      <desc>La fenêtre principale d'<app>Orca</app> vous permet, grâce à une interface graphique, d'afficher la boîte de dialogue <link xref="preferences">Préférences d'Orca</link>, d'avoir accès au manuel d'aide, d'afficher la boîte de dialogue « À propos » et de quitter <app>Orca</app>.</desc>
+    </figure>
+    <p>Beaucoup d'utilisateurs n'aiment pas la fenêtre principale d'<app>Orca</app> car elle apparaît parmi les onglets du gestionnaire de fenêtres quand les touches <keyseq><key>Alt</key><key>Tab</key></keyseq> sont pressées pour changer de fenêtre. Si vous décochez la case <gui>Afficher la fenêtre principale d'<app>Orca</app></gui>, vous indiquez à <app>Orca</app> de ne pas afficher la fenêtre principale d'<app>Orca</app>.</p>
+    <p>Valeur par défaut : cochée</p>
+  </section>
+  <section id="objectundermouse">
+    <info>
+      <desc>Option de la boîte de dialogue de préférences pour activer la présentation de l'objet survolé par la souris.</desc>
+    </info>
+    <title>Lire l'objet sous la souris</title>
+    <media type="image" mime="image/png" src="figures/preferences_speak_object_under_mouse.png"/>
+    <p>Quand cette option est cochée, <app>Orca</app> présente les informations de l'élément survolé par le pointeur de la souris quand vous le déplacez sur l'écran, en utilisant la fonctionnalité <link xref="howto_mouse_review">Examen à la souris</link> d'<app>Orca</app>.</p>
+    <p>Valeur par défaut : non cochée</p>
+  </section>
+  <section id="timeanddate">
+    <info>
+      <desc>Option de la boîte de dialogue de préférences pour personnaliser les formats de l'heure et de la date utilisés par <app>Orca</app>.</desc>
+    </info>
+    <title>Format de la date et de l'heure</title>
+    <media type="image" mime="image/png" src="figures/preferences_date_and_time.png"/>
+    <p>Les listes déroulantes <gui>Format de la date</gui> et <gui>Format de l'heure</gui> vous permettent de spécifier comment <app>Orca</app> prononce et affiche en braille l'heure et la date.</p>
+    <p>Valeur par défaut : utilise le format de l'environnement linguistique du système pour chacun d'eux</p>
+  </section>
+  <section id="profiles">
+    <info>
+      <desc>Options de la boîte de dialogue des préférences pour la gestion des paramètres des profils.</desc>
+    </info>
+    <title>Profils</title>
+    <media type="image" mime="image/png" src="figures/preferences_profiles.png"/>
+    <p>Le groupement des contrôles <gui>Profils</gui>, qui est affiché en bas de l'onglet <gui>Général</gui>, rend possible l'utilisation et la maintenance de plusieurs configurations.</p>
+   <list>
+      <item>
+        <p>La liste déroulante <gui>Profil actif</gui> affiche le profil actuel et vous permet de sélectionner et de charger un autre profil.</p>
+      </item>
+      <item>
+        <p>Quand vous cliquez sur le bouton <gui>Charger</gui>, <app>Orca</app> charge le profil indiqué dans la liste déroulante <gui>Profil actif</gui>.</p>
+      </item>
+      <item>
+        <p>Le bouton <gui>Enregistrer sous</gui> vous permet d'enregistrer le jeu d'options actuellement configurées dans la boîte de dialogue Préférences dans un profil que vous nommerez.</p>
+      </item>
+      <item>
+        <p>La liste déroulante <gui>Profil au démarrage</gui> vous permet de sélectionner le profil chargé automatiquement à chaque fois que vous lancez <app>Orca</app>.</p>
+      </item>
+    </list>
+  </section>
+</page>

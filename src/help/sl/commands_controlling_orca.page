@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="commands_controlling_orca" xml:lang="sl">
+  <info>
+    <link type="next" xref="commands_where_am_i"/>
+    <link type="guide" xref="commands#getting_started"/>
+    <title type="sort">1. Controlling and Learning to Use Orca</title>
+    <title type="link">Controlling and Learning to Use Orca</title>
+    <desc>Ukazi za sporazumevanje z <app>Orko</app></desc>
+    <credit type="author">
+      <name>Joanmarie Diggs</name>
+      <email>joanied@gnome.org</email>
+    </credit>
+    <license>
+      <p>Creative Commons deljenje pod enakimi pogoji 3.0</p>
+    </license>
+  </info>
+  <title type="link">Nadziranje in učenje uporabe Orke</title>
+  <section id="controlling">
+    <title>Ukazi za nadziranje <app>Orke</app></title>
+    <p>Naslednje ukaze lahko uporabite za vstop v pogovorna okna Možnosti <app>Orke</app>, končanje <app>Orke</app> in obhod <app>Orkinih</app> ukazov za izogibanje sporov bližnjic v programu, do katerega dostopa.</p>
+    <list>
+      <item>
+        <p>Pogovorno okno <link xref="preferences">Možnosti Orke</link>: <keyseq><key>Pomožna tipka Orka </key><key>Preslednica</key></keyseq>.</p>
+      </item>
+      <item>
+        <p>Pogovorno okno možnosti Okre za program v žarišču: <keyseq><key>Ctrl</key><key>Pomožna tipka Orka</key><key>Preslednica</key></keyseq>.</p>
+      </item>
+      <item>
+        <p>Končanje <app>Orke</app>: <keyseq><key>Pomožna tipka Orka</key><key>Q</key></keyseq>.</p>
+      </item>
+      <item>
+        <p>Podajanje naslednjega ukaza trenutnemu programu:  <keyseq><key>Pomožna tipka Orka</key><key>Vračalka</key></keyseq></p>
+      </item>
+    </list>
+  </section>
+  <section id="learning">
+    <title>Ukazi za učenje uporabe <app>Orke</app></title>
+    <p>Orka ima dva načina za podrobnejše učenje o <app>Orkinih</app> ukazih:  način učenja in način seznama bližnjic. V načinu učenja bo <app>Orka</app> oznanila vsak vsak vaš pritisk tipke skupaj z morebitnimi povezanimi  ukazi <app>Orke</app>, ki so vezani na ta pritisk tipk. Način seznama bližnjic vam zagotavlja seznam vseh ukazov <app>Orka</app>, ki jih lahko uporabite.</p>
+    <list>
+      <item>
+        <p>Vstop v način učenja:  <keyseq><key>Orca Modifier</key><key>H</key></keyseq> </p>
+      </item>
+      <item>
+        <p>Vstop v način seznama bližnjic: <keyseq><key>Pomožna tipka Orka</key><key>H</key></keyseq> (dvokliknjeno)</p>
+      </item>
+      <item>
+        <p>Končanje kateregakoli od načinov: <keyseq><key>Ubežna tipka</key></keyseq></p>
+      </item>
+    </list>
+  </section>
+</page>

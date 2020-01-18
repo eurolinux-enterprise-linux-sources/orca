@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="commands_reading" xml:lang="sl">
+  <info>
+    <link type="next" xref="commands_structural_navigation"/>
+    <link type="guide" xref="commands#reading_documents"/>
+    <link type="seealso" xref="howto_documents"/>
+    <link type="seealso" xref="howto_text_attributes"/>
+    <link type="seealso" xref="howto_whereami"/>
+    <title type="sort">1. Reading</title>
+    <title type="link">Reading</title>
+    <desc>Ukazi za dostop do besedila dokumenta</desc>
+    <credit type="author">
+      <name>Joanmarie Diggs</name>
+      <email>joanied@gnome.org</email>
+    </credit>
+    <license>
+      <p>Creative Commons deljenje pod enakimi pogoji 3.0</p>
+    </license>
+  </info>
+  <title>Branje ukazov</title>
+  <p>Poleg ukazov krmarjenja kazalke, ki so del GNOME, <app>Orka</app> zagotavlja številne ukaze, ki jih lahko uporabite za branje dokumenta.</p>
+  <note style="tip">
+    <p>V seznamih spodaj boste videli več sklicev na "KP".  Vse tipke "KP" so na številčni tipkovnici. Opazili boste tudi, da so na voljo različni pritiski tipk glede na to ali uporabljate namizni računalnik ali prenosnik - oziroma bolj natančno ali uporabljate <app>Orkino</app> namizno razporeditev tipkovnice ali razporeditev tipkovnice prenosnika. Za dodatne podrobnosti si oglejte temo <link xref="howto_keyboard_layout">Razporeditev tipkovnice</link>.</p>
+  </note>
+  <section id="flat_review">
+    <title>Branje vašega trenutnega mesta</title>
+    <p>
+      The following <app>Orca</app> <link xref="commands_flat_review">Flat
+      Review Commands</link> can be used to read your current location:
+    </p>
+    <list>
+      <item>
+        <p>Preberi trenutno vrstico:</p>
+        <list>
+          <item>
+            <p>Namizje: <keyseq><key>KP 8</key></keyseq></p>
+          </item>
+          <item>
+            <p>Prenosnik: <keyseq><key>Spremenilna tipka Orka</key><key>I</key></keyseq></p>
+          </item>
+        </list>
+      </item>
+      <item>
+        <p>Preberi trenutno besedo:</p>
+        <list>
+          <item>
+            <p>Namizje: <keyseq><key>KP 5</key></keyseq></p>
+          </item>
+          <item>
+            <p>Prenosnik: <keyseq><key>Spremenilna tipka Orka</key><key>K</key></keyseq></p>
+          </item>
+        </list>
+      </item>
+      <item>
+        <p>Črkujte trenutno besedo:</p>
+        <list>
+          <item>
+            <p>Namizni računalnik: <keyseq><key>KP 5</key></keyseq> (dvakrat kliknjeno)</p>
+          </item>
+          <item>
+            <p>Prenosnik: <keyseq><key>Spremenilna tipka Orka</key><key>K</key></keyseq> (dvakrat kliknjeno)</p>
+          </item>
+        </list>
+      </item>
+      <item>
+        <p>Fonetično črkujte trenutno besedo:</p>
+        <list>
+          <item>
+            <p>Namizni računalnik: <keyseq><key>KP 5</key></keyseq> (trikrat kliknjeno)</p>
+          </item>
+          <item>
+            <p>Prenosnik: <keyseq><key>Spremenilna tipka Orka</key><key>K</key></keyseq> (trikrat kliknjeno)</p>
+          </item>
+        </list>
+      </item>
+      <item>
+        <p>Preberite trenutni znak:</p>
+        <list>
+          <item>
+            <p>Namizje: <keyseq><key>KP 2</key></keyseq></p>
+          </item>
+          <item>
+            <p>Prenosnik: <keyseq><key>Spremenilna tipka Orka</key><key>Vejica</key></keyseq></p>
+          </item>
+        </list>
+      </item>
+      <item>
+        <p>Fonetično izgovorite trenutni znak:</p>
+        <list>
+          <item>
+            <p>Namizje: <keyseq><key>KP 2</key></keyseq> (dvakrat kliknjeno)</p>
+          </item>
+          <item>
+            <p>Prenosnik: <keyseq><key>Spremenilna tipka Orka</key><key>Vejica</key></keyseq> (dvakrat kliknjeno)</p>
+          </item>
+        </list>
+      </item>
+      <item>
+        <p>Izgovori unicode vrednost trenutnega znaka:</p>
+        <list>
+          <item>
+            <p>Namizni računalnik: <keyseq><key>KP 2</key></keyseq> (trikrat kliknjeno)</p>
+          </item>
+          <item>
+            <p>Prenosnik: <keyseq><key>Spremenilna tipka Orka</key><key>Vejica</key></keyseq> (trikrat kliknjeno)</p>
+          </item>
+        </list>
+      </item>
+    </list>
+  </section>
+  <section id="say_all">
+    <title>Reci vse</title>
+    <p>Orkin ukaz Reci vse določi, da <app>Orka</app> izgovori celoten dokument od vašega trenutnega mesta naprej.</p>
+    <list>
+      <item>
+        <p>Namizni računalnik: <key>KP plus</key></p>
+      </item>
+      <item>
+        <p>Prenosnik: <keyseq><key>Spremenilna tipka Orka</key><key>Podpičje</key></keyseq></p>
+      </item>
+    </list>
+  </section>
+  <section id="attributes_and_selection">
+    <title>Atributi besedila in izbranega besedila</title>
+    <p>Orka ima namenski ukaz za pridobivanje atributov besedila na mestu kazalke. Poleg tega lahko v predmetu besedila v katerem je bilo izbrano besedilo uporabite <app>Orkine</app> ukaze Kje sem. <app>Orka</app> bo oznanila izbrano besedilo.</p>
+    <list>
+      <item>
+        <p>Predstavi atribute besedila: <keyseq><key>Spremenilna tipka Orka</key><key>F</key></keyseq></p>
+      </item>
+      <item>
+        <p>Izvedi enostavno opravilo kje sem:</p>
+        <list>
+          <item>
+            <p>Namizje: <key>Vnos KP</key></p>
+          </item>
+          <item>
+            <p>Prenosnik: <keyseq><key>Spremenilna tipka</key><key>Vnosna tipka</key></keyseq></p>
+          </item>
+        </list>
+    </item>
+    <item>
+      <p>Izvedi podrobno opravilo kje sem:</p>
+      <list>
+        <item>
+          <p>Namizni računalnik: <key>KP Vnosna tipka</key> (dvakrat kliknjeno)</p>
+        </item>
+        <item>
+          <p>Prenosnik: <keyseq><key>Spremenilna tipka Orka</key><key>Vnosna tipka</key></keyseq> (double-clicked)</p>
+        </item>
+      </list>
+    </item>
+  </list>
+</section>
+</page>

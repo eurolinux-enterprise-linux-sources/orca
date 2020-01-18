@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="preferences_braille" xml:lang="fr">
+  <info>
+    <title type="sort">3. Braille</title>
+    <title type="link">Braille</title>
+    <desc>Configurer la prise en charge de l'afficheur braille par <app>Orca</app></desc>
+    <link type="guide" xref="preferences#orca"/>
+    <link type="next" xref="preferences_key_echo"/>
+    <credit type="author">
+      <name>Joanmarie Diggs</name>
+      <email>joanied@gnome.org</email>
+    </credit>
+    <license>
+      <p>Creative Commons Share Alike 3.0</p>
+    </license>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Laurent Coudeur</mal:name>
+      <mal:email>laurentc@iol.ie</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bruno Brouard</mal:name>
+      <mal:email>annoa.b@gmail.com</mal:email>
+      <mal:years>2011-12</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Julien Hardelin</mal:name>
+      <mal:email>jhardlin@orange.fr</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  </info>
+  <title>Préférences braille</title>
+  <section id="braillesupport">
+    <title>Activer la prise en charge du braille</title>
+    <media type="image" mime="image/png" src="figures/preferences_enable_braille_support.png"/>
+    <p>Cette case à cocher bascule l'utilisation d'un afficheur braille par <app>Orca</app>. Si BrlTTY n'est pas en cours d'exécution, <app>Orca</app> se rétablit correctement et ne communique pas avec l'afficheur braille.</p>
+    <p>Valeur par défaut : non cochée</p>
+    <note style="tip">
+      <p>Si vous configurez BrlTTY plus tard, vous devrez redémarrer <app>Orca</app> pour pouvoir utiliser le braille.</p>
+    </note>
+  </section>
+  <section id="braillemonitor">
+    <title>Activer le moniteur braille</title>
+    <media type="image" mime="image/png" src="figures/preferences_enable_braille_monitor.png"/>
+    <p>Le moniteur braille fournit une représentation à l'écran de ce qui se passe sur l'afficheur braille. C'est une fonction essentiellement à but démonstratif, mais elle est aussi utile pour les développeurs d'<app>Orca</app> qui n'ont pas accès à un afficheur braille.</p>
+    <p>Valeur par défaut : non cochée</p>
+  </section>
+  <section id="contractedbraille">
+    <title>Activer le braille abrégé</title>
+    <media type="image" mime="image/png" src="figures/preferences_braille_contracted.png"/>
+    <p>Orca prend en charge le braille abrégé via le projet liblouis. Comme de nombreuses distributions incluent liblouis, vous avez automatiquement accès à la prise en charge du braille abrégé dans <app>Orca</app>.</p>
+    <p>Pour activer le braille abrégé sur un système où liblouis est installé, assurez-vous que la case <gui>Activer le braille abrégé</gui> est cochée. Sélectionnez ensuite le tableau de traduction désiré dans la liste déroulante <gui>Tableau d'abréviation</gui>.</p>
+    <p>Valeur par défaut : non cochée</p>
+  </section>
+  <section id="rolenames">
+    <title>Noms de rôle abrégés</title>
+    <media type="image" mime="image/png" src="figures/preferences_abbreviated_role_names.png"/>
+    <p>Cette case à cocher détermine la façon dont sont affichés les noms de rôles et elle peut être utilisée pour conserver de la place sur l'afficheur braille. Par exemple, si une glissière a le focus, le mot « Glissière » s'affiche si les rôles abrégés ne sont pas activés sinon « glis » est affiché à la place.</p>
+    <p>Valeur par défaut : non cochée</p>
+  </section>
+  <section id="eolindicator">
+    <title>Désactiver le symbole de fin de ligne</title>
+    <media type="image" mime="image/png" src="figures/preferences_disable_eol_symbol.png"/>
+    <p>Lorsqu'elle est cochée, cette fonction indique à <app>Orca</app> de ne pas lire la chaîne « $l » à la fin d'une ligne de texte.</p>
+    <p>Valeur par défaut : non cochée</p>
+  </section>
+  <section id="verbosity">
+    <title>Verbosité</title>
+    <media type="image" mime="image/png" src="figures/preferences_braille_verbosity.png"/>
+    <p>Ce groupement de boutons radio détermine la quantité d'informations produites en braille dans certaines situations. Par exemple, si ce paramètre est défini à Verbeux, les raccourcis clavier et les noms de rôle sont affichés. Ces informations ne sont pas affichées en mode Court.</p>
+    <p>Valeur par défaut : <gui>Verbeux</gui></p>
+  </section>
+  <section id="selectionandhyperlink">
+    <title>Indicateurs de sélection et d'hyperliens</title>
+    <media type="image" mime="image/png" src="figures/preferences_braille_indicators.png"/>
+    <p>Les boutons radio <gui>Indicateur de sélection</gui> et <gui>Indicateur d'hyperlien</gui> vous permettent de configurer le comportement d'<app>Orca</app> lors de l'affichage d'un texte sélectionné et d'hyperliens. Par défaut, lorsque vous rencontrez l'un ou l'autre, <app>Orca</app> « souligne » ce texte sur votre afficheur braille avec les points 7 et 8. Si vous le préférez, vous pouvez modifier l'indicateur : soit uniquement le point 7, soit uniquement le point 8 ou ne pas avoir d'indicateur du tout.</p>
+    <p>Valeur par défaut : <gui>points 7 et 8</gui></p>
+    <note style="tip">
+      <title>Indicateurs d'attribut de texte</title>
+      <p>Vous pouvez, sur option, indiquer les attributs de texte en braille. L'activation de cette fonction et le choix des attributs qui vous intéressent, s'effectuent dans <link xref="preferences_text_attributes">l'onglet <gui>Attributs de texte</gui></link> de la boîte de dialogue des préférences.</p>
+    </note>
+  </section>
+</page>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="commands_bookmarks" xml:lang="sl">
+  <info>
+    <link type="next" xref="commands_live_regions"/>
+    <link type="guide" xref="commands#reviewing_screen_contents"/>
+    <link type="seealso" xref="howto_bookmarks"/>
+    <title type="sort">4. Bookmarks</title>
+    <title type="link">Bookmarks</title>
+    <desc>Ukazi za ustvarjanje zaznamkov in pridobivanje predmetov</desc>
+    <credit type="author">
+      <name>Joanmarie Diggs</name>
+      <email>joanied@gnome.org</email>
+    </credit>
+    <license>
+      <p>Creative Commons deljenje pod enakimi pogoji 3.0</p>
+    </license>
+  </info>
+  <title>Ukazi zaznamkov</title>
+  <list>
+    <item>
+      <p>
+        Save a bookmark to the numbered slot: <keyseq><key>Orca Modifier</key>
+        <key>Alt</key><key>1</key></keyseq>-<key>6</key>
+      </p>
+    </item>
+    <item>
+      <p>Shrani določene zaznamke za program ali stran<keyseq><key>Pomožna tipka Orka</key><key>Alt</key><key>B</key></keyseq></p>
+    </item>
+    <item>
+      <p>
+        Go to a specific, numbered bookmark: <keyseq><key>Orca Modifier</key>
+        <key>1</key></keyseq>-<key>6</key>
+      </p>
+    </item>
+    <item>
+      <p>
+        Go to the previous bookmark for the application or page:
+        <keyseq><key>Orca Modifier</key><key>Shift</key><key>B</key>
+        </keyseq>
+      </p>
+    </item>
+    <item>
+      <p>Pojdite na naslednji/predhodni zaznamek za program ali stran: <keyseq><key>Pomožna tipka Orka</key><key>B</key></keyseq></p>
+    </item>
+    <item>
+      <p>
+        "Where am I" information for this bookmark relative to the current
+        pointer location: <keyseq><key>Alt</key><key>Shift</key><key>1</key>
+        </keyseq>-<key>6</key>
+      </p>
+    </item>
+  </list>
+</page>

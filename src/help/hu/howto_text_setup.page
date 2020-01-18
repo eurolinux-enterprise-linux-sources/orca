@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="howto_text_setup" xml:lang="hu">
+  <info>
+    <desc>Lehetővé teszi, hogy akkor is megadhassa az <app>Orka</app> kiinduló beállításait, ha a grafikus asztali környezet nem fut.</desc>
+    <credit type="author">
+      <name>Joanmarie Diggs</name>
+      <email>joanied@gnome.org</email>
+    </credit>
+    <license>
+      <p>Creative Commons Share Alike 3.0</p>
+    </license>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Hammer Attila</mal:name>
+      <mal:email>hammera at pickup dot hu</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  </info>
+  <title>Szöveges beállítófelület használata</title>
+  <p>Az Orka rendelkezik egy szöveges beállítófelülettel, amely akkor is lehetővé teszi az <app>Orka</app> alapszintű beállítását, ha a grafikus asztali környezet nem fut.</p>
+  <steps>
+    <title>Az <app>Orka</app> szöveges beállítófelületének elindítása</title>
+    <item>
+      <p>Nyissa meg az <gui>Alkalmazás futtatása</gui> párbeszédablakot. A legtöbb disztribúcióban ezt az <keyseq><key>Alt</key><key>F2</key></keyseq> billentyűkombináció lenyomásával teheti meg. Alternatív lehetőségként használhat terminált, vagy a rendszer szöveges konzolját is.</p>
+    </item>
+    <item>
+      <p>Írja be az <cmd>orca --text-setup</cmd> vagy az <cmd>orca -t</cmd> parancsot, majd nyomja meg az <key>Enter</key> billentyűt.</p>
+    </item>
+  </steps>
+  <p>Néhány kérdésre válaszolnia kell:</p>
+  <steps>
+    <item>
+      <p>Válassza ki a kívánt beszédrendszert</p>
+      <p>A választható beszédrendszerek listája a rendszerére telepített beszédrendszerektől függ. Írja be a használni kívánt beszédrendszer sorszámát, majd nyomja meg az <key>Enter</key> billentyűt.</p>
+    </item>
+    <item>
+      <p>Válassza ki a kívánt beszédkiszolgálót</p>
+      <p>A választható beszédkiszolgálók listája a rendszerére telepített beszédszintetizátoroktól függ. Írja be a használni kívánt beszédkiszolgáló számát, majd nyomja meg az <key>Enter</key> billentyűt.</p>
+    </item>
+    <item>
+      <p>Válassza ki a kívánt hangot</p>
+      <p>Rengeteg nyelv és hangkarakter érhető el. A Speech-dispatcher beszédmotor esetén körülbelül 60 nyelv és nyelvjárás támogatott. Gépelje be a választott nyelv számát (például az amerikai angol a 7. nyelv), majd nyomja meg az <key>Enter</key> billentyűt. Nem kell megvárnia a lista teljes felolvasását, az Orka megpróbálja megállapítani az alapértelmezett nyelvet, ez a lista első eleme lesz.</p>
+    </item>
+    <item>
+      <p>Szavankénti visszhang engedélyezése?</p>
+      <p>Ha ez a beállítás engedélyezett, akkor az <app>Orka</app> egy szó begépelése után megismétli az adott szót. Nyomja meg az <cmd>i</cmd> vagy az <cmd>n</cmd> billentyűk valamelyikét attól függően, hogy szeretné-e használni ezt a funkciót, majd nyomja meg az <key>Enter</key> billentyűt.</p>
+    </item>
+    <item>
+      <p>Billentyűvisszhang engedélyezése?</p>
+      <p>Ha ez a beállítás engedélyezett, az Orka minden billentyűleütést kimond. Nyomja meg az <cmd>i</cmd> vagy az <key>n</key> billentyűk valamelyikét attól függően, hogy szeretné-e használni ezt a funkciót, majd nyomja meg az <key>Enter</key> billentyűt.</p>
+      <p>Ha azt választotta, hogy engedélyezi a billentyűvisszhangot, a beállítófelület egyenként meg fogja kérdezni az egyes billentyűvisszhang típusoknál, hogy engedélyezni kívánja-e az adott billentyűvisszhangot. A választásának megfelelően nyomja meg az <cmd>i</cmd> vagy az <cmd>n</cmd> billentyűk valamelyikét, majd nyomja meg az <key>Enter</key> billentyűt. A billentyűvisszhang-típusok a következők:</p>
+      <list>
+        <item>
+          <p>Alfanumerikus- és írásjelek</p>
+          <p>Ez a beállítás meghatározza, hogy például az <key>a</key>, <key>b</key>, <key>c</key>, <key>;</key>, <key>?</key> billentyűk lenyomásakor az <app>Orka</app> kimondja-e a begépelt karaktereket.</p>
+        </item>
+        <item>
+          <p>Módosítóbillentyűk</p>
+          <p>Ez az opció megadja, hogy például a <key>Shift</key>, <key>Ctrl</key>, <key>Alt</key> és <key>Meta</key> billentyűk kimondásra kerüljenek-e, ha lenyomja ezeket a billentyűket.</p>
+        </item>
+        <item>
+          <p>Zárolóbillentyűk</p>
+          <p>Ez a beállítás meghatározza, hogy például a <key>Nagybetű zár</key>, <key>Scroll Lock</key>, és a <key>Num Lock</key> billentyűk lenyomásakor kimondásra kerüljenek-e a zárolóbillentyűk megnevezései.</p>
+        </item>
+        <item>
+          <p>Funkcióbillentyűk</p>
+          <p>Ez az opció meghatározza, hogy az <key>F1</key> ... <key>F12</key> billentyűk lenyomásakor ezek a billentyűk kimondásra kerüljenek-e.</p>
+        </item>
+        <item>
+          <p>Műveletbillentyűk</p>
+          <p>Ez az opció szabályozza, hogy a <key>BackSpace</key>, <key>Del</key>, <key>Enter</key>, <key>Escape</key>, <key>Tab</key>, <key>Page Up</key>, <key>Page Down</key>, <key>Home</key>, és <key>End</key> billentyűk valamelyikének lenyomásakor kimondásra kerüljenek-e ezek a billentyűmegnevezések.</p>
+        </item>
+      </list>
+    </item>
+    <item>
+      <p>Válassza ki a kívánt billentyűzetkiosztást.</p>
+      <p>Az Orka két billentyűzetkiosztással rendelkezik, asztali és laptop kiosztással. Az Ön által választott billentyűzetkiosztás hatással van az alapértelmezetten használható Orka módosítóbillentyűre.</p>
+      <list>
+        <item>
+          <p>Ha a laptop kiosztást használja, az alapértelmezett Orka módosítóbillentyű a <key>Nagybetűzár</key> lesz.</p>
+        </item>
+        <item>
+          <p>Ha az asztali kiosztást használja, az alapértelmezett Orka módosítóbillentyűk az <key>Inzert</key> és <key>Numpad Inzert</key> billentyűk lesznek, a második billentyű egyben a <key>Numpad 0</key> billentyű is.</p>
+        </item>
+      </list>
+      <p>A választott billentyűzetkiosztás meghatároz számos <app>Orka</app> parancshoz tartozó billentyűtársítást, például az egyszerű áttekintésnél, a hol vagyok műveleteknél és a felolvasás parancsainál.</p>
+      <p>Az asztali kiosztás választásához írja be az <cmd>1</cmd>, vagy a laptop kiosztás választásához a <cmd>2</cmd> számot. A választás megerősítéséhez nyomja meg az <key>Enter</key> billentyűt.</p>
+    </item>
+    <item>
+      <p>Braille támogatás engedélyezése</p>
+      <p>A Braille támogatás használatához egy BrlTTY kompatibilis Braille-kijelző szükséges. Nyomja meg az <cmd>i</cmd> vagy az <cmd>n</cmd> billentyűk valamelyikét, majd a választás véglegesítéséhez nyomja meg az <key>Enter</key> billentyűt. Ha nincs BrlTTY eszköze, és igennel válaszol, az semmilyen problémát nem okoz.</p>
+    </item>
+    <item>
+      <p>Braille monitor engedélyezése</p>
+      <p>Az Orka Braille monitor a képernyőn jeleníti meg azokat az információkat, amik a Braille-kijelzőn látszanak. Ez a szolgáltatás elsősorban demonstrációs célból készült, de hasznos azoknak az Orka fejlesztőknek is, akiknek nincs Braille-kijelzőjük. Nyomja meg az <cmd>i</cmd> vagy az <cmd>n</cmd> billentyűk valamelyikét, majd nyomja meg az <key>Enter</key> billentyűt.</p>
+    </item>
+    <item>
+      <p>Automatikusan elinduljon az <app>Orka</app> a bejelentkezés után?</p>
+      <p>Az <app>Orka</app> automatikus elindításának beállításához nyomja meg az <cmd>i</cmd>, vagy az <cmd>n</cmd> billentyűt, ha ezt nem szeretné, végül az <key>Enter</key> billentyűt.</p>
+    </item>
+  </steps>
+  <p>Ezután az <app>Orka</app> használható. Ha az akadálymentesítés még nem engedélyezett, az <app>Orka</app> megkéri Önt arra, hogy jelentkezzen ki és újra be a grafikus rendszerbe a szolgáltatás bekapcsolásához. Nyomja meg az <cmd>i</cmd> és az <key>Enter</key> billentyűt a kijelentkezéshez, ezután jelentkezzen be, és az <app>Orka</app> el fog indulni. Ha az akadálymentesítés már engedélyezve lett, az <app>Orka</app> arra fogja kérni, hogy nyomja meg az <key>Enter</key> billentyűt, ezután az <app>Orka</app> el fog indulni.</p>
+</page>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="preferences_key_echo" xml:lang="sl">
+  <info>
+    <title type="link">Key Echo</title>
+    <title type="sort">4. Key Echo</title>
+    <desc>Nastavljanje kaj je izgovorjeno medtem ko tipkate</desc>
+    <link type="guide" xref="preferences#orca"/>
+    <link type="next" xref="preferences_key_bindings"/>
+    <credit type="author">
+      <name>Joanmarie Diggs</name>
+      <email>joanied@gnome.org</email>
+    </credit>
+    <license>
+      <p>Creative Commons deljenje pod enakimi pogoji 3.0</p>
+    </license>
+  </info>
+  <title>Možnosti odmeva tipk</title>
+  <section id="keyecho">
+    <title>Omogoči odmev tipk</title>
+    <media type="image" mime="image/png" src="figures/preferences_key_echo.png"/>
+    <p>Nadzorniki Okrinega odmeva tipk nastavijo kaj se zgodi, ko pritisnete tipko. Za omogočenje odmeva tipka izberite izbirno polje "Omogoči odmev tipk". To povzroči, da so na voljo dodatna izbirna polja v katerih lahko izberete katere tipke naj odmevajo ali ne, da najboljše ustrezajo vašim potrebam:</p>
+    <p>Privzeta vrednost: izbrano</p>  
+    <section>
+      <title>Omogoči črkovno-številčne tipke in tipke ločil</title>
+      <p>Ta možnost nadzira ali tipke kot so  <key>a</key>, <key>b</key>, <key>c</key>, <key>;</key>, <key>?</key> in tako naprej izgovorjene ob pritisku.</p>
+      <p>Privzeta vrednost: izbrano</p>
+    </section>
+    <section>
+      <title>Omogoči pomožne tipke</title>
+      <p>Ta možnost nadzira ali so tipke <key>Dvigalka</key>, <key>Ctrl</key>, <key>Alt</key> in <key>Meta</key> izgovorjene ob pritisku.</p>
+      <p>Privzeta vrednost: izbrano</p>
+    </section>
+    <section>
+      <title>Omogoči tipke za zaklep</title>
+      <p>Ta možnost nadzira ali so tipke <key>Caps Lock</key>, <key>Scroll Lock</key> in <key>Num Lock</key> izgovorjene ob pritisku.</p>
+      <p>Privzeta vrednost: izbrano</p>
+    </section>
+    <section>
+      <title>Omogoči funkcijske tipke</title>
+      <p>Ta možnost nadzira ali so tipke od <key>F1</key> do <key>F12</key> izgovorjene ob pritisku.</p>
+      <p>Privzeta vrednost: izbrano</p>
+    </section>
+    <section>
+      <title>Omogoči tipke dejanj</title>
+      <p>Ta možnost nadzira ali so tipke <key>Vračalka</key>, <key>Izbriši</key>, <key>Vnosna tipka</key>, <key>Ubežna tipka</key>, <key>Tabulator</key>, <key>Stran navzgor</key>, <key>Stran navzdol</key>, <key>Domov</key> in <key>Konec</key> izgovorjene ob pritisku.</p>
+      <p>Privzeta vrednost: izbrano</p>
+    </section>
+    <section>
+      <title>Omogoči tipke krmarjenja</title>
+      <p>Ta možnost nadzira ali so tipke <key>Levo</key>, <key>Desno</key>, <key>Navzgor</key> in <key>Navzdol</key> izgovorjene ob pritisku. Ta možnost je uveljavljena za katerokoli kombinacijo tipk pri kateri je pritisnjena <key>Pomožna tipka Orka</key> na primer pri uporabi ploskega pregleda.</p>
+      <p>Prikazana vrednost: ni izbrano</p>
+    </section>
+    <section>
+      <title>Omogoči ne-presledne razločevalne tipke</title>
+      <p>Ta možnost nadzira ali so "mrtve tipke" uporabljene za ustvarjanje naglašenih črk izgovorjene ob pritisku.</p>
+      <p>Prikazana vrednost: ni izbrano</p>
+    </section>
+  </section>
+  <section id="characterecho">
+    <title>Omogoči odmev po znakih</title>
+    <media type="image" mime="image/png" src="figures/preferences_character_echo.png"/>
+    <p>Omogočena možnost določi, da Orka odmeva znak, ki ste ga pravkar vnesli.</p>
+    <p>Odmev po znakih se zdi precej podoben odmevu po črkovnoštevilčnih znakih in ločilih, vendar obstajajo pomembne razlike, še posebno pri naglašenih črkah in drugih simboli za katere ni namenske tipke: </p>
+    <list>
+      <item>
+        <p>Odmev tipk povzroči, da <app>Orka</app> oznani kar ste ravnokar <em>pritisnili</em>.</p>
+      </item>
+      <item>
+        <p>Odmev znakov povzroči, da <app>Orka</app> oznani kaj je bilo pravkar <em>vstavljeno</em>.</p>
+      </item>
+    </list>
+    <p>Za izgovorjavo naglašenih znakov medtem ko jih tipkate omogočite odmev znakov.</p>
+    <p>Prikazana vrednost: ni izbrano</p>
+    <note style="tip">
+      <title>Omogočanje tako odmeva tipk kot odmeva znakov</title>
+      <p>V primeru, da vam je všeč odmev tipk in pogosto pišete naglašene znake, lahko omogočite oboje. <app>Orkina</app> logika odmeva znakov, poskuša filtrirati znake, ki so bili izgovorjeni kot posledica odmeva tipke in s tem zmanjša možnost "dvojnega govora" medtem, ko tipkate.</p>
+    </note>
+  </section>
+  <section id="wordandsentenceecho">
+    <title>Omogoči odmev po besedah in odmev po stavku</title>
+    <media type="image" mime="image/png" src="figures/preferences_word_and_sentence_echo.png"/>
+    <p>Izbira izbirnega polja <gui>Omogoči odmev besed</gui> določi, da <app>Orka</app> odmeva besedo, ki ste jo pravkar vnesli. Podobno izbira izbirnega polja <gui>Omogoči odmev stavka</gui> določi, da <app>Orka</app> odmeva vstavek, ki ste ga pravkar vnesli.</p>
+    <p>Prikazana vrednost: ni izbrano</p>
+  </section>
+</page>

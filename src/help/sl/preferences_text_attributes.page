@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="preferences_text_attributes" xml:lang="sl">
+  <info>
+    <link type="guide" xref="preferences#orca"/>
+    <link type="next" xref="preferences_gecko"/>
+    <link type="seealso" xref="howto_text_attributes"/>
+    <title type="sort">8. Text Attributes</title>
+    <title type="link">Text Attributes</title>
+    <desc>Nastavljanje katero oblikovanje je predstavljeno</desc>
+    <credit type="author">
+      <name>Joanmarie Diggs</name>
+      <email>joanied@gnome.org</email>
+    </credit>
+    <license>
+      <p>Creative Commons deljenje pod enakimi pogoji 3.0</p>
+    </license>
+  </info>
+  <title>Možnosti atributov besedila</title>
+  <p>Naziv "atributi besedila" se sklicuje na pisavo, slog, poravnavo in drugo oblikovanje povezano z danim znakom ali njihovim zaporedjem. <app>Orkina</app> stran <gui>Atributi besedila</gui> vam omogoča prilagajanje atributov besedila, ki jih bo <app>Orka</app> predstavila z govorom, določanje vrstnega reda predstavitve in katere bo <app>Orka</app> nakazala v Braillovi pisavi.</p>
+  <section id="table">
+    <title>Razpredelnica atributov besedila</title>
+    <media type="image" mime="image/png" src="figures/preferences_text_attributes_table.png"/>
+    <p>V razpredelnici atributov besedila navedete pod katerimi pogoji atributi bodo ali ne bodo prisotni. Vsaka vrstica je sestavljena iz štirih stolpcev.</p>
+    <list>
+      <item>
+        <p><gui>Ime atributa</gui>: ime atributa besedila.</p>
+      </item>
+      <item>
+        <p><gui>Govor</gui>: Izberite to izbirno polje, če želite da <app>Orka</app> izgovori ta atribut, ko pritisnete <keyseq><key>Orka</key><key>F</key></keyseq>.</p>
+      </item>
+      <item>
+        <p><gui>Označi v Braillovi pisavi</gui>: Izberite to izbirno polje, če želite, da <app>Orka</app> "podčrta" ta artibut na vašem braillovem prikazu.</p>
+      </item>
+      <item>
+        <p><gui>Predstavi razen</gui>: V tem uredljivem polju lahko navedete, kdaj vas omogočen atribut ne zanima.</p>
+        <p>
+          For example, by default the "underline" text attribute has a
+          value of "none". This causes <app>Orca</app> to inform you
+          about underlined text as long as the text is actually underlined.
+          If you always want this attribute to be spoken irrespective of
+          whether or not the text is underlined, the <gui>Present unless</gui>
+          column should be empty for underline. In addition, you should be sure
+          that the <gui>Speak</gui> column for underline is checked.
+        </p>
+      </item>
+    </list>
+  </section>
+  <section id="reset">
+     <title>Razveljavljanje sprememb</title>
+     <p>Pod seznamom atributov besedila je gumb Ponastavi (<keyseq><key>Alt</key><key>R</key></keyseq>), ki bo obnovil vrednosti razpredelnice na vrednosti ob prvem prikazu pogovornega okna.</p>
+  </section>
+  <section id="rearranging">
+    <title>Preureditev vrstnega reda predstavitve</title>
+    <figure>
+      <title>Možnosti za nadziranje vrstnega reda v katerem so atributi predstavljeni</title>
+      <desc>Ko boste prvič prikazali stran atributov besedila, bodo vsi vaši izbrani atributi postavljeni na vrh razpredelnice v vrstnem redu izgovorjave. Na voljo so štirje gumbi s katerimi lahko preuredite vrstni red predstavitve:</desc>
+      <media type="image" mime="image/png" src="figures/preferences_text_attributes_rearranging.png"/>
+    </figure>
+    <list>
+      <item>
+        <p><gui>Premakni na vrh</gui> (<keyseq><key>Alt</key><key>T</key></keyseq>): premakne izbran atribut na vrh seznama.</p>
+      </item>
+      <item>
+        <p><gui>Premakni eno navzgor</gui> (<keyseq><key>Alt</key><key>U</key></keyseq>): premakne izbran atribut eno vrstico navzgor.</p>
+      </item>
+      <item>
+        <p><gui>Premakni eno navzdol</gui> (<keyseq><key>Alt</key><key>D</key></keyseq>): premakne izbran atribut eno vrstico navzdol.</p>
+      </item>
+      <item>
+        <p><gui>Premakni na dno</gui> (<keyseq><key>Alt</key><key>B</key></keyseq>): premakne izbran atribut na dno seznama.</p>
+      </item>
+    </list>
+  </section>
+  <section id="braille_indicator">
+    <title>Braille kazalnik</title>
+    <figure>
+      <title>Možnosti za nadziranje Braillovega "Podčrtovanja" za oblikovanje</title>
+      <desc>Pod potisnimi gumbi je skupina izbirnih gumbov <gui>Braille kazalnik</gui>. Tukaj lahko izberete celico ali celice, ki nakazujejo besedilo, ki ima vsaj enega od določenih atributov.</desc>
+      <media type="image" mime="image/png" src="figures/preferences_text_attributes_braille.png"/>
+    </figure>
+    <list>
+      <item>
+        <p><gui>Brez</gui>: Ne podčrtaj atributov besedila v Braillovi pisavi (privzeto)</p>
+      </item>
+      <item>
+        <p><gui>Pika 7</gui>: Podčrtaj atribute besedila le s Piko 7</p>
+      </item>
+      <item>
+        <p><gui>Pika 8</gui>: Podčrtaj atribute besedila le s Piko 8</p>
+      </item>
+      <item>
+        <p><gui>Piki 7 in 8</gui>: Podčrtaj atribute besedila tako s Pikama 7 in 8 </p>
+      </item>
+    </list>
+  </section>
+</page>

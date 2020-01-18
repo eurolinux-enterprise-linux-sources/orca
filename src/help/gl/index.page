@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" id="index" xml:lang="gl">
+  <info>
+    <title type="text">Orca Screen Reader</title>
+    <title type="link">Introduction to the <app>Orca</app> Screen Reader</title>
+    <credit type="author">
+      <name>Joanmarie Diggs</name>
+      <email>joanied@gnome.org</email>
+    </credit>
+    <license>
+      <p>Creative Commons Compartir Igual 3.0</p>
+    </license>
+  </info>
+  <title>
+    <media type="image" mime="image/png" src="figures/orca-logo.png">
+      <app>Orca</app>'s logo
+    </media>
+    <app>Orca</app> Screen Reader
+  </title>
+  <note style="important">
+    <title>Antes de comezar</title>
+    <p>
+      Read the <link href="help:gnome-help#a11y">Universal Access Help</link>
+    </p>
+  </note>
+  <section id="getting_started" style="2column">
+    <title>Primeiros pasos</title>
+  </section>
+  <section id="reading" style="2column">
+    <title>Ler documentos e páxinas web</title>
+  </section>
+  <section id="reviewing" style="2column">
+    <title>Reviewing and Interacting with Screen Contents</title>
+  </section>
+  <section id="quick_reference" style="2column">
+    <title>Referencia rápida</title>
+  </section>
+</page>

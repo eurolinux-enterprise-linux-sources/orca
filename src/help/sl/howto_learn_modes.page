@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="howto_learn_modes" xml:lang="sl">
+  <info>
+    <link type="guide" xref="index#getting_started"/>
+    <link type="next" xref="howto_keyboard_layout"/>
+    <title type="sort">5. The "Learn" Modes</title>
+    <desc>Odkrivanje <app>Orkinih</app> ukazov</desc>
+    <credit type="author">
+      <name>Joanmarie Diggs</name>
+      <email>joanied@gnome.org</email>
+    </credit>
+    <license>
+      <p>Creative Commons deljenje pod enakimi pogoji 3.0</p>
+    </license>
+  </info>
+  <title>Načini "Učenje"</title>
+  <p>Orka ima dva načina za podrobnejše učenje o <app>Orkinih</app> ukazih:  način učenja in način seznama bližnjic. V načinu učenja bo <app>Orka</app> oznanila vsak vsak vaš pritisk tipke skupaj z morebitnimi povezanimi  ukazi <app>Orke</app>, ki so vezani na ta pritisk tipk. Način seznama bližnjic vam zagotavlja seznam vseh ukazov <app>Orka</app>, ki jih lahko uporabite.</p>
+  <steps>
+    <title>Uporaba učnega načina</title>
+    <item>
+      <p>
+        Get into Learn Mode by pressing <keyseq><key>Orca Modifier</key>
+        <key>H</key></keyseq>.
+      </p>
+    </item>
+    <item>
+      <p>Pritisnite tipko ali kombinacijo tipk. <app>Orka</app> bo oznanila tipke in morebiten povezan ukaz.</p>
+    </item>
+    <item>
+      <p>Za izhod iz učenega načina pritisnite <key>Ubežno tipko</key>.</p>
+    </item>
+  </steps>
+  <steps>
+    <title>Uporaba seznama načina bližnjic</title>
+    <item>
+      <p>
+        Get into List Shortcuts Mode by pressing <keyseq><key>Orca Modifier</key>
+        <key>H</key></keyseq> twice quickly.
+      </p>
+    </item>
+    <item>
+      <p>Pritisnite <key>1</key>, če želite seznam bližnjic, ki veljajo za celotno <app>Orko</app> in <key>2</key>, če želite seznam bližnjic, ki so določene za programe z žariščem.</p>
+    </item>
+    <item>
+      <p>Pritisnite <key>Navzgor</key> ali <key>Navzdol</key> za preučevanje vsebine seznama.</p>
+    </item>
+    <item>
+      <p>Vstopi v način seznama tipkovnih bližnjic. Za izhod pritisnite ubežno tipko.</p>
+    </item>
+  </steps>
+</page>

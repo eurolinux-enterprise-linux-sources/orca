@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="howto_text_setup" xml:lang="fr">
+  <info>
+    <desc>Une fonction qui vous permet de configurer <app>Orca</app> de façon basique même si le bureau n'est pas en fonctionnement.</desc>
+    <credit type="author">
+      <name>Joanmarie Diggs</name>
+      <email>joanied@gnome.org</email>
+    </credit>
+    <license>
+      <p>Creative Commons Share Alike 3.0</p>
+    </license>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Laurent Coudeur</mal:name>
+      <mal:email>laurentc@iol.ie</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bruno Brouard</mal:name>
+      <mal:email>annoa.b@gmail.com</mal:email>
+      <mal:years>2011-12</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Julien Hardelin</mal:name>
+      <mal:email>jhardlin@orange.fr</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  </info>
+  <title>Utilisation de la configuration en mode texte</title>
+  <p>Orca dispose d'une fonction de configuration en mode texte qui vous permet de configurer <app>Orca</app> de façon basique même si le bureau n'est pas en fonctionnement.</p>
+  <steps>
+    <title>Lancement de la configuration en mode texte d'<app>Orca</app></title>
+    <item>
+      <p>Ouvrez la boîte de dialogue <gui>Exécuter</gui>. Dans la plupart des distributions, elle s'obtient en pressant <keyseq><key>Alt</key><key>F2</key></keyseq>. Vous pouvez aussi utiliser une fenêtre de terminal ou la console de texte système.</p>
+    </item>
+    <item>
+      <p>Saisissez <cmd>orca --text-setup</cmd> ou <cmd>orca -t</cmd> puis <key>Entrée</key>.</p>
+    </item>
+  </steps>
+  <p>Quelques questions vous seront posées :</p>
+  <steps>
+    <item>
+      <p>Sélectionnez le synthétiseur vocal désiré</p>
+      <p>Les choix qui suivront dépendent des systèmes de synthèse vocale installés sur votre ordinateur. Saisissez le numéro associé au système de synthèse vocale que vous souhaitez et appuyez sur <key>Entrée</key>.</p>
+    </item>
+    <item>
+      <p>Sélectionnez le synthétiseur vocal désiré</p>
+      <p>Les choix qui suivront dépendent des synthétiseurs vocaux installés sur votre système. Saisissez le numéro associé au synthétiseur vocal que vous souhaitez et appuyez sur <key>Entrée</key>.</p>
+    </item>
+    <item>
+      <p>Sélectionnez la voix désirée</p>
+      <p>Les « voix » correspondent avec les langues disponibles. Dans le cas de speech-dispatcher, il y a environ soixante langues et dialectes pris en charge et d'autres sont ajoutés régulièrement. Saisissez la langue (par ex. <cmd>7</cmd> pour l'anglais américain) et appuyez sur <key>Entrée</key>. Vous n'avez pas besoin que la liste entière soit lue. De plus, <app>Orca</app> essaie d'utiliser votre langue par défaut comme premier choix, donc dans de nombreux cas vous pouvez simplement saisir <cmd>1</cmd> et presser <key>Entrée</key> sans avoir à écouter toute la liste des voix.</p>
+    </item>
+    <item>
+      <p>Activer l'écho à chaque mot ?</p>
+      <p>Quand cette option est activée <app>Orca</app> lit les mots quand vous avez fini de les saisir. Saisissez <cmd>o</cmd> ou <cmd>n</cmd> et appuyez sur <key>Entrée</key>.</p>
+    </item>
+    <item>
+      <p>Activer l'écho des touches ?</p>
+      <p>Quand cette option est activée <app>Orca</app> lit toute les touches qui sont pressées. Saisissez <cmd>o</cmd> ou <cmd>n</cmd> et appuyez sur <key>Entrée</key>.</p>
+      <p>Si vous indiquez que vous souhaitez activer l'écho de touche, la configuration vous demandera quel sont les type d'écho de touche que vous voulez activer ou désactiver. Pour chacun d'entre eux saisissez <cmd>o</cmd> pour l'activer ou <cmd>n</cmd> pour le désactiver et appuyez sur <key>Entrée</key>. Les types sont :</p>
+      <list>
+        <item>
+          <p>touches alphanumériques et de ponctuation</p>
+          <p>Cette option contrôle si les touches comme <key>a</key>, <key>b</key>, <key>c</key>, <key>;</key>, <key>?</key>, etc. sont prononcées ou pas lorsqu'elles sont pressées.</p>
+        </item>
+        <item>
+          <p>touches de modification</p>
+          <p>Cette option contrôle si les touches <key>Maj</key>, <key>Ctrl</key>, <key>Alt</key> et <key>Meta</key> doivent être lues quand elles sont pressées.</p>
+        </item>
+        <item>
+          <p>blocage des clés</p>
+          <p>Cette option contrôle si les touches <key>Verr. maj.</key>, <key>Arrêt défil.</key> et <key>Verr. num</key> doivent être lues quand elles sont pressées.</p>
+        </item>
+        <item>
+          <p>touches de fonctions</p>
+          <p>Cette option contrôle si les touches <key>F1</key> jusqu'à <key>F12</key> doivent être lues quand elles sont pressées.</p>
+        </item>
+        <item>
+          <p>touches d'action</p>
+          <p>Cette option contrôle si les touches <key>Retour arrière</key>, <key>Suppr</key>, <key>Retour</key>, <key>Esc.</key>, <key>Tab</key>, <key>Page Haut</key>, <key>Page bas</key>, <key>Flèche haut</key> et <key>Flèche bas</key> doivent être lues quand elles sont pressées.</p>
+        </item>
+      </list>
+    </item>
+    <item>
+      <p>Sélectionnez l'agencement du clavier désirée.</p>
+      <p>Orca dispose de deux agencements de clavier : bureau et portable. L'agencement que vous choisissez détermine la touche qui est utilisée comme modificateur d'Orca.</p>
+      <list>
+        <item>
+          <p>Si vous utilisez l'agencement ordinateur portable, le modificateur d'Orca par défaut est <key>Verr. maj.</key></p>
+        </item>
+        <item>
+          <p>Si vous utilisez l'agencement ordinateur de bureau, les modificateurs d'Orca par défaut sont à la fois les touches <key>Inser</key> et <key>Insert du pavé numérique</key>, la seconde étant la même touche que le <key>0 du pavé numérique</key>.</p>
+        </item>
+      </list>
+      <p>L'agencement détermine aussi les combinaisons de touches associées à un certain nombre de commandes d'<app>Orca</app>, plus particulièrement en ce qui concerne l'« Examen global », « Où suis-je » et « Lire tout ».</p>
+      <p>Saisissez <cmd>1</cmd> pour l'agencement de bureau ou <cmd>2</cmd> pour portable et appuyez sur <key>Entrée</key>.</p>
+    </item>
+    <item>
+      <p>Activer le braille</p>
+      <p>Cette fonctionnalité assume qu'un périphérique compatible BrlTTY est disponible. Saisissez <cmd>o</cmd> ou <cmd>n</cmd> et appuyez sur <key>Entrée</key>. Remarque, vous pouvez saisir <cmd>o</cmd> ici ; <app>Orca</app> se rétablira correctement et fonctionne même s'il ne trouve pas BrlTTY.</p>
+    </item>
+    <item>
+      <p>Activer le moniteur braille</p>
+      <p>L'afficheur Braille d'Orca est une représentation à l'écran du braille. Cette fonction est essentiellement utile pour les développeurs voyants qui ont besoin de vérifier la sortie BrlTTY, mais qui peut être utile dans d'autre situations, tel que le diagnostique visuel ou la vérification de la sortie braille. Saisissez <cmd>o</cmd> ou <cmd>n</cmd> et appuyez sur <key>Entrée</key>.</p>
+    </item>
+    <item>
+      <p>Lancement automatique d'<app>Orca</app> quand vous vous connectez</p>
+      <p>Saisissez <cmd>o</cmd> si vous souhaitez que <app>Orca</app> soit lancé automatiquement pour vous ou <cmd>n</cmd> si vous ne le souhaitez pas, et appuyez sur <key>Entrée</key>.</p>
+    </item>
+  </steps>
+  <p>C'est fait. <app>Orca</app> est maintenant prêt à être utilisé. Si l'accessibilité n'était pas en encore activée, <app>Orca</app> le fait en ce moment et vous demande de vous reconnecter pour que le service démarre. Saisissez <cmd>o</cmd> et appuyez sur <key>Entrée</key> pour redémarrer votre session. Si l'accessibilité était déjà activée, vous êtes simplement inviter à presser <key>Entrée</key> après quoi <app>Orca</app> est lancé.</p>
+</page>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" id="index" xml:lang="hu">
+  <info>
+    <title type="text">Orka képernyőolvasó</title>
+    <title type="link">Az <app>Orka</app> képernyőolvasó bemutatása</title>
+    <credit type="author">
+      <name>Joanmarie Diggs</name>
+      <email>joanied@gnome.org</email>
+    </credit>
+    <license>
+      <p>Creative Commons Share Alike 3.0</p>
+    </license>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Hammer Attila</mal:name>
+      <mal:email>hammera at pickup dot hu</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  </info>
+  <title><media type="image" mime="image/png" src="figures/orca-logo.png"> <app>Orka</app> logó</media><app>Orka</app> képernyőolvasó</title>
+  <note style="important">
+    <title>Mielőtt tovább lépne</title>
+    <p>Olvassa el az <link href="help:gnome-help#a11y">Akadálymentesítési súgót</link>.</p>
+  </note>
+  <section id="getting_started" style="2column">
+    <title>Kezdeti lépések</title>
+  </section>
+  <section id="reading" style="2column">
+    <title>Dokumentumok és weblapok olvasása</title>
+  </section>
+  <section id="reviewing" style="2column">
+    <title>Képernyőtartalom áttekintése és kezelése</title>
+  </section>
+  <section id="quick_reference" style="2column">
+    <title>Rövid referencia</title>
+  </section>
+</page>

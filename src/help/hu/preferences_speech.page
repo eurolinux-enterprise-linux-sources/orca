@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="preferences_speech" xml:lang="hu">
+  <info>
+    <link type="guide" xref="preferences#orca"/>
+    <link type="next" xref="preferences_braille"/>
+    <title type="sort">2. Beszéd</title>
+    <title type="link">Beszéd</title>
+    <desc>A beszéddel kapcsolatos beállítások megadása</desc>
+    <credit type="author">
+      <name>Joanmarie Diggs</name>
+      <email>joanied@gnome.org</email>
+    </credit>
+    <license>
+      <p>Creative Commons Share Alike 3.0</p>
+    </license>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Hammer Attila</mal:name>
+      <mal:email>hammera at pickup dot hu</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  </info>
+  <title>Beszéd beállításai</title>
+  <section id="enable_speech">
+    <title>Beszéd engedélyezése</title>
+    <media type="image" mime="image/png" src="figures/preferences_enable_speech.png"/>
+    <p>Ez a jelölőnégyzet szabályozza, hogy az <app>Orka</app> használja-e a beszédszintetizátort. A csak Braille-kijelzőt használó felhasználók töröljék a jelölőnégyzetet.</p>
+  </section>
+  <section id="tts_options">
+    <title>Beszéd beállításai</title>
+    <media type="image" mime="image/png" src="figures/preferences_tts_options.png"/>
+    <section>
+      <title>Beszédrendszer</title>
+      <p>Ez a kombinált listamező lehetővé teszi, hogy kiválaszthassa a használni kívánt beszédrendszert a telepített beszédrendszerek közül. Néhány példa az általában elérhető beszédrendszerek közül: Speech Dispatcher és GNOME Felolvasó szolgáltatás.</p>
+    </section>
+    <section>
+      <title>Beszédszintetizátor</title>
+      <p>Ebben a kombinált listamezőben kiválaszthatja az Ön által kiválasztott beszédrendszerrel használni kívánt beszédszintetizátort.</p>
+    </section>
+    <section>
+      <title>Hangbeállítások</title>
+      <p>Ebben a kombinált listamezőben a különböző szövegtípusokhoz más és más hangkaraktert rendelhet, így lehetősége van például jobban megkülönböztetni a nagybetűs és hivatkozásokat tartalmazó szövegeket a normál szövegektől, vagy a képernyőn megjelenő üzeneteket az <app>Orka</app> által kiküldött üzenetektől.</p>
+      <note style="tip">
+        <title>Több hangkarakter beállítása</title>
+        <p>Ha egy hangkarakter beállításait szeretné konfigurálni, először válassza ki a kívánt hangkaraktert a <gui>Hangbeállítás</gui> kombinált listamezőből. Ezután állítsa be a kívánt karaktert, beszédsebességet, hangmagasságot és hangerőt.</p>
+      </note>
+    </section>
+    <section>
+      <title>Személy</title>
+      <p>Ez a kombinált listamező lehetővé teszi, hogy kiválassza, melyik „személy” vagy „beszélő” legyen aktív a kiválasztott hangbeállításnál. Beállíthatja például, hogy Dávid legyen az alapértelmezett hangkarakter az általános információk kimondásakor, de a hivatkozások kimondása Alíz hangján történjen. Ne feledje, hogy a <gui>Személy</gui> kombinált listamezőben választható hangkarakterek az Ön által telepített beszédszintetizátorok lehetőségeitől függenek.</p>
+    </section>
+    <section>
+      <title>Sebesség, hangmagasság és hangerő</title>
+      <media type="image" mime="image/png" src="figures/preferences_rate_pitch_volume.png"/>
+      <p>Ezzel a három balra és jobbra mozgatható csúszkával beállíthatja a kiválasztott személy beszédjellemzőit.</p>
+    </section>
+  </section>
+  <section id="punctuation_level">
+    <title>Központozás szintje</title>
+    <media type="image" mime="image/png" src="figures/preferences_punctuation_level.png"/>
+    <p>A <gui>Központozás szintje</gui> választógomb-csoport meghatározza a beszédszintetizátor által használandó központozási szintet. Az elérhető szintek: Nincs, Néhány, Legtöbb és Mindent.</p>
+    <section>
+      <title>Nincs</title>
+      <p>Ha a <gui>Nincs</gui> központozási szintet választja, semmilyen írásjel kimondása nem történik meg. Kivételt képeznek ez alól a speciális szimbólumok, például a felső és alsó indexben lévő számok, Unicode jelek és felsorolásjelek, noha egyesek ezeket a szimbólumokat is központozási jeleknek tekintik.</p>
+    </section>
+    <section>
+      <title>Néhány</title>
+      <p>Ha a <gui>Néhány</gui> központozási szintet választja, minden előzőleg írt szimbólum kimondásra kerül. Továbbá, az <app>Orka</app> ki fogja mondani az ismert matematikai szimbólumokat, pénznemeket, valamint a „^”, „@”, „/”, „&amp;”, „#” szimbólumokat is.</p>
+    </section>
+    <section>
+      <title>Legtöbb</title>
+      <p>Ha a <gui>Legtöbb</gui> központozási szintet választja, minden előzőleg írt szimbólum kimondásra kerül. Továbbá, az <app>Orka</app> ki fog mondani minden más ismert írásjelet, <em>kivéve</em> a „!”, „'”, „,”, „.”, „?” írásjeleket.</p>
+    </section>
+    <section>
+      <title>Mindent</title>
+      <p>Ha a <gui>Mindent</gui> központozási szintet választja, az <app>Orka</app> minden ismert írásjelet és szimbólumot ki fog mondani.</p>
+    </section>
+    <p>Alapbeállítás: <gui>Legtöbb</gui></p>
+  </section>
+  <section id="verbosity">
+    <title>Részletesség</title>
+    <media type="image" mime="image/png" src="figures/preferences_speech_verbosity.png"/>
+    <p>A <gui>Részletesség</gui> beállításával megadható az egyes szituációkban kimondandó információk mennyisége. Ha például a részletes lehetőség van beállítva, és a nyílbillentyűkkel egy elgépelt szóra mozgatja a kurzort, akkor az <app>Orka</app> jelezni fogja Önnek az elgépelést. Ha a Tömör lehetőség van beállítva, ez az információ nem kerül kimondásra.</p>
+    <p>Alapbeállítás: <gui>Részletes</gui></p>
+  </section>
+  <section id="table_rows">
+    <title>Táblázatoszlopok olvasása</title>
+    <media type="image" mime="image/png" src="figures/preferences_table_rows.png"/>
+    <p>A <gui>Táblázatoszlopok olvasása</gui> választógombcsoport meghatározza, hogy mi kerüljön kimondásra, ha egy táblázat sorai között navigál. A választható beállítások: <gui>Sor felolvasása</gui> és <gui>Cella felolvasása</gui>.</p>
+    <p>Tegyük fel, hogy át kell tekintenie a Beérkezett üzenetek mappában levő üzeneteit. Ha azt szeretné, hogy az <app>Orka</app> kimondja egy üzenet esetén a feladót, tárgyat, dátumot és hogy az üzenet tartalmaz-e mellékletet, a <gui>Sor felolvasása</gui> beállítás használandó. Ha viszont egy táblázat sorai között navigál, a teljes sor végighallgatása akár zavaró is lehet. Ebben az esetben érdemes például a <gui>Cella felolvasása</gui> beállítást választania.</p>
+      <p>Alapbeállítás: <gui>Sor felolvasása</gui></p>
+  </section>
+  <section id="progress_bar_updates">
+    <title>Folyamatjelző frissítésének felolvasása</title>
+    <media type="image" mime="image/png" src="figures/preferences_progress_bar_updates.png"/>
+    <section>
+      <title>Az engedélyezve jelölőnégyzet</title>
+      <p>Ha az <gui>Engedélyezve</gui> jelölőnégyzet be van jelölve, az <app>Orka</app> megadott időközönként felolvassa a folyamatjelzők állapotváltozását.</p>
+      <p>Alapbeállítás: bejelölve</p>
+    </section>
+    <section>
+      <title>Gyakoriság másodpercben</title>
+      <p>Ezzel a léptetőgombbal megadhatja, hogy az <app>Orka</app> milyen gyakran jelentse be a folyamatjelzők állapotváltozását.</p>
+      <p>Alapbeállítás: 10</p>
+    </section>
+    <section>
+      <title>Korlátozás erre</title>
+      <p>Ha a folyamatjelzők állapotának felolvasása engedélyezve van, ebben a kombinált listamezőben megadhatja, hogy milyen esetekben legyenek kimondva a folyamatjelzők állapotváltozásai. A választható lehetőségek: <gui>Mindent</gui>, <gui>Alkalmazás</gui>, és <gui>Ablak</gui>.</p>
+      <p>Ha a <gui>Mindent</gui> lehetőséget választja, az <app>Orka</app> minden folyamatjelző-állapotváltozást ki fog mondani, függetlenül azok helyétől.</p>
+      <p>Ha az <gui>Alkalmazás</gui> lehetőséget választja, az <app>Orka</app> ki fogja mondani a fókuszban levő aktív alkalmazás folyamatjelző-állapotváltozásait, függetlenül attól, hogy az alkalmazás ablaka aktív-e.</p>
+      <p>Ha az <gui>Ablak</gui> lehetőséget választja, az <app>Orka</app> csak az aktív ablak folyamatjelző-állapotváltozásait fogja kimondani.</p>
+      <p>Alapbeállítás: <gui>Alkalmazás</gui></p>
+    </section>
+  </section>
+  <section id="only_speak_displayed_text">
+    <title>Csak a képernyőn megjelenő szöveg kimondása</title>
+    <media type="image" mime="image/png" src="figures/preferences_only_speak_displayed_text.png"/>
+    <p>Ha bejelöli ezt a jelölőnégyzetet, az <app>Orka</app> csak a képernyőn megjelenő szövegeket fogja kimondani. Ez a beállítás elsősorban a gyengén látó, vagy vizuális tanulási nehézségekkel küzdő felhasználók számára lehet hasznos.</p>
+  </section>
+  <section id="multicase_strings">
+    <title>Több nagybetűt tartalmazó kifejezések szavankénti felolvasása</title>
+    <media type="image" mime="image/png" src="figures/preferences_speak_multicase_strings_as_words.png"/>
+    <p>Ha forráskódokkal dolgozik, gyakran találkozhat különálló szavakra felbontható „szavakkal”, amelyek vegyesen tartalmazhatnak kis és nagy betűket, mint például a „TöbbNagyBetű” kifejezés. A beszédszintetizátorok nem mindig tudják jól kiejteni az ilyen kifejezéseket. Ha bejelöli a <gui>Több nagybetűt tartalmazó kifejezések szavankénti felolvasása</gui> jelölőnégyzetet, az <app>Orka</app> a TöbbNagyBetű” kifejezést különálló szavakra bontva („Több”, „Nagy”, „Betű” formában) adja át a beszédszintetizátornak.</p>
+  </section>
+  <section id="pauses">
+    <media type="image" mime="image/png" src="figures/preferences_break_speech_into_chunks.png"/>
+    <title>A beszéd megállítása szüneteknél</title>
+    <p>A különböző engedélyezett beszédbeállításoktól függően az <app>Orka</app> sok információt árul el egy objektumról (az objektum nevét, a vezérlőelem típusát, a gyorsbillentyűjét, a hozzá tartozó oktatói üzenetet stb). Ha be van jelölve a <gui>Beszéd megállítása szüneteknél</gui> jelölőnégyzet, az <app>Orka</app> rövid szüneteket szúr be az információk közé, így a fontosabb információk jól elkülönülnek egymástól.</p>
+  </section>
+  <section id="say_all_by">
+    <media type="image" mime="image/png" src="figures/preferences_say_all_by.png"/>
+    <title>Kimondás</title>
+    <p>A <gui>Kimondás</gui> kombinált listamezőben megadhatja, hogy az <app>Orka</app> egy mondatot, vagy egy teljes sort olvasson fel akkor, ha aktiválja a felolvasás parancsot.</p>
+  </section>
+  <section id="system_voice_items">
+    <title>Rendszer hangkarakter használata</title>
+    <media type="image" mime="image/png" src="figures/preferences_system_voice_options.png"/>
+    <p>A következő kiegészítő lehetőségekkel irányíthatja a fókuszban levő objektumról elhangzó „rendszer” üzenetek kimondását. Mivel az objektumhoz társított szöveg nem jelenik meg a képernyőn, ezért ez az információ az <app>Orka</app> rendszer hangkaraktere által lesz kimondva.</p>
+    <note style="note">
+      <title>A rendszer hangkarakter beállításai</title>
+      <p>A következő beállítások nem lesznek elérhetők, ha a <gui>Csak a képernyőn megjelenő szöveg kimondása</gui> jelölőnégyzet be van jelölve.</p>
+      </note>
+      <section id="speak_blank_lines">
+        <title>Üres sorok felolvasása</title>
+        <p>Ha az <gui>Üres sorok felolvasása</gui> jelölőnégyzet be van jelölve, az <app>Orka</app> egy „üres” szót fog mondani, amikor egy üres sorra lép. Ha ez a jelölőnégyzet nincs bejelölve, az <app>Orka</app> semmit sem fog mondani, amikor egy üres sorra lép.</p>
+      </section>
+      <section id="indentation_and_justification">
+        <title>Behúzás és igazítás felolvasása</title>
+        <p>Ha kódot vagy szövegeket szerkeszt, gyakran szüksége lehet az igazítás vagy a behúzás felolvasására. A <gui>Behúzás és igazítás felolvasása</gui> jelölőnégyzet bejelölése után az <app>Orka</app> kimondja ezeket az információkat.</p>
+      </section>
+      <section id="mnemonics">
+       <title>Gyorsbillentyűk felolvasása</title>
+        <p>Ha a <gui>Gyorsbillentyűk felolvasása</gui> jelölőnégyzet be van jelölve, az <app>Orka</app> kimondja a fókuszban lévő objektumokhoz társított gyorsbillentyűket. Ha például az <gui>OK</gui> gomb van fókuszban és ez a jelölőnégyzet be van jelölve, a kimondott szöveg a következő lesz: „<gui>OK</gui> gomb. <keyseq><key>Alt</key><key>O</key></keyseq>”.</p>
+      </section>
+    <section id="child_position">
+      <title>Pozícióadatok kimondásának engedélyezése</title>
+      <p>Ha a <gui>Pozícióadatok kimondásának engedélyezése</gui> jelölőnégyzet be van jelölve, az <app>Orka</app> kimondja a fókuszban lévő objektum pozícióadatait, ha ez az adat elérhető. Ha például egy listában a második elemen áll, és a listának nyolc eleme van, a kimondott adat 2/8 lesz. Ezek az információk például a következő objektumoknál hangzanak el: választógombok, kombinált listamezők, menük, listák, lapfülek, stb.</p>
+    </section>
+    <section id="speak_tutorial_messages">
+      <title>Oktatói üzenetek kimondásának engedélyezése</title>
+      <p>Ha ez a jelölőnégyzet be van jelölve és mozog a kezelőfelület komponensei között, az <app>Orka</app> oktatói üzenet kimondásával tudatja, hogyan dolgozhat egy fókuszban levő komponenssel.</p>
+    </section>
+  </section>
+</page>

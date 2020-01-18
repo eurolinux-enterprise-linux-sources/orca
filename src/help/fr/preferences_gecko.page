@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="preferences_gecko" xml:lang="fr">
+  <info>
+    <link type="guide" xref="preferences#application"/>
+    <link type="next" xref="preferences_table_navigation"/>
+    <title type="sort">1. Navigation Gecko</title>
+    <title type="link">Navigation Gecko</title>
+    <desc>Configurer la prise en charge de <app>Firefox</app> et <app>Thunderbird</app> par <app>Orca</app></desc>
+    <credit type="author">
+      <name>Joanmarie Diggs</name>
+      <email>joanied@gnome.org</email>
+    </credit>
+    <license>
+      <p>Creative Commons Share Alike 3.0</p>
+    </license>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Laurent Coudeur</mal:name>
+      <mal:email>laurentc@iol.ie</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bruno Brouard</mal:name>
+      <mal:email>annoa.b@gmail.com</mal:email>
+      <mal:years>2011-12</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Julien Hardelin</mal:name>
+      <mal:email>jhardlin@orange.fr</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  </info>
+  <title>Préférences de navigation Gecko</title>
+  <section id="page_navigation">
+    <title>Navigation à travers la page</title>
+    <media type="image" mime="image/png" src="figures/preferences_gecko_page_navigation.png"/>
+    <p>Le groupement de contrôles <gui>Navigation à travers la page</gui> vous permet de personnaliser comment <app>Orca</app> prononce et vous permet d'interagir avec le texte et d'autres types de contenu.</p>
+    <section>
+      <title>Utiliser la navigation au curseur d'Orca</title>
+      <p>Cette case à cocher bascule la navigation au curseur d'<app>Orca</app>. Quand elle est activée, Orca prend le contrôle du curseur lorsque vous vous déplacez dans la page ; quand elle est désactivée, la navigation au curseur native de Gecko est active.</p>
+      <p>Valeur par défaut : cochée</p>
+      <note style="tip">
+        <title>Ce paramètre peut être activé à la volée</title>
+        <p>Pour basculer ce paramètre pour un moment sans le conserver, utilisez <keyseq><key>Modificateur d'Orca</key><key>F12</key></keyseq>.</p>
+       </note>
+    </section>
+    <section>
+      <title>Utiliser la navigation par structure d'Orca</title>
+      <p>Cette case à cocher bascule la <link xref="howto_structural_navigation">Navigation par structure</link> d'<app>Orca</app>. La navigation par structure vous permet de parcourir la page d'élément en élément tel que les en-têtes, les liens et les champs de formulaire.</p>
+      <p>Valeur par défaut : cochée</p>
+      <note style="tip">
+        <title>Ce paramètre peut être activé à la volée</title>
+        <p>Pour basculer ce paramètre à la volée sans le conserver, utilisez <keyseq><key>Modificateur d'Orca</key><key>Z</key></keyseq>.</p>
+       </note>
+    </section>
+    <section>
+      <title>Capturer le focus des objets lors de la navigation</title>
+      <p>Si cette case est cochée, <app>Orca</app> capture le focus des objets parcourus quand vous naviguez à l'aide du curseur contrôlé par <app>Orca</app>. Cette option était nécessaire dans les anciennes versions de <app>Firefox</app> et <app>Thunderbird</app>.</p>
+      <p>Valeur par défaut : non cochée</p>
+    </section>
+    <section>
+      <title>Positionner le curseur au début de la ligne lors de la navigation verticale</title>
+      <p>Si cette case est cochée, <app>Orca</app> déplace toujours le curseur au début de la ligne quand <app>Orca</app> contrôle le curseur et que vous appuyez sur les flèches haut ou bas pour lire la ligne précédente ou suivante. Si cette case n'est pas cochée <app>Orca</app> tente de conserver le curseur dans la même position horizontale quand vous vous déplacez vers le haut ou le bas.</p>
+      <p>Valeur par défaut : non cochée</p>
+    </section>
+  </section>
+  <section id="find_options">
+    <title>Options de recherche</title>
+    <media type="image" mime="image/png" src="figures/preferences_gecko_find_options.png"/>
+    <p>Le groupement de contrôles <gui>Option de recherche</gui> rend possible la personnalisation de la présentation par <app>Orca</app> des résultats d'une recherche effectuée au sein d'une application.</p>
+    <section>
+      <title>Lire les résultats durant la recherche</title>
+      <p>Si cette case est cochée, <app>Orca</app> lit la ligne qui contient l'élément que vous recherchez.</p>
+      <p>Valeur par défaut : cochée</p>
+    </section>
+    <section>
+      <title>Lire uniquement les lignes changées durant la recherche</title>
+      <p>Si cette case est cochée, <app>Orca</app> ne lit pas une ligne correspondante si celle-ci est la même que la ligne correspondante précédente. Cette option est conçue pour prévenir le « bavardage » si une ligne contient plusieurs instances de la chaîne que vous recherchez.</p>
+      <p>Valeur par défaut : non cochée</p>
+    </section>
+    <section>
+      <title>Longueur minimale du texte correspondant</title>
+      <p>Ce bouton de réglage est utilisé pour spécifier le nombre de caractères qui doivent correspondre à votre recherche avant que <app>Orca</app> ne prononce les lignes correspondantes. Cette option est aussi conçue pour prévenir le « bavardage » car il y a de très nombreuses correspondances lorsque vous commencez à saisir la chaîne que vous recherchez.</p>
+      <p>Valeur par défaut : 4</p>
+    </section>
+  </section>
+</page>

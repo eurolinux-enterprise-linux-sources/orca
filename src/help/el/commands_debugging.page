@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="commands_debugging" xml:lang="el">
+  <info>
+    <link type="guide" xref="commands#troubleshooting"/>
+    <title type="sort">1. Αποσφαλμάτωση</title>
+    <title type="link">Αποσφαλμάτωση</title>
+    <desc>Εντολές για αντιμετώπιση προβλημάτων</desc>
+    <credit type="author">
+      <name>Joanmarie Diggs</name>
+      <email>joanied@gnome.org</email>
+    </credit>
+    <license>
+      <p>Creative Commons Share Alike 3.0</p>
+    </license>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name> Δημήτρης Σπίγγος</mal:name>
+      <mal:email>dmtrs32@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  </info>
+  <title>Εντολές αποσφαλμάτωσης</title>
+    <list>
+      <item>
+        <p>Πληροφορίες αναφοράς στο τρέχον ενεργό σενάριο: <keyseq><key>Ctrl</key><key>Alt</key><key>τροποποιητής Orca</key> <key>Home</key></keyseq></p>
+      </item>
+    </list>
+    <note style="tip">
+    <p>Για να χρησιμοποιηθούν οι επόμενες τρεις εντολές, το <app>Orca</app> χρειάζεται να ξεκινήσει από μια εικονική κονσόλα ή μέσα από τερματικό gnome. Η έξοδος στέλνεται μόνο σε κονσόλα (δηλαδή, δεν στέλνεται σε εκφώνηση ή Μπράιγ).</p>
+  </note>
+  <list>
+    <item>
+      <p>Εκτύπωση της λίστας αποσφαλμάτωσης όλων των γνωστών εφαρμογών στην κονσόλα όπου τρέχει το <app>Orca</app>: <keyseq> <key>Ctrl</key><key>Alt</key><key>τροποποιητής Orca</key><key>End</key> </keyseq></p>
+    </item>
+    <item>
+      <p>Εκτύπωση πληροφοριών αποσφαλμάτωσης σχετικές με τον πρόγονο του εστιασμένου αντικειμένου: <keyseq> <key>Ctrl</key><key>Alt</key><key>τροποποιητής Orca</key><key>Page Up</key> </keyseq></p>
+    </item>
+    <item>
+      <p>Εκτύπωση πληροφοριών αποσφαλμάτωσης σχετικές με την ιεραρχία της εστιασμένης εφαρμογής: <keyseq> <key>Ctrl</key><key>Alt</key><key>τροποποιητής Orca</key><key>Page Down</key> </keyseq></p>
+    </item>
+  </list>
+</page>

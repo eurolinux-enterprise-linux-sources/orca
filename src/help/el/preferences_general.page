@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="preferences_general" xml:lang="el">
+  <info>
+    <title type="sort">1. Γενικά</title>
+    <title type="link">Γενικά</title>
+    <desc>Ρύθμιση των θεμελιακών συμπεριφορών του <app>Orca</app></desc>
+    <link type="guide" xref="preferences#orca"/>
+    <link type="next" xref="preferences_speech"/>
+    <credit type="author">
+      <name>Joanmarie Diggs</name>
+      <email>joanied@gnome.org</email>
+    </credit>
+    <license>
+      <p>Creative Commons Share Alike 3.0</p>
+    </license>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name> Δημήτρης Σπίγγος</mal:name>
+      <mal:email>dmtrs32@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  </info>
+  <title>Γενικές προτιμήσεις</title>
+  <section id="keyboardlayout">
+    <info>
+      <desc>Η επιλογή του πλαισίου διαλόγου προτιμήσεων για διάλεγμα διάταξης πληκτρολογίου του <app>Orca</app> για επιτραπέζιου ή φορητού.</desc>
+    </info>
+    <title>Διάταξη πληκτρολογίου</title>
+    <media type="image" mime="image/png" src="figures/preferences_keyboard_layout.png"/>
+    <p>Η ομάδα ραδιοπλήκτρων <gui>διάταξης πληκτρολογίου</gui> επιτρέπει τον ορισμό εάν θα δουλεύει σε επιτραπέζιο (δηλαδή με αριθμητικό υποπληκτρολόγιο) ή πληκτρολόγιο φορητού. Η επιλεγόμενη διάταξη θα προσδιορίσει και τον <key>τροποποιητή Orca</key> και έναν αριθμό συντομεύσεων πληκτρολογίου για εκτέλεση εντολών <app>Orca</app>.</p>
+    <p>Προεπιλεγμένη τιμή: <gui>επιτραπέζιος</gui></p>
+  </section>
+  <section id="quitorca">
+    <info>
+      <desc>Η επιλογή πλαισίου διαλόγου προτιμήσεων για έξοδο από το <app>Orca</app> χωρίς την παρουσία διαλόγου επιβεβαίωσης.</desc>
+    </info>
+    <title>Έξοδος από το Orca χωρίς επιβεβαίωση</title>
+      <media type="image" mime="image/png" src="figures/preferences_quit_Orca_without_confirmation.png"/>
+      <p>Κανονικά, όταν εγκαταλείπετε το <app>Orca</app>, ένας διάλογος θα εμφανιστεί ρωτώντας σας εάν πραγματικά θέλετε να εγκαταλείψετε το <app>Orca</app>. Σημειώνοντας το πλαίσιο ελέγχου <gui>έξοδος από το Orca χωρίς επιβεβαίωση</gui> αποτρέπει το παράθυρο επιβεβαίωσης να εμφανιστεί.</p>
+    <p>Προεπιλεγμένη τιμή: ασημείωτη</p>
+  </section>
+  <section id="presenttooltips">
+    <info>
+      <desc>Η επιλογή του πλαισίου διαλόγου για ενεργοποίηση της παρουσίασης των συμβουλών οθόνης θα εμφανιστεί ως αποτέλεσμα της υπέρπτησης του ποντικιού.</desc>
+    </info>
+    <title>Εμφάνιση συμβουλών οθόνης</title>
+    <media type="image" mime="image/png" src="figures/preferences_present_tooltips.png"/>
+    <p>Όταν σημειωθεί, αυτή η επιλογή ζητά από το <app>Orca</app> να παρουσιάζει τις πληροφορίες των συμβουλών οθόνης όταν αυτές εμφανίζονται ως αποτέλεσμα της υπέρπτησης του ποντικιού. Ειδικές ενέργειες εξαναγκασμού εμφάνισης των συμβουλών οθόνης, όπως το πάτημα <keyseq> <key>Ctrl</key><key>F1</key></keyseq> όταν είναι εστιασμένο ένα αντικείμενο, καταλήγουν πάντοτε στην παρουσίαση συμβουλών οθόνης, ανεξάρτητα από τη ρύθμιση αυτή.</p>
+    <p>Προεπιλεγμένη τιμή: ασημείωτη</p>
+  </section>
+  <section id="showmainwindow">
+    <info>
+      <desc>Η επιλογή του πλαισίου διαλόγου προτιμήσεων για προβολή ή απόκρυψη του κύριου παραθύρου του <app>Orca</app>.</desc>
+    </info>
+    <title>Προβολή κύριου παραθύρου του Orca</title>
+    <media type="image" mime="image/png" src="figures/preferences_show_Orca_main_window.png"/>
+    <figure>
+      <title>Το κύριο παράθυρο του Orca</title>
+      <media type="image" mime="image/png" src="figures/main_window.png"/>
+      <desc>Το κύριο παράθυρο του <app>Orca</app> παρέχει με γραφικό τρόπο την εμφάνιση του διαλόγου <link xref="preferences">προτιμήσεων του orca</link>, πρόσβαση στο περιεχόμενο βοήθειας, προβολή του διαλόγου περί και έξοδο από το <app>Orca</app>.</desc>
+    </figure>
+    <p>Σε πολλούς χρήστες δεν αρέσει το κύριο παράθυρο του <app>Orca</app> επειδή εμφανίζει τη σειρά καρτελών του διαχειριστή παραθύρου όταν πατάτε το <keyseq> <key>Alt</key><key>Tab</key></keyseq> για εναλλαγή παραθύρων. Αποεπιλέγοντας το πλαίσιο ελέγχου <gui>εμφάνιση του κυρίου παραθύρου του <app>Orca</app></gui>, μπορείτε να πείτε στο <app>Orca</app> να μην εμφανιστεί στο κύριο παράθυρο του <app>Orca</app>.</p>
+    <p>Προεπιλεγμένη τιμή: σημειωμένη</p>
+  </section>
+  <section id="objectundermouse">
+    <info>
+      <desc>Η επιλογή του πλαισίου διαλόγου προτιμήσεων για ενεργοποίηση της παρουσίασης του αντικειμένου κάτω από τον δείκτη του ποντικιού.</desc>
+    </info>
+    <title>Εκφώνηση του αντικειμένου κάτω από το ποντίκι</title>
+    <media type="image" mime="image/png" src="figures/preferences_speak_object_under_mouse.png"/>
+    <p>Όταν σημειωθεί, αυτή η επιλογή θα πει στο <app>Orca</app> να εμφανίσει πληροφορίες για το αντικείμενο κάτω από τον δείκτη ποντικιού καθώς το μετακινείτε γύρω από την οθόνη χρησιμοποιώντας στο <app>Orca</app> το γνώρισμα <link xref="howto_mouse_review">επισκόπηση ποντικιού</link>.</p>
+    <p>Προεπιλεγμένη τιμή: ασημείωτη</p>
+  </section>
+  <section id="timeanddate">
+    <info>
+      <desc>Επιλογές του πλαισίου διαλόγου προτιμήσεων για προσαρμογή των μορφών του χρόνου και ημερομηνίας που χρησιμοποιούνται από το <app>Orca</app>.</desc>
+    </info>
+    <title>Μορφές χρόνου και ημερομηνίας</title>
+    <media type="image" mime="image/png" src="figures/preferences_date_and_time.png"/>
+    <p>Τα σύνθετα πλαίσια <gui>μορφής χρόνου</gui> και <gui>μορφής ημερομηνίας</gui> επιτρέπουν τον καθορισμό της εκφώνησης του <app>Orca</app> του χρόνου και της ημερομηνίας σε Μπράιγ.</p>
+    <p>Προεπιλεγμένη τιμή: χρήση της μορφής του τοπικού συστήματος για κάθε</p>
+  </section>
+  <section id="profiles">
+    <info>
+      <desc>Επιλογή του πλαισίου διαλόγου προτιμήσεων διαχείρισης των κατατομών ρυθμίσεων.</desc>
+    </info>
+    <title>Κατατομές</title>
+    <media type="image" mime="image/png" src="figures/preferences_profiles.png"/>
+    <p>Η ομάδα των ελέγχων <gui>κατατομές</gui>, που εμφανίζεται στο τέλος της σελίδας <gui>γενικά</gui>, κάνει δυνατή τη διατήρηση και χρήση πολλαπλών διαμορφώσεων.</p>
+   <list>
+      <item>
+        <p>Το σύνθετο πλαίσιο <gui>ενεργή κατατομή</gui> εμφανίζει την τρέχουσα κατατομή και επιτρέπει τη φόρτωση της επιλογή διαφορετικής κατατομής.</p>
+      </item>
+      <item>
+        <p>Το κουμπί <gui>φόρτωση</gui> θα προκαλέσει τη φόρτωση από το <app>Orca</app> της κατατομής που εμφανίζεται στο σύνθετο πλαίσιο <gui>ενεργής κατατομής</gui>.</p>
+      </item>
+      <item>
+        <p>Το κουμπί <gui>αποθήκευση ως</gui> επιτρέπει την αποθήκευση του τρέχοντος συνόλου επιλογών από το πλαίσιο διαλόγου προτιμήσεων σε μία επώνυμη κατατομή.</p>
+      </item>
+      <item>
+        <p>Το σύνθετο πλαίσιο <gui>εκκίνηση κατατομής</gui> επιτρέπει την επιλογή της κατατομής που πρέπει να φορτωθεί αυτόματα κάθε φορά που ξεκινάτε το <app>Orca</app>.</p>
+      </item>
+    </list>
+  </section>
+</page>

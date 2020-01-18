@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="preferences_key_bindings" xml:lang="hu">
+  <info>
+    <link type="guide" xref="preferences#orca"/>
+    <link type="next" xref="preferences_pronunciation"/>
+    <link type="seealso" xref="howto_key_bindings"/>
+    <title type="sort">6. Billentyűtársítások</title>
+    <title type="link">Billentyűtársítások</title>
+    <desc>Az <app>Orka</app> billentyűparancsainak konfigurálása</desc>
+    <credit type="author">
+      <name>Joanmarie Diggs</name>
+      <email>joanied@gnome.org</email>
+    </credit>
+    <license>
+      <p>Creative Commons Share Alike 3.0</p>
+    </license>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Hammer Attila</mal:name>
+      <mal:email>hammera at pickup dot hu</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  </info>
+  <title>Billentyűtársítások beállításai</title>
+  <section id="orca_modifier_keys">
+    <title>Orka módosítóbillentyűk</title>
+    <media type="image" mime="image/png" src="figures/preferences_Orca_modifier_keys.png"/>
+    <p>Az <gui>Orka módosítóbillentyűk</gui> kombinált listamezőben kiválaszthatja, hogy mely billentyűt vagy billentyűket kívánja Orka módosítóbillentyűként használni. Az elérhető lehetőségek:</p>
+    <list>
+      <item>
+        <p><gui>KP_Insert</gui>: Egyenértékű a numerikus billentyűzet 0 billentyűjével.</p></item>
+      <item><p><gui>Insert</gui></p></item>
+      <item><p><gui>Insert, KP_Insert</gui></p></item>
+      <item><p><gui>Caps_Lock</gui></p></item>
+    </list>
+  </section>
+  <section id="key_bindings_table">
+    <title>A billentyűtársítások táblázat</title>
+    <media type="image" mime="image/png" src="figures/preferences_key_bindings_table.png"/>
+    <p>A billentyűtársítások táblázat a különböző <app>Orka</app> műveletek és az azokhoz rendelt billentyűtársítások listáját tartalmazza.</p>
+    <list>
+      <item>
+        <p>A <gui>Funkció</gui> oszlop az adott <app>Orka</app> művelet leírását tartalmazza.</p>
+      </item>
+      <item>
+        <p>A <gui>Billentyűtársítás</gui> oszlop az adott Orka funkció elsődleges billentyűparancsát tartalmazza, esetleg az „Orka” szóval kiegészítve. Ez azt jelenti, hogy az <app>Orka</app> módosítóbillentyűt nyomva kell tartani az egyéb billentyűkkel együtt. A billentyűparancsot módosíthatja, ha a <gui>Billentyűtársítás</gui> oszlopban lenyomja az <key>Enter</key> billentyűt. Ezután nyomja meg az Ön által használni kívánt billentyűkombinációt, majd nyomja meg újra az <key>Enter</key> billentyűt.</p>
+      </item>
+      <item>
+        <p>A <gui>Tartalék</gui> oszlop az adott Orka funkció másodlagos billentyűparancsát tartalmazza. A billentyűparancsot módosíthatja, ha a <gui>Tartalék</gui> oszlopban lenyomja az <key>Enter</key> billentyűt. Ezután nyomja meg az Ön által használni kívánt billentyűkombinációt, majd nyomja meg újra az <key>Enter</key> billentyűt.</p>
+      </item>
+      <item>
+        <p>A <gui>Módosítva</gui> oszlop két célra szolgál: jelzi, hogy milyen billentyűtársítások lettek megváltoztatva, és lehetőséget biztosít egy funkció eredeti billentyűtársításainak visszaállítására.</p>
+      </item>
+    </list>
+    <p>Az <app>Orka</app> billentyűtársítások listája alatt találni fog egy „Nincs kiosztva” elnevezésű csoportot. Ezek általában olyan parancsok, melyek hasznosak lehetnek egyes felhasználóknak, de a legtöbb felhasználónak ezekre a parancsokra nem lenne szüksége. Nem akartunk minden ilyen parancshoz „elhasználni” egy billentyűtársítást, így ezek a parancsok alapértelmezetten nem rendelkeznek billentyűtársítással. A lista alján találhatók a Braille társítások, melyeket egy frissíthető Braille-kijelzőn használhat.</p>
+  </section>
+</page>

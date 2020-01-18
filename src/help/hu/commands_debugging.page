@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="commands_debugging" xml:lang="hu">
+  <info>
+    <link type="guide" xref="commands#troubleshooting"/>
+    <title type="sort">1. Hibaelhárítás</title>
+    <title type="link">Hibaelhárítás</title>
+    <desc>Hibaelhárítással kapcsolatos parancsok</desc>
+    <credit type="author">
+      <name>Joanmarie Diggs</name>
+      <email>joanied@gnome.org</email>
+    </credit>
+    <license>
+      <p>Creative Commons Share Alike 3.0</p>
+    </license>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Hammer Attila</mal:name>
+      <mal:email>hammera at pickup dot hu</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  </info>
+  <title>Hibaelhárítással kapcsolatos parancsok</title>
+    <list>
+      <item>
+        <p>Információkérés az aktív <app>Orka</app> parancsfájlról: <keyseq><key>Orka módosító</key><key>Ctrl</key><key>Alt</key><key>Home</key></keyseq></p>
+      </item>
+    </list>
+    <note style="tip">
+    <p>A következő három parancs használatához az <app>Orkát</app> a gnome-terminalból vagy virtuális konzolból kell elindítani. A három parancs kimenete csak a konzolra kerül kiírásra, azaz nem lesz kimondva vagy a Braille-kijelzőre kiírva.</p>
+  </note>
+  <list>
+    <item>
+      <p>Az összes ismert alkalmazás listájának kiírása hibakeresési céllal arra a konzolra, amelyen az <app>Orka</app> fut: <keyseq><key>Orka módosító</key><key>Ctrl</key><key>Alt</key><key>End</key></keyseq></p>
+    </item>
+    <item>
+      <p>A fókuszban levő objektum szülőinformációinak kiírása: <keyseq><key>Orka módosító</key><key>Ctrl</key><key>Alt</key><key>Page Up</key></keyseq></p>
+    </item>
+    <item>
+      <p>A fókuszban levő alkalmazás hierarchiainformációinak kiírása: <keyseq><key>Orka módosító</key><key>Ctrl</key><key>Alt</key><key>Page Down</key></keyseq></p>
+    </item>
+  </list>
+</page>

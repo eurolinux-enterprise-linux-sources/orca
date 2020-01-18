@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="introduction" xml:lang="sl">
+  <info>
+    <link type="guide" xref="index#getting_started"/>
+    <link type="next" xref="howto_setting_up_orca"/>
+    <title type="sort">1. Welcome to Orca</title>
+    <desc>Uvod v bralnik zaslona <app>Orka</app></desc>
+    <credit type="author">
+      <name>Joanmarie Diggs</name>
+      <email>joanied@gnome.org</email>
+    </credit>
+    <license>
+      <p>Creative Commons deljenje pod enakimi pogoji 3.0</p>
+    </license>
+  </info>
+  <title>Dobrodošli v Orki</title>
+  <p>
+    <app>Orca</app> is a free, open source, flexible, and extensible
+    screen reader that provides access to the graphical desktop via
+    speech and refreshable braille.
+  </p>
+  <p>
+    <app>Orca</app> works with applications and toolkits that support
+    the Assistive Technology Service Provider Interface (AT-SPI), which
+    is the primary assistive technology infrastructure for Linux and
+    Solaris. Applications and toolkits supporting the AT-SPI include the
+    GNOME Gtk+ toolkit, the Java platform's Swing toolkit, OpenOffice,
+    Gecko, and WebKitGtk. AT-SPI support for the KDE Qt toolkit is being
+    pursued.
+  </p>
+  <section id="launching">
+    <title>Zaganjanje <app>Orke</app></title>
+    <p>Za zagon <app>Orke</app>:</p>
+    <list>
+      <item>
+        <p>Vpišite <cmd>orka</cmd> skupaj z morebitnimi izbirnimi parametri v okno terminala ali v pogovorno okno <gui>Zaženi</gui> in pritisnite <key>Vnosno tipko</key>.</p>
+      </item>
+      <item>
+        <p>
+          The method for configuring <app>Orca</app> to be launched
+          automatically as your preferred screen reader will depend upon
+          which desktop environment you use. For instance, in GNOME 3.x
+          this option can be found in the Universal Access Control Center
+          panel on the <gui>Seeing</gui> page.
+        </p>
+      </item>
+    </list>
+  </section>
+  <section id="quitting">
+    <title>Končanje <app>Orce</app></title>
+      <p>Za končanje <app>Orke</app>:</p>
+      <list>
+        <item>
+          <p>Pritisnite gumb <gui>Končaj</gui> v glavnem oknu <app>Orke</app>.</p>
+        </item>
+        <item>
+          <p>Pritisnite <keyseq><key>Spremenilno tipko Orka</key><key>Q</key></keyseq>. Ta ukaz deluje ne glede na to ali je <app>Orkino</app> glavno okno omogočeno ali ne.</p>
+        </item>
+        <item>
+          <p>Vpišite <cmd>orca -q</cmd> ali <cmd>orca --quit</cmd> v okno terminala ali v pogovorno okno  <gui>Zaženi</gui> in nato pritisnite <key>Vnosno tipko</key>.</p>
+        </item>
+      </list>
+    </section>
+    <section id="loadtime">
+      <title>Možnosti časa nalaganja</title>
+      <p>Ob zaganjanju <app>Orke</app> lahko navedete naslednje ukaze:</p>
+      <list>
+        <item>
+          <p><cmd>-h</cmd>, <cmd>--help</cmd>: Show the help message</p>
+        </item>
+        <item>
+          <p><cmd>-v</cmd>, <cmd>--version</cmd>: pokaži različico <app>Orke</app></p>
+        </item>
+        <item>
+          <p><cmd>-t</cmd>, <cmd>--text-setup</cmd>: nastavi možnosti uporabnika (besedilna različica)</p>
+        </item>
+        <item>
+          <p><cmd>-u</cmd>, <cmd>--user-prefs-dir=<em>imemape</em></cmd>: Uporabi <em>imemape</em> kot nadomestno mapo za možnosti uporabnika</p>
+        </item>
+        <item>
+          <p><cmd>-e</cmd>, <cmd>--enable=<em>možnost</em></cmd>: prisili uporabo možnosti, kjer je <em>možnost</em> lahko nekaj od naslednjega:</p>
+          <list>
+            <item><p><cmd>speech</cmd></p></item>
+            <item><p><cmd>braille</cmd></p></item>
+            <item><p><cmd>braille-monitor</cmd></p></item>
+            <item><p><cmd>main-window</cmd></p></item>
+            <item><p><cmd>splash-window</cmd></p></item>
+          </list>
+        </item>
+        <item>
+          <p><cmd>-d</cmd>, <cmd>--disable=<em>možnosti</em></cmd>: prepreči uporabo možnosti, kjer je <em>možnost</em> lahko eno od naslednjega:</p>
+          <list>
+            <item><p><cmd>speech</cmd></p></item>
+            <item><p><cmd>braille</cmd></p></item>
+            <item><p><cmd>braille-monitor</cmd></p></item>
+            <item><p><cmd>main-window</cmd></p></item>
+            <item><p><cmd>splash-window</cmd></p></item>
+          </list>
+        </item>
+        <item>
+            <p><cmd>-i</cmd>, <cmd>--import-file=<em>imedatoteke</em></cmd>: uvozi profil iz dane datoteke profila <app>Orka</app></p>
+        </item>
+        <item>
+          <p><cmd>--replace</cmd>: zamenja trenutno delujočo <app>Orko</app></p>
+        </item>
+        <item>
+          <p><cmd>-l</cmd>, <cmd>--list-apps</cmd>: izpiše znane programe v teku</p>
+        </item>
+        <item>
+          <p><cmd>--debug</cmd>: pošlji izhod razhroščevanja na debug-YYYY-MM-DD-HH:MM:SS.out</p>
+        </item>
+        <item>
+          <p><cmd>--debug-file=<em>imedatoteke</em></cmd>: pošlji izhod razhroščevanja v navedeno datoteko</p>
+        </item>
+      </list>
+    </section>
+
+</page>

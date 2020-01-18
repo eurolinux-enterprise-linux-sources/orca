@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="howto_forms" xml:lang="fr">
+  <info>
+    <link type="guide" xref="index#reading"/>
+     <link type="next" xref="howto_live_regions"/>
+    <title type="sort">5. Remplir des formulaires</title>
+    <desc>Accéder aux éléments graphiques intégrés dans les documents</desc>
+    <credit type="author">
+      <name>Joanmarie Diggs</name>
+      <email>joanied@gnome.org</email>
+    </credit>
+    <license>
+      <p>Creative Commons Share Alike 3.0</p>
+    </license>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Laurent Coudeur</mal:name>
+      <mal:email>laurentc@iol.ie</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bruno Brouard</mal:name>
+      <mal:email>annoa.b@gmail.com</mal:email>
+      <mal:years>2011-12</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Julien Hardelin</mal:name>
+      <mal:email>jhardlin@orange.fr</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  </info>
+  <title>Remplir des formulaires</title>
+  <p>Lorsque vous interagissez avec des pages Web et d'autres documents en utilisant <app>Orca</app>, vous interagissez directement avec le document ; pas avec une copie intermédiaire en buffer. Il n'y a donc pas de mode spécial à activer ou désactiver quand vous voulez remplir un formulaire. Déplacez-vous simplement directement dans chaque champ que vous voulez modifier, et interagissez avec l'élément comme s'il était dans une boîte de dialogue.</p>
+  <section>
+    <title>Navigation parmi les champs d'un formulaire</title>
+    <p>Pour naviguer parmi les champs du formulaire, vous avez plusieurs options :</p>
+    <list>
+      <item>
+        <p>Utilisez <key>Tab</key> et <keyseq><key>Maj</key><key>Tab</key></keyseq> pour parcourir les éléments pouvant avoir le focus, quel que soit leur type.</p>
+      </item>
+      <item>
+        <p>Utilisez les <link xref="commands_structural_navigation#forms">Commandes de navigation par structure pour formulaires</link> d'<app>Orca</app>.</p>
+      </item>
+      <item>
+        <p>En fonction du formulaire, vous pouvez utiliser les commandes de navigation au pointeur d'<app>Orca</app>, en d'autres termes, les flèches de direction quand <app>Orca</app> possède le contrôle du curseur.</p>
+      </item>
+   </list>
+  </section>
+  <section>
+    <title>Quitter les champs de formulaire</title>
+    <p>Comme il n'y a pas de mode spécifique dans <app>Orca</app> pour interagir avec les formulaires, la question la plus fréquente est : comment quitter un champ de formulaire. Pour ceci, vous avez aussi plusieurs solutions :</p>
+    <list>
+      <item>
+        <p>Utilisez <key>Tab</key> ou <keyseq><key>Maj</key><key>Tab</key></keyseq> si vous voulez quitter le champ actuel et aller dans l'objet suivant ou précédent quel qu'il soit.</p>
+      </item>
+      <item>
+        <p>Utilisez la <link xref="commands_structural_navigation#forms">navigation par structure</link> d'<app>Orca</app> pour aller dans le champ de formulaire précédent ou suivant : <keyseq><key>Modificateur d'Orca</key><key>Tab</key></keyseq> ou <keyseq><key>Modificateur d'Orca</key><key>Maj</key><key>Tab</key></keyseq>.</p>
+      </item>
+      <item>
+        <p>Utilisez les commandes d'<app>Orca</app> pour vous déplacer vers l'objet ou bloc de texte suivant ou précédent : <keyseq><key>Modificateur d'Orca</key><key>Flèche droite</key></keyseq> ou <keyseq><key>Modificateur d'Orca</key><key>Flèche gauche</key></keyseq>.</p>
+      </item>
+      <item>
+        <p>Si vous n'êtes pas dans une liste ou une boîte déroulante, vous pouvez utiliser les commandes de navigation au curseur pour quitter le champ de formulaire, tant que <app>Orca</app> contrôle le curseur.</p>
+      </item>
+    </list>
+  </section>
+</page>

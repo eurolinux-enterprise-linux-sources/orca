@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="preferences_general" xml:lang="sl">
+  <info>
+    <title type="sort">1. General</title>
+    <title type="link">General</title>
+    <desc>Nastavljanje <app>Orkinega</app> osnovnega obnašanja</desc>
+    <link type="guide" xref="preferences#orca"/>
+    <link type="next" xref="preferences_speech"/>
+    <credit type="author">
+      <name>Joanmarie Diggs</name>
+      <email>joanied@gnome.org</email>
+    </credit>
+    <license>
+      <p>Creative Commons deljenje pod enakimi pogoji 3.0</p>
+    </license>
+  </info>
+  <title>Splošne možnosti</title>
+  <section id="keyboardlayout">
+    <info>
+      <desc>Možnost za izbiro razporeditve tipkovnice, ki jo bo uporabljala <app>Orka</app>. Na voljo sta razporeditvi namiznega računalnika in prenosnika.</desc>
+    </info>
+    <title>Razporeditev tipkovnice</title>
+    <media type="image" mime="image/png" src="figures/preferences_keyboard_layout.png"/>
+    <p>Izbirni gumb <gui>razporeditev tipkovnice</gui> vam omogoča navedbo, če boste delali s tipkovnico namiznega računalnika (s številčno tipkovnico) ali prenosnika. Razporeditev, ki jo izberete, bo določila tako <key>Spremenilno tipko Orka</key> kot tudi številne tipkovne bližnjice za izvajanje ukazov <app>Orka</app>.</p>
+    <p>Privzeta vrednost: <gui>Namizni računalnik</gui></p>
+  </section>
+  <section id="quitorca">
+    <info>
+      <desc>Možnost za končanje <app>Orke</app> brez prestavljanja pogovornega okna potrditve.</desc>
+    </info>
+    <title>Končaj Orko brez potrditve</title>
+      <media type="image" mime="image/png" src="figures/preferences_quit_Orca_without_confirmation.png"/>
+      <p>
+        Normally, when you quit <app>Orca</app>, a confirmation dialog will
+        appear asking you if you do indeed wish to quit <app>Orca</app>.
+        Checking the <gui>Quit Orca without confirmation</gui> checkbox
+        prevents this confirmation window from appearing.
+    </p>
+    <p>Prikazana vrednost: ni izbrano</p>
+  </section>
+  <section id="presenttooltips">
+    <info>
+      <desc>Možnost za omogočitev predstavitve orodnih namigov, ki se pojavijo kot posledica miškinega prehoda.</desc>
+    </info>
+    <title>Prisotni orodni namigi</title>
+    <media type="image" mime="image/png" src="figures/preferences_present_tooltips.png"/>
+    <p>
+      When checked, this option will tell <app>Orca</app> to present information
+      about tooltips when they appear as the result of mouse hovering. Specific
+      actions to force tooltips to appear, such as pressing <keyseq>
+      <key>Ctrl</key><key>F1</key></keyseq> when an object has focus, will
+      always result in tooltips being presented, regardless of this setting.
+    </p>
+    <p>Prikazana vrednost: ni izbrano</p>
+  </section>
+  <section id="showmainwindow">
+    <info>
+      <desc>Možnost za prikaz ali skritje glavnega okna <app>Orke</app>.</desc>
+    </info>
+    <title>Pokaži glavno okno Orka</title>
+    <media type="image" mime="image/png" src="figures/preferences_show_Orca_main_window.png"/>
+    <figure>
+      <title>Glavno okno Orka</title>
+      <media type="image" mime="image/png" src="figures/main_window.png"/>
+      <desc><app>Orkino</app> glavno okno vam zagotavlja grafičen prikaz <link xref="preferences">Možnosti Orke</link> , dostop do vsebine pomoči, priklic pogovornega okna O programu in končanje <app>Orke</app>.</desc>
+    </figure>
+    <p>
+      Many users do not like the <app>Orca</app> main window because it shows
+      up in the window manager's Tab order when you press <keyseq>
+      <key>Alt</key><key>Tab</key></keyseq> to switch windows. By unchecking
+      the <gui>Show <app>Orca</app> main window</gui> checkbox, you can tell
+      <app>Orca</app> to not show <app>Orca</app>'s main window.
+    </p>
+    <p>Privzeta vrednost: izbrano</p>
+  </section>
+  <section id="objectundermouse">
+    <info>
+      <desc>Možnost za omogočitev predstavitve predmeta pod miškinim kazalnikom.</desc>
+    </info>
+    <title>Izgovorite predmet pod miško</title>
+    <media type="image" mime="image/png" src="figures/preferences_speak_object_under_mouse.png"/>
+    <p>Izbrana možnost določi, da <app>Orka</app> predstavi podatke o predmetu pod miškinim kazalnikom medtem ko ga premikate po zaslonu z <app>Orkino</app> zmožnostjo <link xref="howto_mouse_review">Pregleda miške</link>.</p>
+    <p>Prikazana vrednost: ni izbrano</p>
+  </section>
+  <section id="timeanddate">
+    <info>
+      <desc>Možnosti za prilagajanje prikaza datuma in časa, ki ju uporablja <app>Orka</app>.</desc>
+    </info>
+    <title>Prikaz časa in prikaz datuma</title>
+    <media type="image" mime="image/png" src="figures/preferences_date_and_time.png"/>
+    <p>Spustni polji <gui>Prikaz časa</gui> in <gui>Prikaz datuma</gui> vam omogočata navedbo ali <app>Orka</app> izgovori in v Braillovi pisavi prikaže čas in datum.</p>
+    <p>Privzeta vrednost: uporabi prikaz sistemskega jezikovnega določila</p>
+  </section>
+  <section id="profiles">
+    <info>
+      <desc>Možnosti za upravljanje profilov nastavitev.</desc>
+    </info>
+    <title>Profili</title>
+    <media type="image" mime="image/png" src="figures/preferences_profiles.png"/>
+    <p>Skupina nadzornikov <gui>Profili</gui>, ki se pojavi na dnu strani <gui>Splošno</gui>, vam omogoča vzdrževanje in uporabo več nastavitev.</p>
+   <list>
+      <item>
+        <p>Spustno polje <gui>Dejaven profil</gui> prikazuje trenutni profil in vam omogoča izbiro drugega profila za nalaganje.</p>
+      </item>
+      <item>
+        <p>Gumb <gui>Naloži</gui> povzroči, da <app>Orka</app> naloži profil nakazan v spustnem polju <gui>Dejaven profil</gui>.</p>
+      </item>
+      <item>
+        <p>Gumb <gui>Shrani kot</gui> vam omogoča shranjevanje trenutnega niza možnosti v profil.</p>
+      </item>
+      <item>
+        <p>Spustno polje <gui>Zagonski profila</gui> vam omogoča izbiro profila, ki bo bil samodejno naložen, vsakič ko zaženete <app>Orko</app>.</p>
+      </item>
+    </list>
+  </section>
+</page>
